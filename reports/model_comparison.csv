@@ -1,0 +1,6 @@
+branch,model,val_f1,val_roc_auc,threshold,selected
+message,LogisticRegression,1.0000,1.0000,0.5914,True
+message,LinearSVC,1.0000,1.0000,0.8885,False
+message,MultinomialNB,1.0000,1.0000,0.9960,False
+url,LogisticRegression,0.9960,0.9979,0.3271,False
+url,RandomForest,0.9981,0.9989,0.4244,True

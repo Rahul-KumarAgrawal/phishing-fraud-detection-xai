@@ -1,0 +1,27 @@
+{
+  "random_seed": 42,
+  "label_map": {
+    "ham": 0,
+    "smishing": 1
+  },
+  "excluded_labels": [
+    "spam"
+  ],
+  "excluded_count": 0,
+  "total_after_filtering": 65,
+  "train": {
+    "total": 45,
+    "positive": 20,
+    "negative": 25
+  },
+  "val": {
+    "total": 10,
+    "positive": 5,
+    "negative": 5
+  },
+  "test": {
+    "total": 10,
+    "positive": 5,
+    "negative": 5
+  }
+}

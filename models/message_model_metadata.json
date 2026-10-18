@@ -1,0 +1,66 @@
+{
+  "model_name": "LogisticRegression",
+  "threshold": 0.5914394906706496,
+  "label_map": {
+    "0": "ham",
+    "1": "smishing"
+  },
+  "feature_type": "TF-IDF word(1-3gram) + char_wb(2-5gram)",
+  "random_seed": 42,
+  "split_stats": {
+    "random_seed": 42,
+    "label_map": {
+      "ham": 0,
+      "smishing": 1
+    },
+    "excluded_labels": [
+      "spam"
+    ],
+    "excluded_count": 0,
+    "total_after_filtering": 65,
+    "train": {
+      "total": 45,
+      "positive": 20,
+      "negative": 25
+    },
+    "val": {
+      "total": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    "test": {
+      "total": 10,
+      "positive": 5,
+      "negative": 5
+    }
+  },
+  "val_metrics": {
+    "f1": 1.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": [
+      [
+        5,
+        0
+      ],
+      [
+        0,
+        5
+      ]
+    ]
+  },
+  "all_val_results": {
+    "LogisticRegression": {
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "LinearSVC": {
+      "f1": 1.0,
+      "roc_auc": 1.0
+    },
+    "MultinomialNB": {
+      "f1": 1.0,
+      "roc_auc": 1.0
+    }
+  },
+  "training_date": "2026-10-18T17:46:41.257952"
+}

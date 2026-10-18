@@ -1,0 +1,23 @@
+{
+  "random_seed": 42,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "total_after_filtering": 235370,
+  "train": {
+    "total": 164758,
+    "phishing": 94394,
+    "legitimate": 70364
+  },
+  "val": {
+    "total": 35306,
+    "phishing": 20228,
+    "legitimate": 15078
+  },
+  "test_random": {
+    "total": 35306,
+    "phishing": 20228,
+    "legitimate": 15078
+  }
+}

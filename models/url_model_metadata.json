@@ -1,0 +1,90 @@
+{
+  "model_name": "RandomForest",
+  "threshold": 0.4244005158743374,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "registered_domain_length",
+    "dot_count",
+    "hyphen_count",
+    "slash_count",
+    "underscore_count",
+    "at_count",
+    "question_count",
+    "equals_count",
+    "ampersand_count",
+    "percent_count",
+    "digit_count",
+    "digit_ratio",
+    "special_char_ratio",
+    "tilde_count",
+    "subdomain_count",
+    "subdomain_length",
+    "tld_length",
+    "path_depth",
+    "query_param_count",
+    "has_query",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "has_percent_encoding",
+    "is_url_shortener",
+    "suspicious_token_count"
+  ],
+  "n_features": 30,
+  "random_seed": 42,
+  "split_stats": {
+    "random_seed": 42,
+    "label_map": {
+      "0": "legitimate",
+      "1": "phishing"
+    },
+    "total_after_filtering": 235370,
+    "train": {
+      "total": 164758,
+      "phishing": 94394,
+      "legitimate": 70364
+    },
+    "val": {
+      "total": 35306,
+      "phishing": 20228,
+      "legitimate": 15078
+    },
+    "test_random": {
+      "total": 35306,
+      "phishing": 20228,
+      "legitimate": 15078
+    }
+  },
+  "val_metrics": {
+    "f1": 0.9981242904388173,
+    "roc_auc": 0.9988619474691003,
+    "confusion_matrix": [
+      [
+        15009,
+        69
+      ],
+      [
+        7,
+        20221
+      ]
+    ]
+  },
+  "all_val_results": {
+    "LogisticRegression": {
+      "f1": 0.9959841336322649,
+      "roc_auc": 0.9979275062536193
+    },
+    "RandomForest": {
+      "f1": 0.9981242904388173,
+      "roc_auc": 0.9988619474691003
+    }
+  },
+  "training_date": "2026-10-18T17:47:38.244357"
+}

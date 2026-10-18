@@ -1,0 +1,23 @@
+{
+  "split": "test",
+  "model": "LogisticRegression",
+  "threshold": 0.5914394906706496,
+  "precision": 1.0,
+  "recall": 0.6,
+  "f1": 0.75,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      5,
+      0
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "n_test": 10,
+  "n_positive_test": 5,
+  "inference_ms_per_sample": 0.387000001501292,
+  "classification_report": "              precision    recall  f1-score   support\n\n         ham       0.71      1.00      0.83         5\n    smishing       1.00      0.60      0.75         5\n\n    accuracy                           0.80        10\n   macro avg       0.86      0.80      0.79        10\nweighted avg       0.86      0.80      0.79        10\n"
+}

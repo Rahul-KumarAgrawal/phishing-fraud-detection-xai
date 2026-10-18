@@ -1,0 +1,108 @@
+# ==============================================================================
+# Git Ignore Configuration - Phishing & Fraud Detection XAI
+# ==============================================================================
+
+# ── Python & Bytecode ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Jupyter / IPython ────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Testing, Profiling & Coverage ────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.ruff_cache/
+.mypy_cache/
+*.log
+
+# ── Secrets, Keys & Private Credentials ──────────────────────
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+secrets.json
+credentials.json
+token.json
+service_account*.json
+*id_rsa*
+*id_ed25519*
+
+# ── Datasets & Raw Data ──────────────────────────────────────
+# Raw datasets must be downloaded according to README instructions
+data/raw/
+*.csv.gz
+*.parquet
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ── Node / Frontend Dependencies & Builds ────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/build/
+frontend/.vite/
+frontend/.vite-temp/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.turbo/
+
+# ── IDEs, Editors & Workspaces ───────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ── Operating System Artifacts ────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Temporary / Backup Files ──────────────────────────────────
+*.tmp
+*.bak
+*.swp
+~*
