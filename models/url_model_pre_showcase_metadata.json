@@ -1,0 +1,142 @@
+{
+  "model_name": "RandomForest",
+  "threshold": 0.6293639206241308,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "registered_domain_length",
+    "dot_count",
+    "hyphen_count",
+    "slash_count",
+    "underscore_count",
+    "at_count",
+    "question_count",
+    "equals_count",
+    "ampersand_count",
+    "percent_count",
+    "digit_count",
+    "digit_ratio",
+    "special_char_ratio",
+    "tilde_count",
+    "subdomain_count",
+    "subdomain_length",
+    "tld_length",
+    "path_depth",
+    "query_param_count",
+    "has_query",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "has_percent_encoding",
+    "is_url_shortener",
+    "suspicious_token_count",
+    "brand_token_count",
+    "brand_domain_mismatch",
+    "brand_lookalike_domain"
+  ],
+  "n_features": 33,
+  "feature_schema_version": 2,
+  "random_seed": 42,
+  "split_stats": {
+    "random_seed": 42,
+    "label_map": {
+      "0": "legitimate",
+      "1": "phishing"
+    },
+    "label_convention": {
+      "note": "PHIUSIL raw labels are 1 = legitimate, 0 = phishing. They are mapped to the project convention 0 = legitimate, 1 = phishing.",
+      "raw_meaning": {
+        "1": "legitimate",
+        "0": "phishing"
+      },
+      "expected_raw_counts": {
+        "1": 134850,
+        "0": 100945
+      },
+      "source": "https://archive.ics.uci.edu/dataset/967/phiusil-phishing-url-dataset"
+    },
+    "total_after_filtering": 235370,
+    "train": {
+      "total": 164758,
+      "phishing": 70364,
+      "legitimate": 94394
+    },
+    "val": {
+      "total": 35306,
+      "phishing": 15078,
+      "legitimate": 20228
+    },
+    "test_random": {
+      "total": 35306,
+      "phishing": 15078,
+      "legitimate": 20228
+    },
+    "leakage": {
+      "random_seed": 42,
+      "domain_train_total": 196779,
+      "domain_test_total": 38591,
+      "template_test_total": 38342,
+      "template_test_rows_removed": 249,
+      "reports": [
+        {
+          "split": "LEGACY random-train+val vs domain_test (contaminated)",
+          "n_train": 200064,
+          "n_test": 38591,
+          "exact_url_overlap": 32826,
+          "domain_overlap": 22513,
+          "test_template_overlap_count": 33260,
+          "test_template_overlap_pct": 86.19
+        },
+        {
+          "split": "domain_train vs domain_test",
+          "n_train": 196779,
+          "n_test": 38591,
+          "exact_url_overlap": 0,
+          "domain_overlap": 0,
+          "test_template_overlap_count": 249,
+          "test_template_overlap_pct": 0.65
+        },
+        {
+          "split": "domain_train vs template_clean_test",
+          "n_train": 196779,
+          "n_test": 38342,
+          "exact_url_overlap": 0,
+          "domain_overlap": 0,
+          "test_template_overlap_count": 0,
+          "test_template_overlap_pct": 0.0
+        }
+      ]
+    }
+  },
+  "val_metrics": {
+    "f1": 0.9975073947289708,
+    "roc_auc": 0.9985856110351282,
+    "confusion_matrix": [
+      [
+        20224,
+        4
+      ],
+      [
+        71,
+        15007
+      ]
+    ]
+  },
+  "all_val_results": {
+    "LogisticRegression": {
+      "f1": 0.9951873610143052,
+      "roc_auc": 0.9982697071005604
+    },
+    "RandomForest": {
+      "f1": 0.9975073947289708,
+      "roc_auc": 0.9985856110351282
+    }
+  },
+  "training_date": "2026-10-19T09:01:09.334728"
+}

@@ -45,8 +45,9 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="Fraud & Phishing Detection API",
     description=(
-        "AI-based fraud and phishing detection with Explainable AI (XAI). "
-        "Course: CSET312, Bennett University."
+        "College-project prototype for fraud and phishing analysis with "
+        "Explainable AI (XAI). It is an educational demonstration, not a "
+        "production security control. Course: CSET312, Bennett University."
     ),
     version="0.1.0",
     docs_url="/docs",
@@ -101,6 +102,8 @@ def health_check() -> HealthResponse:
         status="ok",
         message_model_loaded=registry.message_loaded,
         url_model_loaded=registry.url_loaded,
+        message_dataset_provenance=registry.message_dataset_provenance,
+        prototype=registry.prototype,
     )
 
 
@@ -149,7 +152,7 @@ def analyze_url(request: UrlRequest) -> UrlAnalysisResponse:
 
     Returns:
     - Phishing classification.
-    - Extracted URL features (30 numeric/boolean features).
+    - Extracted URL features (33 numeric/boolean features).
     - SHAP explanation of the model's decision.
 
     The URL destination is NEVER visited, fetched, or resolved.

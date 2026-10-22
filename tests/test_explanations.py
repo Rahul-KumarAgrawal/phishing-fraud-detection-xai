@@ -2,8 +2,9 @@
 test_explanations.py
 ====================
 Tests for SHAP explanation output schemas.
-These tests verify structure, not correctness of SHAP values
-(which depend on trained models).
+These tests verify structure, not the correctness of SHAP values.
+Correctness invariants (class alignment, additivity, feature-value display) live
+in `test_explanation_consistency.py`.
 """
 
 import sys
@@ -82,6 +83,18 @@ def test_explanation_output_schema_if_model_exists():
     assert isinstance(result.get("top_positive_features", []), list)
     assert isinstance(result.get("top_negative_features", []), list)
 
+    # The payload must state what the contributions describe and in which units.
+    assert result["units"] in ("probability", "log_odds")
+    assert result["explained_output"]
+    assert result["base_value"] is not None
+    assert result["additivity_gap"] is not None
+
+    # Contributions carry a SHAP value and a *separate* real feature value.
+    for item in result["top_positive_features"] + result["top_negative_features"]:
+        assert "shap_value" in item
+        assert "feature_value" in item
+        assert "value" not in item
+
 
 def test_message_explanation_schema_if_model_exists():
     """If the message model is trained, verify explanation output schema."""
@@ -96,3 +109,14 @@ def test_message_explanation_schema_if_model_exists():
     assert required_keys.issubset(result.keys())
     assert result["label"] in (0, 1)
     assert 0.0 <= result["score"] <= 1.0
+
+    # Message contributions are anchored to the calibrated probability.
+    assert result["units"] == "probability"
+    assert result["explained_output"] == "P(smishing)"
+    assert result["additivity_gap"] is not None
+    assert result["additivity_gap"] <= 1e-6
+
+    for item in result["top_positive_features"] + result["top_negative_features"]:
+        assert "shap_value" in item
+        assert "feature_value" in item
+        assert "value" not in item

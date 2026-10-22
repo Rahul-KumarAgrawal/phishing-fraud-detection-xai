@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "development_boundary": [
+    "PHIUSIL",
+    "MURL"
+  ],
+  "not_read": [
+    "compphish_external_frozen.csv",
+    "LegitPhish",
+    "URL-Phish"
+  ],
+  "murl_exact_label_conflicts_quarantined": 402,
+  "murl_rows_after_conflict_quarantine_before_cap": 661449,
+  "murl_cap_per_class": 60000,
+  "normalized_label_conflict_keys_excluded": 0,
+  "grouping": "connected components where any shared registered domain or project-normalized template joins rows",
+  "components": {
+    "count": 224121,
+    "largest_rows": 6238,
+    "p95_rows": 2.0
+  },
+  "train": {
+    "rows": 291693,
+    "legitimate": 165094,
+    "phishing": 126599,
+    "phiusil": 192639,
+    "murl": 99054
+  },
+  "validation": {
+    "rows": 61553,
+    "legitimate": 29732,
+    "phishing": 31821,
+    "phiusil": 41907,
+    "murl": 19646
+  },
+  "isolation": {
+    "exact_url": 0,
+    "normalized_url": 0,
+    "registered_domain": 0,
+    "template": 0
+  }
+}

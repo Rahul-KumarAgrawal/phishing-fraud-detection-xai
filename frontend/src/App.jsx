@@ -56,6 +56,15 @@ export default function App() {
 
       {/* ── Main content ────────────────────────────────────────── */}
       <main className="main-content">
+        <div className="alert-error" style={{ marginBottom: '1.5rem' }} role="note">
+          <span>⚠</span>
+          <span>
+            <strong>COLLEGE PROJECT PROTOTYPE</strong> — this is an educational
+            demonstration, not a dependable production security control. Verify
+            important messages and URLs through official channels.
+          </span>
+        </div>
+
         {/* Model-not-loaded warning */}
         {!health.loading && !health.error && (!health.message_model_loaded || !health.url_model_loaded) && (
           <div className="alert-error" style={{ marginBottom: '1.5rem' }}>
@@ -68,6 +77,19 @@ export default function App() {
               </code> and <code style={{ fontFamily: 'JetBrains Mono, monospace', background: 'rgba(0,0,0,0.3)', padding: '1px 6px', borderRadius: '4px' }}>
                 python scripts/train_url_model.py
               </code> first.
+            </span>
+          </div>
+        )}
+
+        {/* Prototype / non-real-data warning */}
+        {!health.loading && !health.error && health.prototype && (
+          <div className="alert-error" style={{ marginBottom: '1.5rem' }}>
+            <span>⚠</span>
+            <span>
+              <strong>PROTOTYPE</strong> — the message model was trained on{' '}
+              <strong>{health.message_dataset_provenance}</strong> data, not the real
+              Mendeley SMS dataset. Treat the results below as a development
+              demonstration, not an evaluation.
             </span>
           </div>
         )}

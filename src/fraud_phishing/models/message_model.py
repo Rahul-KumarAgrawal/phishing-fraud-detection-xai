@@ -14,7 +14,10 @@ Each model is wrapped in a scikit-learn Pipeline with:
       character-level TF-IDF (2-5 grams),
   ])
 
-The fitted pipeline is saved with joblib to models/message_model.joblib.
+The fitted pipeline is saved with joblib to models/message_model.joblib together
+with its metadata. ``load_model`` refuses an artifact whose metadata is missing
+or whose feature specification no longer matches ``FEATURE_SPEC``, so a stale
+file cannot silently run with the default 0.5 threshold.
 """
 
 import json
@@ -47,6 +50,22 @@ RANDOM_SEED = 42
 # ── Model artefact paths ───────────────────────────────────────────────────
 MESSAGE_MODEL_PATH = MODELS_DIR / "message_model.joblib"
 MESSAGE_METADATA_PATH = MODELS_DIR / "message_model_metadata.json"
+
+# Canonical description of the TF-IDF feature space. Single source of truth:
+# written into the artifact metadata by scripts/train_message_model.py and
+# re-checked when the artifact is loaded. Change it only together with
+# ``_make_tfidf_union`` and retrain.
+FEATURE_SPEC = "TF-IDF word(1-3gram) + char_wb(2-5gram)"
+
+# Metadata keys the runtime depends on. Missing any of them means the artifact
+# cannot be interpreted safely: without ``threshold`` the decision silently
+# falls back to 0.5 and borderline messages are mislabelled.
+REQUIRED_METADATA_KEYS: tuple[str, ...] = (
+    "model_name",
+    "threshold",
+    "label_map",
+    "dataset_provenance",
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -197,10 +216,67 @@ def select_threshold(pipeline: Pipeline, X_val: pd.Series, y_val: pd.Series) -> 
 # ─────────────────────────────────────────────────────────────────────────────
 
 def save_model(pipeline: Pipeline, metadata: dict) -> None:
+    metadata.setdefault("feature_type", FEATURE_SPEC)
     joblib.dump(pipeline, MESSAGE_MODEL_PATH)
     MESSAGE_METADATA_PATH.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
     print(f"Model saved: {MESSAGE_MODEL_PATH}")
     print(f"Metadata  : {MESSAGE_METADATA_PATH}")
+
+
+def _assert_artifact(pipeline: Pipeline, metadata: dict, path: pathlib.Path) -> None:
+    """
+    Fail loudly if a message artifact is missing metadata or disagrees with code.
+
+    The TF-IDF vocabularies travel inside the pipeline, so a stale artifact
+    cannot silently shift columns the way a URL model can. What it *can* do is
+    lose its tuned threshold (the loader would fall back to 0.5) or be trained
+    under a different feature specification, so both are checked here.
+    """
+    if not metadata:
+        raise RuntimeError(
+            f"Refusing to load {path.name}: its metadata is missing or empty. "
+            f"Expected {MESSAGE_METADATA_PATH.name} beside the model. Retrain "
+            "with: python scripts/train_message_model.py"
+        )
+    missing = [key for key in REQUIRED_METADATA_KEYS if key not in metadata]
+    if missing:
+        raise RuntimeError(
+            f"Refusing to load {path.name}: metadata is missing required key(s) "
+            f"{missing}. Retrain with: python scripts/train_message_model.py"
+        )
+
+    threshold = metadata["threshold"]
+    if isinstance(threshold, bool) or not isinstance(threshold, (int, float)):
+        raise RuntimeError(
+            f"Refusing to load {path.name}: metadata threshold {threshold!r} is not "
+            "a number. Retrain with: python scripts/train_message_model.py"
+        )
+    if not 0.0 < float(threshold) < 1.0:
+        raise RuntimeError(
+            f"Refusing to load {path.name}: metadata threshold {threshold!r} is not "
+            "a probability in (0, 1). Retrain with: python "
+            "scripts/train_message_model.py"
+        )
+
+    spec = metadata.get("feature_type")
+    if spec != FEATURE_SPEC:
+        raise RuntimeError(
+            f"Feature-spec mismatch loading {path.name}: the artifact was trained "
+            f"with {spec!r} but the code builds {FEATURE_SPEC!r}. Retrain with: "
+            "python scripts/train_message_model.py"
+        )
+
+    steps = getattr(pipeline, "named_steps", {})
+    for step in ("features", "clf"):
+        if step not in steps:
+            raise RuntimeError(
+                f"Refusing to load {path.name}: the pipeline has no {step!r} step."
+            )
+    if not hasattr(pipeline, "predict_proba"):
+        raise RuntimeError(
+            f"Refusing to load {path.name}: the pipeline has no predict_proba, so "
+            "no calibrated probability can be produced."
+        )
 
 
 def load_model() -> tuple[Pipeline, dict]:
@@ -210,10 +286,29 @@ def load_model() -> tuple[Pipeline, dict]:
             f"Message model not found at {MESSAGE_MODEL_PATH}. "
             "Run: python scripts/train_message_model.py"
         )
+    if not MESSAGE_METADATA_PATH.exists():
+        raise FileNotFoundError(
+            f"Refusing to load {MESSAGE_MODEL_PATH.name}: its metadata file "
+            f"{MESSAGE_METADATA_PATH.name} is missing, so the tuned threshold and "
+            "feature spec are unknown. Retrain with: python "
+            "scripts/train_message_model.py"
+        )
     pipeline = joblib.load(MESSAGE_MODEL_PATH)
-    metadata: dict = {}
-    if MESSAGE_METADATA_PATH.exists():
+    try:
         metadata = json.loads(MESSAGE_METADATA_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(
+            f"Refusing to load {MESSAGE_MODEL_PATH.name}: "
+            f"{MESSAGE_METADATA_PATH.name} is not valid JSON ({exc}). Retrain the "
+            "model."
+        ) from exc
+    if not isinstance(metadata, dict):
+        raise RuntimeError(
+            f"Refusing to load {MESSAGE_MODEL_PATH.name}: "
+            f"{MESSAGE_METADATA_PATH.name} must contain a JSON object, got "
+            f"{type(metadata).__name__}."
+        )
+    _assert_artifact(pipeline, metadata, MESSAGE_MODEL_PATH)
     return pipeline, metadata
 
 

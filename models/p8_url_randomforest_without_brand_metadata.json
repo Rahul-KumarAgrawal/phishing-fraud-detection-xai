@@ -1,0 +1,75 @@
+{
+  "model_name": "RandomForest",
+  "model_variant": "p8_candidate",
+  "feature_subset": "without_brand",
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "registered_domain_length",
+    "dot_count",
+    "hyphen_count",
+    "slash_count",
+    "underscore_count",
+    "at_count",
+    "question_count",
+    "equals_count",
+    "ampersand_count",
+    "percent_count",
+    "digit_count",
+    "digit_ratio",
+    "special_char_ratio",
+    "tilde_count",
+    "subdomain_count",
+    "subdomain_length",
+    "tld_length",
+    "path_depth",
+    "query_param_count",
+    "has_query",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "has_percent_encoding",
+    "is_url_shortener",
+    "suspicious_token_count"
+  ],
+  "threshold": 0.46865665206036455,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "random_seed": 42,
+  "purpose": "P8 development-only candidate; not served or promoted",
+  "training_data": "P7 deterministic 150,000-row fit sample (PHIUSIL + conflict-quarantined MURL)",
+  "validation_data": "P7 validation partition; previously used development data",
+  "threshold_selection": "max validation F1; no target false-positive rate",
+  "validation_metrics": {
+    "precision": 0.8781172343224675,
+    "recall": 0.943904968417083,
+    "f1": 0.9098234029018871,
+    "roc_auc": 0.9731494534925248,
+    "pr_auc": 0.9754026336929537,
+    "confusion_matrix": [
+      [
+        25563,
+        4169
+      ],
+      [
+        1785,
+        30036
+      ]
+    ],
+    "false_positives": 4169,
+    "false_negatives": 1785,
+    "false_positive_rate_legitimate": 0.1402192923449482,
+    "false_negative_rate_phishing": 0.05609503158291694,
+    "rows": 61553,
+    "legitimate": 29732,
+    "phishing": 31821
+  },
+  "created_at_utc": "2026-10-19T17:20:10.322429+00:00",
+  "n_features": 30,
+  "feature_schema_version": 2,
+  "feature_schema_fingerprint": "1de7363ea0a84a41"
+}

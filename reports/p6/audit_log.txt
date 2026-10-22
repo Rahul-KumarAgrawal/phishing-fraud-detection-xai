@@ -1,0 +1,65 @@
+P6 URL dataset audit  (2026-10-19 19:07:00)
+==============================================================================
+
+[1] Loading sources
+PHIUSIL      rows=235,370  (dropped 425 exact dup rows)  legit=134,850  phishing=100,520
+  [WARN] composition {0: 134850, 1: 100520} != documented {0: 134850, 1: 100945} (check the label convention before trusting any metric)
+LegitPhish   rows=100,872  (dropped 346 exact dup rows)  legit= 37,380  phishing= 63,492
+  [WARN] composition {0: 37380, 1: 63492} != documented {0: 37540, 1: 63678} (check the label convention before trusting any metric)
+MURL         rows=661,851  (dropped 3 exact dup rows)  legit=432,241  phishing=229,610
+URL-Phish    rows=115,231  (dropped 1,369 exact dup rows)  legit= 98,641  phishing= 16,590
+  [WARN] composition {0: 98641, 1: 16590} != documented {0: 100000, 1: 16600} (check the label convention before trusting any metric)
+
+[2] Structural audit (project extractor)
+  NOTE PHIUSIL is audited on a 10,000-per-class random sample (20,000 rows); overlaps use the full file
+  PHIUSIL/legitimate n= 10,000  https=100.0%  no_scheme=  0.0%  path=  0.0%  query=  0.0%  subdom=100.0%  len_med=27
+  PHIUSIL/phishing   n= 10,000  https= 48.7%  no_scheme=  0.0%  path= 26.9%  query=  6.2%  subdom= 86.1%  len_med=34
+  (PHIUSIL structural audit took 0.4s)
+  NOTE LegitPhish is audited on a 10,000-per-class random sample (20,000 rows); overlaps use the full file
+  LegitPhish/legitimate n= 10,000  https=100.0%  no_scheme=  0.0%  path=  1.1%  query=  0.1%  subdom= 99.6%  len_med=27
+  LegitPhish/phishing   n= 10,000  https=  5.1%  no_scheme=  2.3%  path= 99.4%  query=  1.1%  subdom= 95.7%  len_med=34
+  (LegitPhish structural audit took 0.4s)
+  NOTE MURL is audited on a 10,000-per-class random sample (20,000 rows); overlaps use the full file
+  MURL/legitimate n= 10,000  https=  0.0%  no_scheme=100.0%  path= 86.7%  query= 16.4%  subdom= 27.5%  len_med=45
+  MURL/phishing   n= 10,000  https=  0.0%  no_scheme=100.0%  path= 76.9%  query= 13.7%  subdom= 46.6%  len_med=35
+  (MURL structural audit took 0.4s)
+  NOTE URL-Phish is audited on a 10,000-per-class random sample (20,000 rows); overlaps use the full file
+  URL-Phish/legitimate n= 10,000  https= 34.0%  no_scheme=  0.0%  path= 23.6%  query=  2.1%  subdom= 85.8%  len_med=26
+  URL-Phish/phishing   n= 10,000  https= 91.5%  no_scheme=  0.0%  path= 56.0%  query= 14.5%  subdom= 69.2%  len_med=38
+  (URL-Phish structural audit took 0.4s)
+
+[3] Duplicate / domain / template overlap between sources
+  PHIUSIL      unique urls=235,370  domains=175,353  templates=220,415
+  LegitPhish   unique urls=100,872  domains= 38,101  templates= 54,262
+  MURL         unique urls=661,851  domains=198,274  templates=565,127
+  URL-Phish    unique urls=115,231  domains= 90,845  templates=112,310
+  PHIUSIL      vs LegitPhish   exact= 36,935 label_conflicts=     0 shared_domains= 36,530 domain_conflicts=    47 shared_templates= 36,947
+  PHIUSIL      vs MURL         exact=      0 label_conflicts=     0 shared_domains= 10,218 domain_conflicts= 2,395 shared_templates=  4,159
+  PHIUSIL      vs URL-Phish    exact=    595 label_conflicts=     0 shared_domains=  7,200 domain_conflicts=   112 shared_templates=  5,060
+  LegitPhish   vs MURL         exact=    402 label_conflicts=   402 shared_domains=  3,275 domain_conflicts= 1,506 shared_templates=    910
+  LegitPhish   vs URL-Phish    exact=    176 label_conflicts=     0 shared_domains=  2,130 domain_conflicts=    24 shared_templates=  1,379
+  MURL         vs URL-Phish    exact=      0 label_conflicts=     0 shared_domains=  3,976 domain_conflicts= 1,464 shared_templates=    171
+
+[4] Current project split integrity
+  loaded urls_train.csv               n=164,758
+  loaded urls_val.csv                 n= 35,306
+  loaded urls_test.csv                n= 35,306
+  loaded urls_domain_train.csv        n=196,779
+  loaded urls_domain_test.csv         n= 38,591
+  loaded urls_template_test.csv       n= 38,342
+  loaded urls_aug_train.csv           n=268,577
+  loaded urls_aug_val.csv             n= 48,202
+  loaded legitphish_external.csv      n=100,872
+  loaded urlphish_external.csv        n=115,231
+  train (random)             -> test (random)              exact=      0 shared_domains=  2,234 (  8.0% of b) templates=  1,360
+  train (random)             -> val (random)               exact=      0 shared_domains=  2,155 (  7.7% of b) templates=  1,378
+  val (random)               -> test (random)              exact=      0 shared_domains=  1,064 (  3.8% of b) templates=    536
+  domain train               -> domain test                exact=      0 shared_domains=      0 (  0.0% of b) templates=    143
+  domain train               -> template-clean test        exact=      0 shared_domains=      0 (  0.0% of b) templates=      0
+  augmented fit              -> domain test                exact=      0 shared_domains=      0 (  0.0% of b) templates=    132
+  augmented fit              -> template-clean test        exact=      0 shared_domains=      0 (  0.0% of b) templates=      0
+  augmented fit              -> test (random)              exact= 25,342 shared_domains= 20,169 ( 72.4% of b) templates= 24,391
+  augmented fit              -> LegitPhish (dev)           exact= 26,545 shared_domains= 26,386 ( 69.2% of b) templates= 26,652
+  augmented fit              -> URL-Phish (dev-informed)   exact=    438 shared_domains=  5,897 (  6.5% of b) templates=  3,664
+  domain train               -> URL-Phish (dev-informed)   exact=    509 shared_domains=  6,115 (  6.7% of b) templates=  4,286
+  domain train               -> LegitPhish (dev)           exact= 31,303 shared_domains= 30,959 ( 81.3% of b) templates= 31,323

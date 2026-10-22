@@ -1,10 +1,8 @@
 {
   "model_name": "RandomForest",
-  "threshold": 0.4244005158743374,
-  "label_map": {
-    "0": "legitimate",
-    "1": "phishing"
-  },
+  "model_variant": "showcase_integrated",
+  "feature_configuration": "p8_without_brand",
+  "feature_subset": "p8_without_brand",
   "feature_names": [
     "url_length",
     "hostname_length",
@@ -37,54 +35,66 @@
     "is_url_shortener",
     "suspicious_token_count"
   ],
-  "n_features": 30,
+  "threshold": 0.5143261183261184,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
   "random_seed": 42,
-  "split_stats": {
-    "random_seed": 42,
-    "label_map": {
-      "0": "legitimate",
-      "1": "phishing"
+  "purpose": "College showcase served URL model; grouped internal acceptance criteria passed",
+  "training_data": "showcase train + validation deterministic source-aware fit sample",
+  "threshold_selection": "fixed from pre-refit grouped validation max-F1 selection",
+  "selection_test_metrics": {
+    "precision": 0.8985200111172874,
+    "recall": 0.9385955362003267,
+    "f1": 0.9181206624185733,
+    "accuracy": 0.9205011546548099,
+    "roc_auc": 0.9798762352495685,
+    "pr_auc": 0.9781676024149972,
+    "confusion_matrix": {
+      "tn": 27550,
+      "fp": 2921,
+      "fn": 1692,
+      "tp": 25863
     },
-    "total_after_filtering": 235370,
-    "train": {
-      "total": 164758,
-      "phishing": 94394,
-      "legitimate": 70364
+    "false_positive_rate_legitimate": 0.09586163893538119,
+    "false_negative_rate_phishing": 0.06140446379967338,
+    "predicted_class_counts": {
+      "legitimate": 29242,
+      "phishing": 28784
     },
-    "val": {
-      "total": 35306,
-      "phishing": 20228,
-      "legitimate": 15078
-    },
-    "test_random": {
-      "total": 35306,
-      "phishing": 20228,
-      "legitimate": 15078
+    "rows": 58026,
+    "legitimate": 30471,
+    "phishing": 27555,
+    "legitimate_path_query_subgroups": {
+      "nonempty_path": {
+        "legitimate_rows": 9118,
+        "false_positives": 2496,
+        "false_positive_rate": 0.27374424215836807
+      },
+      "query_parameter": {
+        "legitimate_rows": 1216,
+        "false_positives": 291,
+        "false_positive_rate": 0.2393092105263158
+      },
+      "path_or_query": {
+        "legitimate_rows": 9118,
+        "false_positives": 2496,
+        "false_positive_rate": 0.27374424215836807
+      }
     }
   },
-  "val_metrics": {
-    "f1": 0.9981242904388173,
-    "roc_auc": 0.9988619474691003,
-    "confusion_matrix": [
-      [
-        15009,
-        69
-      ],
-      [
-        7,
-        20221
-      ]
-    ]
+  "acceptance_criteria": {
+    "minimum_test_f1": 0.8,
+    "minimum_test_roc_auc": 0.85,
+    "maximum_test_false_positive_rate": 0.2,
+    "maximum_test_false_negative_rate": 0.2,
+    "minimum_test_path_or_query_legitimate_fpr": null,
+    "minimum_f1_improvement_over_served": 0.05,
+    "minimum_fpr_reduction_over_served": 0.05
   },
-  "all_val_results": {
-    "LogisticRegression": {
-      "f1": 0.9959841336322649,
-      "roc_auc": 0.9979275062536193
-    },
-    "RandomForest": {
-      "f1": 0.9981242904388173,
-      "roc_auc": 0.9988619474691003
-    }
-  },
-  "training_date": "2026-10-18T17:47:38.244357"
+  "created_at_utc": "2026-10-20T12:19:24.594405+00:00",
+  "n_features": 30,
+  "feature_schema_version": 2,
+  "feature_schema_fingerprint": "1de7363ea0a84a41"
 }

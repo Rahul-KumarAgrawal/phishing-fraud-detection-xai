@@ -1,0 +1,6 @@
+{
+  "phishvn_v4": {"official_url": "https://data.mendeley.com/datasets/b97hxbxtpd/4", "license": "CC BY 4.0", "role": "secondary candidate only", "required_files": ["archive containing dataset_url.csv", "splits/url_train.csv", "splits/url_val.csv", "splits/url_test.csv", "docs/datasheet.md", "MANIFEST.txt"], "known_limit": "URLs are scheme-stripped; do not infer HTTP/HTTPS behavior or use is_https."},
+  "phishtank": {"official_url": "https://phishtank.org/developer_info.php", "role": "prospective phishing source", "minimum_label_evidence": "verified=yes plus verification_time and source phish_id", "terms_gate": "record the applicable terms snapshot and retrieval time"},
+  "openphish": {"official_url": "https://www.openphish.com/academic_use.html", "role": "optional prospective phishing source", "access_gate": "approved academic access; do not redistribute contrary to terms"},
+  "ror": {"official_url": "https://ror.readme.io/docs/data-dump", "license": "CC0 1.0", "role": "legitimate-domain seed only", "minimum_label_evidence": "page-level provenance, successful static capture metadata, no redirect to unverified host, no overlap with phishing feeds at collection; otherwise uncertain"}
+}

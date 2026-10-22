@@ -7,13 +7,24 @@ This is the single source of truth for URL features used in both
 training and API inference. The feature schema (name and order) is
 immutable – any change requires retraining the URL model.
 
-Features (28 total):
+Features (33 total):
   Group 1 – Length & shape (5)
-  Group 2 – Character counts (14)
+  Group 2 – Character counts (13)
   Group 3 – Domain structure (3)
   Group 4 – URL components (3)
   Group 5 – Boolean / lexical indicators (6)
+  Group 6 – Brand impersonation (3)
   → Suspicious-token count uses an explicit, documented token list.
+  → Brand features use an explicit, documented brand-token list.
+
+Note: the feature *values* are correct for any URL, but several of them
+(`path_length`, `slash_count`, `path_depth`, `url_length`, `subdomain_length`, …)
+only carry phishing signal for datasets whose legitimate URLs have the same shape
+as their phishing URLs. In PHIUSIL every legitimate URL is a bare `https://domain`,
+so those features act as a dataset-format shortcut rather than phishing evidence.
+The model is therefore trained on an augmented pool (see
+`data/prepare_urls_augmented.py`) and feature selection is decided by measured
+ablation (`scripts/ablate_url_features.py`), not by intuition.
 
 Usage:
     from fraud_phishing.features.url_features import extract_features, FEATURE_NAMES
@@ -23,12 +34,24 @@ Usage:
 No network I/O is performed. The URL destination is never visited.
 """
 
+import functools
 import ipaddress
+import pathlib
 import re
 import urllib.parse
 from typing import Any
 
 import tldextract
+
+# Use tldextract's bundled public-suffix snapshot. The default extractor may
+# attempt a network refresh on an empty cache, which would violate this module's
+# static-analysis contract and make identical inputs environment-dependent. A
+# project-local cache avoids a stale shared interpreter-cache lock blocking the
+# application.
+_TLD_CACHE_DIR = pathlib.Path(__file__).resolve().parents[3] / ".cache" / "tldextract"
+_TLD_EXTRACT = tldextract.TLDExtract(
+    suffix_list_urls=(), cache_dir=str(_TLD_CACHE_DIR)
+)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Immutable feature schema (name list defines order used by the model)
@@ -69,6 +92,10 @@ FEATURE_NAMES: tuple[str, ...] = (
     "has_percent_encoding",
     "is_url_shortener",
     "suspicious_token_count",
+    # Group 6 – Brand impersonation
+    "brand_token_count",
+    "brand_domain_mismatch",
+    "brand_lookalike_domain",
 )
 
 # Documented list of suspicious tokens used for the suspicious_token_count feature.
@@ -135,9 +162,129 @@ URL_SHORTENERS: frozenset[str] = frozenset(
     }
 )
 
+# Brand tokens used for impersonation / lookalike detection. Matching is
+# *token*-based against the hostname: only whole labels separated by dots,
+# hyphens or underscores count, so "applebees.com" does not match "apple".
+# Generic English words that are common in legitimate domains (target, chase,
+# visa, orange, shell, gap, discover, square …) are deliberately excluded to
+# keep the false-positive rate low.
+BRAND_TOKENS: frozenset[str] = frozenset(
+    {
+        "paypal", "apple", "google", "microsoft", "amazon", "netflix",
+        "facebook", "instagram", "whatsapp", "linkedin", "twitter", "ebay",
+        "dropbox", "adobe", "dhl", "fedex", "usps", "ups", "wellsfargo",
+        "bankofamerica", "citibank", "hsbc", "barclays", "santander",
+        "commbank", "westpac", "alibaba", "aliexpress", "steam", "roblox",
+        "coinbase", "binance", "metamask", "outlook", "office365", "icloud",
+        "gmail", "yahoo", "spotify", "telegram", "tiktok", "snapchat", "zoom",
+        "walmart", "costco", "hmrc", "australiapost", "royalmail", "docusign",
+        "salesforce", "oracle", "nvidia", "samsung", "huawei", "xiaomi",
+        "mastercard", "amex", "stripe", "venmo", "cashapp", "zelle",
+        "revolut", "klarna", "afterpay", "shopify", "godaddy", "namecheap",
+        "squarespace", "weebly", "wordpress", "github", "gitlab", "bitbucket",
+        "slack", "discord", "notion", "canva", "atlassian", "twilio",
+        "mailchimp",
+    }
+)
+
+_MIN_BRAND_LEN_FOR_LOOKALIKE = 5
+_MAX_LOOKALIKE_DISTANCE = 2
+
 # Regex for special characters (non-alphanumeric, excluding common separators)
 _SPECIAL_CHAR_RE = re.compile(r"[^a-zA-Z0-9./\-_~:?#\[\]@!$&'()*+,;=%]")
 _URL_SCHEME_RE = re.compile(r"^[a-z][a-z0-9+\-.]*://", re.IGNORECASE)
+
+
+def normalize_url_for_parsing(url: str) -> str:
+    """Return a deterministic parse representation without inventing a scheme.
+
+    A user may enter ``example.com/path`` rather than an absolute URL. Prefixing
+    that input with ``http://`` merely to satisfy ``urllib.parse`` makes an
+    unknown transport look like explicit HTTP. Scheme-relative syntax (``//``)
+    lets the standard parser identify the hostname, path, and query while
+    retaining an empty scheme. This representation is internal only: callers
+    continue to display the submitted input unchanged.
+    """
+    value = url.strip()
+    if _URL_SCHEME_RE.match(value) or value.startswith("//"):
+        return value
+    return f"//{value}"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Brand-impersonation helpers
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _levenshtein(a: str, b: str, max_distance: int) -> int:
+    """
+    Levenshtein distance, short-circuited to ``max_distance + 1``.
+
+    Only ever used for short strings (registered-domain labels vs brand names).
+    """
+    if abs(len(a) - len(b)) > max_distance:
+        return max_distance + 1
+    if a == b:
+        return 0
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, start=1):
+        cur = [i]
+        for j, cb in enumerate(b, start=1):
+            cur.append(
+                min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (0 if ca == cb else 1))
+            )
+        prev = cur
+    return min(prev[-1], max_distance + 1)
+
+
+def _registered_sld(registered_domain: str) -> str:
+    """
+    The label immediately left of the public suffix.
+
+    ``paypal-login.com`` -> ``paypal-login``; ``example.co.uk`` -> ``example``;
+    an empty string when no registered domain could be parsed (e.g. IP hosts).
+    """
+    if not registered_domain:
+        return ""
+    parts = registered_domain.lower().split(".")
+    return parts[0] if len(parts) >= 2 else registered_domain.lower()
+
+
+@functools.lru_cache(maxsize=400_000)
+def _brand_features(hostname: str, registered_domain: str) -> tuple[int, int, int]:
+    """
+    Return ``(brand_token_count, brand_domain_mismatch, brand_lookalike_domain)``.
+
+    * ``brand_token_count``  – number of distinct brand tokens in the hostname.
+    * ``brand_domain_mismatch`` – a brand token is present but the registered
+      domain is *not* that brand (e.g. ``paypal-secure.verify-account.com``).
+    * ``brand_lookalike_domain`` – the registered-domain label is a near-miss
+      (edit distance 1–2) of a brand (e.g. ``paypa1``, ``rnicrosoft``).
+    """
+    tokens = [t for t in re.split(r"[^a-z0-9]+", hostname.lower()) if t]
+    present = {t for t in tokens if t in BRAND_TOKENS}
+    count = len(present)
+
+    sld = _registered_sld(registered_domain)
+    sld_compact = sld.replace("-", "")
+    sld_is_exact_brand = sld in BRAND_TOKENS
+
+    mismatch = 1 if (count and not sld_is_exact_brand) else 0
+
+    lookalike = 0
+    if (
+        sld_compact
+        and not sld_is_exact_brand
+        and len(sld_compact) >= _MIN_BRAND_LEN_FOR_LOOKALIKE
+    ):
+        n = len(sld_compact)
+        for brand in BRAND_TOKENS:
+            if abs(len(brand) - n) > _MAX_LOOKALIKE_DISTANCE:
+                continue
+            if 0 < _levenshtein(sld_compact, brand, _MAX_LOOKALIKE_DISTANCE) <= _MAX_LOOKALIKE_DISTANCE:
+                lookalike = 1
+                break
+
+    return count, mismatch, lookalike
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -174,10 +321,10 @@ def extract_features(url: str) -> dict[str, Any]:
     if len(url) > MAX_URL_LEN:
         url = url[:MAX_URL_LEN]
 
-    # Add scheme if missing so urllib.parse can split components
-    working_url = url
-    if not _URL_SCHEME_RE.match(url):
-        working_url = "http://" + url
+    # Parse scheme-less input as scheme-relative rather than silently assigning
+    # HTTP. ``is_https`` is therefore 1 only for explicitly supplied HTTPS;
+    # an absent scheme has no transport claim.
+    working_url = normalize_url_for_parsing(url)
 
     try:
         parsed = urllib.parse.urlparse(working_url)
@@ -188,9 +335,9 @@ def extract_features(url: str) -> dict[str, Any]:
     path = parsed.path or ""
     query = parsed.query or ""
 
-    # tldextract (uses offline public suffix list; no network I/O)
+    # tldextract uses the bundled public suffix list only; no network I/O.
     try:
-        ext = tldextract.extract(working_url)
+        ext = _TLD_EXTRACT(working_url)
         # top_domain_under_public_suffix is the current API (tldextract >= 5.x)
         registered_domain = ext.top_domain_under_public_suffix or ""
         subdomain = ext.subdomain or ""
@@ -246,15 +393,17 @@ def extract_features(url: str) -> dict[str, Any]:
 
     # URL shortener detection (registered domain match)
     regd_lower = registered_domain.lower()
-    is_url_shortener = int(
-        regd_lower in URL_SHORTENERS
-        or any(regd_lower == s for s in URL_SHORTENERS)
-    )
+    is_url_shortener = int(regd_lower in URL_SHORTENERS)
 
     # Suspicious token count (from documented SUSPICIOUS_TOKENS list)
     url_lower = url.lower()
     suspicious_token_count = sum(
         1 for token in SUSPICIOUS_TOKENS if token in url_lower
+    )
+
+    # Brand impersonation / lookalike detection
+    brand_token_count, brand_domain_mismatch, brand_lookalike = _brand_features(
+        hostname.lower(), regd_lower
     )
 
     features: dict[str, Any] = {
@@ -288,6 +437,9 @@ def extract_features(url: str) -> dict[str, Any]:
         "has_percent_encoding": has_percent_encoding,
         "is_url_shortener": is_url_shortener,
         "suspicious_token_count": suspicious_token_count,
+        "brand_token_count": brand_token_count,
+        "brand_domain_mismatch": brand_domain_mismatch,
+        "brand_lookalike_domain": brand_lookalike,
     }
 
     # ── Schema validation ────────────────────────────────────────────────

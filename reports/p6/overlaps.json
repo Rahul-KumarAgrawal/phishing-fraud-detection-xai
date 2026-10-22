@@ -1,0 +1,136 @@
+{
+  "pairs": [
+    {
+      "a": "PHIUSIL",
+      "b": "LegitPhish",
+      "exact_url_overlap": 36935,
+      "exact_url_overlap_pct_of_b": 36.616,
+      "exact_url_label_conflicts": 0,
+      "exact_url_conflict_examples": [],
+      "shared_registered_domains": 36530,
+      "shared_domain_label_conflicts": 47,
+      "shared_domain_conflict_examples": [
+        "3blmedia.com",
+        "adobe.com",
+        "bitbin.it",
+        "bnpb.go.id",
+        "clickfunnels.com"
+      ],
+      "shared_templates": 36947
+    },
+    {
+      "a": "PHIUSIL",
+      "b": "MURL",
+      "exact_url_overlap": 0,
+      "exact_url_overlap_pct_of_b": 0.0,
+      "exact_url_label_conflicts": 0,
+      "exact_url_conflict_examples": [],
+      "shared_registered_domains": 10218,
+      "shared_domain_label_conflicts": 2395,
+      "shared_domain_conflict_examples": [
+        "000a.biz",
+        "000space.com",
+        "0catch.com",
+        "0fees.net",
+        "0hna.com"
+      ],
+      "shared_templates": 4159
+    },
+    {
+      "a": "PHIUSIL",
+      "b": "URL-Phish",
+      "exact_url_overlap": 595,
+      "exact_url_overlap_pct_of_b": 0.516,
+      "exact_url_label_conflicts": 0,
+      "exact_url_conflict_examples": [],
+      "shared_registered_domains": 7200,
+      "shared_domain_label_conflicts": 112,
+      "shared_domain_conflict_examples": [
+        "ac.cd",
+        "academy-skrf.ru",
+        "acm.org",
+        "altervista.org",
+        "amazonaws.com"
+      ],
+      "shared_templates": 5060
+    },
+    {
+      "a": "LegitPhish",
+      "b": "MURL",
+      "exact_url_overlap": 402,
+      "exact_url_overlap_pct_of_b": 0.061,
+      "exact_url_label_conflicts": 402,
+      "exact_url_conflict_examples": [
+        "www-paypal-com-us50eefeef9583hkfkfzm40592944fdmeor.efetolgght4039495fekereruf45394.feotie32049fekorer430928482fekitefl3059924feltioekzfzf.efeirjfj23940894820fekrfezeorir5983felzfekri.tutuncubaba.com/indetectable.php",
+        "confirmaaqui.com/login.html",
+        "salaryof.com/cgi-bin.webscr.cmd.login-submit.dispatch.5885d80a13c0db1.8e2636.63d3fae.8db2b24f7b84f1819343fd6c338b1d9d60.6/us/webscr.htm?cmd=_login-run&amp;dispatch=5885d80a13c0db1f998ca054efbdf2c29878a435fe324eec2511727fbf3e9efcd8",
+        "equipmentshop.com/includes/readme.html",
+        "atdf.de/wp-includes/js/webscr.php?cmd=_login-run&dispatch=5885d80a13c0db1f1ff80d546411d7f84f1036d8f209d3d19ebb6f4eeec8bd0e1e6eb7c3cb46b4e4a861f9fc1d38506a1e6eb7c3cb46b4e4a861f9fc1d38506a"
+      ],
+      "shared_registered_domains": 3275,
+      "shared_domain_label_conflicts": 1506,
+      "shared_domain_conflict_examples": [
+        "'anupamnavsari.com",
+        "'beforenanny911.com",
+        "'bspnepal.org.np",
+        "'buffetpalattare.com.br",
+        "'cciampnr.com"
+      ],
+      "shared_templates": 910
+    },
+    {
+      "a": "LegitPhish",
+      "b": "URL-Phish",
+      "exact_url_overlap": 176,
+      "exact_url_overlap_pct_of_b": 0.153,
+      "exact_url_label_conflicts": 0,
+      "exact_url_conflict_examples": [],
+      "shared_registered_domains": 2130,
+      "shared_domain_label_conflicts": 24,
+      "shared_domain_conflict_examples": [
+        "adobe.com",
+        "altervista.org",
+        "amazonaws.com",
+        "clickfunnels.com",
+        "dropbox.com"
+      ],
+      "shared_templates": 1379
+    },
+    {
+      "a": "MURL",
+      "b": "URL-Phish",
+      "exact_url_overlap": 0,
+      "exact_url_overlap_pct_of_b": 0.0,
+      "exact_url_label_conflicts": 0,
+      "exact_url_conflict_examples": [],
+      "shared_registered_domains": 3976,
+      "shared_domain_label_conflicts": 1464,
+      "shared_domain_conflict_examples": [
+        "163.com",
+        "20m.com",
+        "3ds.com",
+        "3utilities.com",
+        "5u.com"
+      ],
+      "shared_templates": 171
+    }
+  ],
+  "within_source": {
+    "PHIUSIL": {
+      "domains_with_both_labels": 120,
+      "domains_total": 175353
+    },
+    "LegitPhish": {
+      "domains_with_both_labels": 7,
+      "domains_total": 38101
+    },
+    "MURL": {
+      "domains_with_both_labels": 3278,
+      "domains_total": 198274
+    },
+    "URL-Phish": {
+      "domains_with_both_labels": 24,
+      "domains_total": 90845
+    }
+  }
+}

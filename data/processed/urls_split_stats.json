@@ -4,20 +4,68 @@
     "0": "legitimate",
     "1": "phishing"
   },
+  "label_convention": {
+    "note": "PHIUSIL raw labels are 1 = legitimate, 0 = phishing. They are mapped to the project convention 0 = legitimate, 1 = phishing.",
+    "raw_meaning": {
+      "1": "legitimate",
+      "0": "phishing"
+    },
+    "expected_raw_counts": {
+      "1": 134850,
+      "0": 100945
+    },
+    "source": "https://archive.ics.uci.edu/dataset/967/phiusil-phishing-url-dataset"
+  },
   "total_after_filtering": 235370,
   "train": {
     "total": 164758,
-    "phishing": 94394,
-    "legitimate": 70364
+    "phishing": 70364,
+    "legitimate": 94394
   },
   "val": {
     "total": 35306,
-    "phishing": 20228,
-    "legitimate": 15078
+    "phishing": 15078,
+    "legitimate": 20228
   },
   "test_random": {
     "total": 35306,
-    "phishing": 20228,
-    "legitimate": 15078
+    "phishing": 15078,
+    "legitimate": 20228
+  },
+  "leakage": {
+    "random_seed": 42,
+    "domain_train_total": 196779,
+    "domain_test_total": 38591,
+    "template_test_total": 38342,
+    "template_test_rows_removed": 249,
+    "reports": [
+      {
+        "split": "LEGACY random-train+val vs domain_test (contaminated)",
+        "n_train": 200064,
+        "n_test": 38591,
+        "exact_url_overlap": 32826,
+        "domain_overlap": 22513,
+        "test_template_overlap_count": 33260,
+        "test_template_overlap_pct": 86.19
+      },
+      {
+        "split": "domain_train vs domain_test",
+        "n_train": 196779,
+        "n_test": 38591,
+        "exact_url_overlap": 0,
+        "domain_overlap": 0,
+        "test_template_overlap_count": 249,
+        "test_template_overlap_pct": 0.65
+      },
+      {
+        "split": "domain_train vs template_clean_test",
+        "n_train": 196779,
+        "n_test": 38342,
+        "exact_url_overlap": 0,
+        "domain_overlap": 0,
+        "test_template_overlap_count": 0,
+        "test_template_overlap_pct": 0.0
+      }
+    ]
   }
 }

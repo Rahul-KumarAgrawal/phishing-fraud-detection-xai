@@ -1,0 +1,198 @@
+{
+  "splits": {
+    "train (random)": {
+      "file": "urls_train.csv",
+      "n": 164758,
+      "legit": 94394,
+      "phish": 70364
+    },
+    "val (random)": {
+      "file": "urls_val.csv",
+      "n": 35306,
+      "legit": 20228,
+      "phish": 15078
+    },
+    "test (random)": {
+      "file": "urls_test.csv",
+      "n": 35306,
+      "legit": 20228,
+      "phish": 15078
+    },
+    "domain train": {
+      "file": "urls_domain_train.csv",
+      "n": 196779,
+      "legit": 114518,
+      "phish": 82261
+    },
+    "domain test": {
+      "file": "urls_domain_test.csv",
+      "n": 38591,
+      "legit": 20332,
+      "phish": 18259
+    },
+    "template-clean test": {
+      "file": "urls_template_test.csv",
+      "n": 38342,
+      "legit": 20297,
+      "phish": 18045
+    },
+    "augmented fit": {
+      "file": "urls_aug_train.csv",
+      "n": 268577,
+      "legit": 146209,
+      "phish": 122368
+    },
+    "augmented val": {
+      "file": "urls_aug_val.csv",
+      "n": 48202,
+      "legit": 28309,
+      "phish": 19893
+    },
+    "LegitPhish (dev)": {
+      "file": "legitphish_external.csv",
+      "n": 100872,
+      "legit": 37380,
+      "phish": 63492
+    },
+    "URL-Phish (dev-informed)": {
+      "file": "urlphish_external.csv",
+      "n": 115231,
+      "legit": 98641,
+      "phish": 16590
+    }
+  },
+  "checks": [
+    {
+      "a": "train (random)",
+      "b": "test (random)",
+      "expectation": "must be 0 exact (random split is disjoint by URL)",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 2234,
+      "b_domains": 27875,
+      "b_pct_domains_seen_in_a": 8.01,
+      "shared_templates": 1360,
+      "b_pct_templates_seen_in_a": 4.0
+    },
+    {
+      "a": "train (random)",
+      "b": "val (random)",
+      "expectation": "must be 0 exact",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 2155,
+      "b_domains": 27902,
+      "b_pct_domains_seen_in_a": 7.72,
+      "shared_templates": 1378,
+      "b_pct_templates_seen_in_a": 4.06
+    },
+    {
+      "a": "val (random)",
+      "b": "test (random)",
+      "expectation": "must be 0 exact",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 1064,
+      "b_domains": 27875,
+      "b_pct_domains_seen_in_a": 3.82,
+      "shared_templates": 536,
+      "b_pct_templates_seen_in_a": 1.58
+    },
+    {
+      "a": "domain train",
+      "b": "domain test",
+      "expectation": "must be 0 exact and 0 shared domains (hard requirement)",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 0,
+      "b_domains": 26303,
+      "b_pct_domains_seen_in_a": 0.0,
+      "shared_templates": 143,
+      "b_pct_templates_seen_in_a": 0.39
+    },
+    {
+      "a": "domain train",
+      "b": "template-clean test",
+      "expectation": "must be 0 exact, domains and templates",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 0,
+      "b_domains": 26115,
+      "b_pct_domains_seen_in_a": 0.0,
+      "shared_templates": 0,
+      "b_pct_templates_seen_in_a": 0.0
+    },
+    {
+      "a": "augmented fit",
+      "b": "domain test",
+      "expectation": "must be disjoint by domain",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 0,
+      "b_domains": 26303,
+      "b_pct_domains_seen_in_a": 0.0,
+      "shared_templates": 132,
+      "b_pct_templates_seen_in_a": 0.36
+    },
+    {
+      "a": "augmented fit",
+      "b": "template-clean test",
+      "expectation": "must be disjoint by domain and template",
+      "exact_url_overlap": 0,
+      "shared_registered_domains": 0,
+      "b_domains": 26115,
+      "b_pct_domains_seen_in_a": 0.0,
+      "shared_templates": 0,
+      "b_pct_templates_seen_in_a": 0.0
+    },
+    {
+      "a": "augmented fit",
+      "b": "test (random)",
+      "expectation": "informational",
+      "exact_url_overlap": 25342,
+      "shared_registered_domains": 20169,
+      "b_domains": 27875,
+      "b_pct_domains_seen_in_a": 72.36,
+      "shared_templates": 24391,
+      "b_pct_templates_seen_in_a": 71.81
+    },
+    {
+      "a": "augmented fit",
+      "b": "LegitPhish (dev)",
+      "expectation": "informational",
+      "exact_url_overlap": 26545,
+      "shared_registered_domains": 26386,
+      "b_domains": 38100,
+      "b_pct_domains_seen_in_a": 69.25,
+      "shared_templates": 26652,
+      "b_pct_templates_seen_in_a": 49.12
+    },
+    {
+      "a": "augmented fit",
+      "b": "URL-Phish (dev-informed)",
+      "expectation": "informational - 595 known overlaps",
+      "exact_url_overlap": 438,
+      "shared_registered_domains": 5897,
+      "b_domains": 90844,
+      "b_pct_domains_seen_in_a": 6.49,
+      "shared_templates": 3664,
+      "b_pct_templates_seen_in_a": 3.26
+    },
+    {
+      "a": "domain train",
+      "b": "URL-Phish (dev-informed)",
+      "expectation": "informational",
+      "exact_url_overlap": 509,
+      "shared_registered_domains": 6115,
+      "b_domains": 90844,
+      "b_pct_domains_seen_in_a": 6.73,
+      "shared_templates": 4286,
+      "b_pct_templates_seen_in_a": 3.82
+    },
+    {
+      "a": "domain train",
+      "b": "LegitPhish (dev)",
+      "expectation": "informational",
+      "exact_url_overlap": 31303,
+      "shared_registered_domains": 30959,
+      "b_domains": 38100,
+      "b_pct_domains_seen_in_a": 81.26,
+      "shared_templates": 31323,
+      "b_pct_templates_seen_in_a": 57.73
+    }
+  ]
+}

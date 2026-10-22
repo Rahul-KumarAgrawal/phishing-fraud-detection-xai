@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-10-20T12:10:19.992061+00:00",
+  "purpose": "Final showcase URL development corpus; CompPhish is development data and P9 is preserved historical evidence.",
+  "inputs": {
+    "development_sources": [
+      "PHIUSIL",
+      "MURL",
+      "CompPhish"
+    ],
+    "compphish_frozen_path": "data\\processed\\compphish_external_frozen.csv",
+    "compphish_frozen_sha256": "56f6e8545a7df5f675b740d0858ee0fb4b2fa920a085d4aceae2838bfbc0e377",
+    "compphish_development_copy": "data\\processed\\showcase_compphish_development.csv",
+    "compphish_development_copy_sha256": "56f6e8545a7df5f675b740d0858ee0fb4b2fa920a085d4aceae2838bfbc0e377",
+    "p9_historical_outputs_preserved": true,
+    "murl_rows_after_conflict_screening_before_cap": 661449,
+    "murl_exact_label_conflicts_quarantined": 402,
+    "murl_cap_per_class": 60000
+  },
+  "deduplication_and_exclusions": {
+    "raw_rows_before_normalized_conflict_exclusion": 361813,
+    "normalized_label_conflict_keys_excluded": 0,
+    "rows_excluded_for_normalized_label_conflict": 0,
+    "normalized_duplicates_removed_after_conflict_screening": 2153,
+    "malformed_rows_excluded": 1906,
+    "deduplication_rule": "keep first by normalized URL after source priority CompPhish, PHIUSIL, MURL; only after excluding conflicting labels"
+  },
+  "grouping": {
+    "registered_domain": "offline public suffix extraction",
+    "template": "project url_template: lowercase, remove scheme/query/fragment/trailing slash, mask digit runs",
+    "components": 229908,
+    "largest_component_rows": 6259,
+    "p95_component_rows": 2.0
+  },
+  "splits": {
+    "seed": 42,
+    "train": {
+      "rows": 240558,
+      "class_counts": {
+        "0": 138774,
+        "1": 101784
+      },
+      "source_counts": {
+        "CompPhish": 4500,
+        "MURL": 81579,
+        "PHIUSIL": 154479
+      },
+      "unique_raw_urls": 240558,
+      "unique_normalized_urls": 240558,
+      "unique_registered_domains": 161907,
+      "unique_templates": 224445
+    },
+    "validation": {
+      "rows": 61076,
+      "class_counts": {
+        "0": 30070,
+        "1": 31006
+      },
+      "source_counts": {
+        "CompPhish": 997,
+        "MURL": 18716,
+        "PHIUSIL": 41363
+      },
+      "unique_raw_urls": 61076,
+      "unique_normalized_urls": 61076,
+      "unique_registered_domains": 34621,
+      "unique_templates": 55774
+    },
+    "test": {
+      "rows": 58026,
+      "class_counts": {
+        "0": 30471,
+        "1": 27555
+      },
+      "source_counts": {
+        "CompPhish": 938,
+        "MURL": 18384,
+        "PHIUSIL": 38704
+      },
+      "unique_raw_urls": 58026,
+      "unique_normalized_urls": 58026,
+      "unique_registered_domains": 34664,
+      "unique_templates": 52384
+    }
+  },
+  "overlap": {
+    "train_validation": {
+      "exact_url": 0,
+      "normalized_url": 0,
+      "registered_domain": 0,
+      "template": 0
+    },
+    "train_test": {
+      "exact_url": 0,
+      "normalized_url": 0,
+      "registered_domain": 0,
+      "template": 0
+    },
+    "validation_test": {
+      "exact_url": 0,
+      "normalized_url": 0,
+      "registered_domain": 0,
+      "template": 0
+    }
+  },
+  "outputs": {
+    "train": {
+      "path": "data\\processed\\showcase_url_train.csv",
+      "sha256": "4a226c910fc65d6115e019b6d2b686418a78bb65a6cc14b1c4adfea60d61b079"
+    },
+    "validation": {
+      "path": "data\\processed\\showcase_url_validation.csv",
+      "sha256": "c921c32a513dfde925c1c7fa6b3fbf080dc9330dd5dfe402996986c7fa6d4e03"
+    },
+    "test": {
+      "path": "data\\processed\\showcase_url_test.csv",
+      "sha256": "26de1318d7b05d46f533a6cc258159c73e4236c856993b6c350b83b0ec5ab41f"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-10-19T17:08:52.151300+00:00",
+  "purpose": "P7 internal validation only; candidates are not served and frozen CompPhish was not read.",
+  "schema": {
+    "feature_names": [
+      "url_length",
+      "hostname_length",
+      "path_length",
+      "query_length",
+      "registered_domain_length",
+      "dot_count",
+      "hyphen_count",
+      "slash_count",
+      "underscore_count",
+      "at_count",
+      "question_count",
+      "equals_count",
+      "ampersand_count",
+      "percent_count",
+      "digit_count",
+      "digit_ratio",
+      "special_char_ratio",
+      "tilde_count",
+      "subdomain_count",
+      "subdomain_length",
+      "tld_length",
+      "path_depth",
+      "query_param_count",
+      "has_query",
+      "is_https",
+      "is_ip_host",
+      "has_at_symbol",
+      "has_percent_encoding",
+      "is_url_shortener",
+      "suspicious_token_count",
+      "brand_token_count",
+      "brand_domain_mismatch",
+      "brand_lookalike_domain"
+    ],
+    "n_features": 33
+  },
+  "fit_sample": {
+    "rows": 150000,
+    "class_counts": {
+      "0": 84898,
+      "1": 65102
+    },
+    "selection": "deterministic stratified subsample of leakage-isolated training partition, seed 42"
+  },
+  "validation": {
+    "rows": 61553,
+    "class_counts": {
+      "0": 29732,
+      "1": 31821
+    }
+  },
+  "candidates": {
+    "LogisticRegression": {
+      "artifact": "models\\p7_url_logisticregression.joblib",
+      "artifact_sha256": "6a27464bc1fbac8785a38f21381a6cbc8697e3e9cff8b4c319ffbd414580aa00",
+      "metadata": "models\\p7_url_logisticregression_metadata.json",
+      "metadata_sha256": "6c6d159e64e05ac58f2bd6d3dff1931c28ac1ce0d96ee442525fbc1a71adcc20",
+      "threshold": 0.3980841305018193,
+      "precision": 0.8276771096373172,
+      "recall": 0.9373369787247415,
+      "f1": 0.8791004745203218,
+      "roc_auc": 0.9366340159155698,
+      "pr_auc": 0.9232678921285362,
+      "confusion_matrix": [
+        [
+          23522,
+          6210
+        ],
+        [
+          1994,
+          29827
+        ]
+      ],
+      "false_positives": 6210,
+      "false_negatives": 1994,
+      "false_positive_rate_legitimate": 0.20886586842459304,
+      "false_negative_rate_phishing": 0.06266302127525848,
+      "validation_rows": 61553,
+      "validation_legitimate": 29732,
+      "validation_phishing": 31821
+    },
+    "RandomForest": {
+      "artifact": "models\\p7_url_randomforest.joblib",
+      "artifact_sha256": "57a053267dc5f0e08c64508593a2c165cddb74a2f6acefa1407a46c121c11957",
+      "metadata": "models\\p7_url_randomforest_metadata.json",
+      "metadata_sha256": "c021014bc8dbcfec1cbb277d6295fd6194b32be272d806d278ef2942f29d1c22",
+      "threshold": 0.2933606675557894,
+      "precision": 0.8450666015572014,
+      "recall": 0.9789132962509035,
+      "f1": 0.9070790017763024,
+      "roc_auc": 0.971971429312273,
+      "pr_auc": 0.9743069603158963,
+      "confusion_matrix": [
+        [
+          24021,
+          5711
+        ],
+        [
+          671,
+          31150
+        ]
+      ],
+      "false_positives": 5711,
+      "false_negatives": 671,
+      "false_positive_rate_legitimate": 0.19208260460110319,
+      "false_negative_rate_phishing": 0.02108670374909651,
+      "validation_rows": 61553,
+      "validation_legitimate": 29732,
+      "validation_phishing": 31821
+    }
+  }
+}

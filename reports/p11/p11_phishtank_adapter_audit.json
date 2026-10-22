@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "source": {
+    "filename": "verified_online.csv",
+    "sha256": "eae6fe0459db5f87a4b5109ef1454234e9867a396eb18ea3da3ea4f1b05f6bcd",
+    "bytes": 11589341,
+    "terms": "https://phishtank.org/terms.php",
+    "filesystem_last_write_time_utc": "2026-10-19T17:57:32.686872+00:00",
+    "acquisition_time": "unknown; filesystem timestamp is not asserted as acquisition time"
+  },
+  "source_rows": 60415,
+  "source_schema": [
+    "phish_id",
+    "url",
+    "phish_detail_url",
+    "submission_time",
+    "verified",
+    "verification_time",
+    "online",
+    "target"
+  ],
+  "verified_counts": {
+    "yes": 60415
+  },
+  "online_counts": {
+    "yes": 60415
+  },
+  "timestamp_range": {
+    "submission_time": [
+      "2011-02-18 10:50:32+00:00",
+      "2026-10-19 17:02:42+00:00"
+    ],
+    "verification_time": [
+      "2011-02-19 00:05:43+00:00",
+      "2026-10-19 17:11:22+00:00"
+    ]
+  },
+  "duplicate_url_rule": "sort phish_id ascending and retain first URL; all source labels are verified phishing",
+  "excluded_duplicate_urls": 3,
+  "retained_rows": 60412,
+  "output": {
+    "filename": "data\\raw\\prospective_phishtank_verified.csv",
+    "sha256": "a9c815c518e338ed47d11fa6ba47458df51fe3f90ea4fcf9f91194dde2b3d91c"
+  },
+  "prospective_eligibility": "not established: feed contains records from 2011 onward and no pre-registered collection cutoff was supplied"
+}

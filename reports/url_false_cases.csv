@@ -1,0 +1,1152 @@
+split,model,url,true_label,true_label_name,predicted_label,predicted_label_name,phishing_probability,threshold,error_type
+Random Test,RandomForest,https://www.romeogadungan.com,1,phishing,0,legitimate,0.004069,0.461235,false_negative
+Random Test,RandomForest,https://www.amazon.ydoxt.xyz,1,phishing,0,legitimate,0.425836,0.461235,false_negative
+Random Test,RandomForest,https://www.michelonturismo.com.br,1,phishing,0,legitimate,0.011314,0.461235,false_negative
+Random Test,RandomForest,https://www.bendigoverification.com,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.nomorjitu88.com,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.v2deniz.net,1,phishing,0,legitimate,0.015028,0.461235,false_negative
+Random Test,RandomForest,https://www.faewood.com,1,phishing,0,legitimate,0.001419,0.461235,false_negative
+Random Test,RandomForest,https://www.ak3.duckdns.org,1,phishing,0,legitimate,0.053165,0.461235,false_negative
+Random Test,RandomForest,https://www.netflix-vn.com,1,phishing,0,legitimate,0.009929,0.461235,false_negative
+Random Test,RandomForest,https://www.labanquepostal.co,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.3659eee.net,1,phishing,0,legitimate,0.204132,0.461235,false_negative
+Random Test,RandomForest,https://www.3659ggg.net,1,phishing,0,legitimate,0.204132,0.461235,false_negative
+Random Test,RandomForest,https://www.bx27cmv43vcll.net,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.sparkassesicherheit.link,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.112112ww.com,0,legitimate,1,phishing,0.964108,0.461235,false_positive
+Random Test,RandomForest,https://www.hayabusa2.jaxa.jp,0,legitimate,1,phishing,0.651929,0.461235,false_positive
+Random Test,RandomForest,https://www.scarletespinal.com,1,phishing,0,legitimate,0.001727,0.461235,false_negative
+Random Test,RandomForest,https://www.builder-quote.gsdev.co.uk,1,phishing,0,legitimate,0.127747,0.461235,false_negative
+Random Test,RandomForest,https://www.payasosmiami.com,1,phishing,0,legitimate,0.004053,0.461235,false_negative
+Random Test,RandomForest,https://www.locato.top,1,phishing,0,legitimate,0.001989,0.461235,false_negative
+Random Test,RandomForest,https://www.apple-error.com,1,phishing,0,legitimate,0.000805,0.461235,false_negative
+Random Test,RandomForest,https://www.support-lcioud-maps.info,1,phishing,0,legitimate,0.298903,0.461235,false_negative
+Random Test,RandomForest,https://www.maria.susypro.com,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.source-assist-guide.info,1,phishing,0,legitimate,0.027009,0.461235,false_negative
+Random Test,RandomForest,https://adt.i9erp.com.br,1,phishing,0,legitimate,0.004598,0.461235,false_negative
+Random Test,RandomForest,https://www.ron-supp.pages.dev,1,phishing,0,legitimate,0.193932,0.461235,false_negative
+Random Test,RandomForest,https://www.xn--rcaengenhariaemanuteno-x4b9g.com.br,1,phishing,0,legitimate,0.362442,0.461235,false_negative
+Random Test,RandomForest,https://www.tinyurl.com,1,phishing,0,legitimate,0.070086,0.461235,false_negative
+Random Test,RandomForest,https://www.xvsc.my.id,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.ads798ad.top,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.mailgrave.de,1,phishing,0,legitimate,0.002095,0.461235,false_negative
+Random Test,RandomForest,https://what.promerc.repl.co,1,phishing,0,legitimate,0.003277,0.461235,false_negative
+Random Test,RandomForest,https://www.aquaflow.ae,1,phishing,0,legitimate,0.003767,0.461235,false_negative
+Random Test,RandomForest,https://www.vam-podarok.org.ru,1,phishing,0,legitimate,0.154424,0.461235,false_negative
+Random Test,RandomForest,https://www.stlouisnewsbulletin.com,1,phishing,0,legitimate,0.003991,0.461235,false_negative
+Random Test,RandomForest,https://www.uploadkon.ir,1,phishing,0,legitimate,0.002095,0.461235,false_negative
+Random Test,RandomForest,https://www.find-myphone.itech-server.us,1,phishing,0,legitimate,0.42571,0.461235,false_negative
+Random Test,RandomForest,https://www.vip3659a.com,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.pastance.com,1,phishing,0,legitimate,0.003141,0.461235,false_negative
+Random Test,RandomForest,https://www.lnicioerlineaennpresasscoltiaperu.com,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.omahanewsbulletin.com,1,phishing,0,legitimate,0.003145,0.461235,false_negative
+Random Test,RandomForest,https://www.business-services.upenn.edu,0,legitimate,1,phishing,0.797476,0.461235,false_positive
+Random Test,RandomForest,https://www.opallegal.com.au,1,phishing,0,legitimate,0.00582,0.461235,false_negative
+Random Test,RandomForest,https://www.clubempleadosbancoitau.com.uy,1,phishing,0,legitimate,0.039035,0.461235,false_negative
+Random Test,RandomForest,https://www.180360.com,0,legitimate,1,phishing,0.987939,0.461235,false_positive
+Random Test,RandomForest,https://www.myfreeserver.download,1,phishing,0,legitimate,0.061771,0.461235,false_negative
+Random Test,RandomForest,https://www.gecici.email,1,phishing,0,legitimate,0.059288,0.461235,false_negative
+Random Test,RandomForest,https://www.xvqpby.top,1,phishing,0,legitimate,0.001989,0.461235,false_negative
+Random Test,RandomForest,https://www.steamcomunilty.com,1,phishing,0,legitimate,0.001727,0.461235,false_negative
+Random Test,RandomForest,https://www.expressgalicia.repl.co,1,phishing,0,legitimate,0.448979,0.461235,false_negative
+Random Test,RandomForest,https://www.cui-advanced.uni-hamburg.de,0,legitimate,1,phishing,0.475604,0.461235,false_positive
+Random Test,RandomForest,https://www.2023foco.com.br,1,phishing,0,legitimate,0.003208,0.461235,false_negative
+Random Test,RandomForest,https://www.minneapolisnewsbulletin.com,1,phishing,0,legitimate,0.013732,0.461235,false_negative
+Random Test,RandomForest,https://www.dsc.soic.indiana.edu,0,legitimate,1,phishing,0.471364,0.461235,false_positive
+Random Test,RandomForest,https://bhsdfsr.bhdfsra.repl.co,1,phishing,0,legitimate,0.118616,0.461235,false_negative
+Random Test,RandomForest,https://www.microsoft-sicherheitsupdate.com,1,phishing,0,legitimate,0.376943,0.461235,false_negative
+Random Test,RandomForest,https://www.cfg.me,1,phishing,0,legitimate,0.002964,0.461235,false_negative
+Random Test,RandomForest,https://gafas.ocuoa.repl.co,1,phishing,0,legitimate,0.268216,0.461235,false_negative
+Random Test,RandomForest,https://www.uknypxl-rqf-3.ml,1,phishing,0,legitimate,0.043891,0.461235,false_negative
+Random Test,RandomForest,https://www.kuronekoyamato.avtoelectrik.com,1,phishing,0,legitimate,0.171217,0.461235,false_negative
+Random Test,RandomForest,https://www.shopeinnovationt.com,1,phishing,0,legitimate,0.002224,0.461235,false_negative
+Random Test,RandomForest,https://www.en.candidates-2020.com,0,legitimate,1,phishing,0.479332,0.461235,false_positive
+Random Test,RandomForest,https://www.alhashimia.net,1,phishing,0,legitimate,0.003424,0.461235,false_negative
+Random Test,RandomForest,https://www.dnk174.ru,0,legitimate,1,phishing,0.552041,0.461235,false_positive
+Random Test,RandomForest,https://www.frjcohsa.com,1,phishing,0,legitimate,0.003141,0.461235,false_negative
+Random Test,RandomForest,https://www.versoflor.de,1,phishing,0,legitimate,0.002095,0.461235,false_negative
+Random Test,RandomForest,https://www.urbanqueen.co.ke,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.supportcopyrght-ig.net,1,phishing,0,legitimate,0.042706,0.461235,false_negative
+Random Test,RandomForest,https://www.banjaluka.rs.ba,0,legitimate,1,phishing,0.640847,0.461235,false_positive
+Random Test,RandomForest,https://www.factor-a1.com,1,phishing,0,legitimate,0.250427,0.461235,false_negative
+Random Test,RandomForest,https://www.tkow.ink,1,phishing,0,legitimate,0.00063,0.461235,false_negative
+Random Test,RandomForest,https://www.srbtcollegemouda.org,1,phishing,0,legitimate,0.002224,0.461235,false_negative
+Random Test,RandomForest,https://www.allchainprotocol.com,1,phishing,0,legitimate,0.002224,0.461235,false_negative
+Random Test,RandomForest,https://www.revista-estudios.revistas.deusto.es,0,legitimate,1,phishing,0.693426,0.461235,false_positive
+Random Test,RandomForest,https://www.zernina.com.ua,1,phishing,0,legitimate,0.003076,0.461235,false_negative
+Random Test,RandomForest,https://www.thebertonandeastbridge.onesuffolk.net,0,legitimate,1,phishing,0.586202,0.461235,false_positive
+Random Test,RandomForest,https://www.rccgdrc.ca,1,phishing,0,legitimate,0.002063,0.461235,false_negative
+Random Test,RandomForest,https://www.divmainbot.pages.dev,1,phishing,0,legitimate,0.010783,0.461235,false_negative
+Random Test,RandomForest,https://www.instagram-apple.com,1,phishing,0,legitimate,0.001077,0.461235,false_negative
+Random Test,RandomForest,https://www.virkunarze.tk,1,phishing,0,legitimate,0.00549,0.461235,false_negative
+Random Test,RandomForest,https://www.tostudydrycleaning.ru,1,phishing,0,legitimate,0.0,0.461235,false_negative
+Random Test,RandomForest,https://www.mistoreosqv-jp.top,1,phishing,0,legitimate,0.008115,0.461235,false_negative
+Random Test,RandomForest,https://www.unisonhomes.com.au,1,phishing,0,legitimate,0.003515,0.461235,false_negative
+Domain-Aware Test,RandomForest,https://www.nacionmulticultural.unam.mx,0,legitimate,1,phishing,0.950528,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.bendiqo-log-au.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.ahsansupermarket.com,1,phishing,0,legitimate,0.003352,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.ambtechonline.com,1,phishing,0,legitimate,0.00397,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.mistoreosqv-jp.top,1,phishing,0,legitimate,0.003622,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.alhashimia.net,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.lazarovs.ga,1,phishing,0,legitimate,0.003792,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.arywarriors.armourtech.org,1,phishing,0,legitimate,0.08104,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.iboiha.fun,1,phishing,0,legitimate,0.001948,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.orderedami.com,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.365okn.com,1,phishing,0,legitimate,0.032114,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.torneocittadiverona.it,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://nibkrjvyxe.corso.net.pl,1,phishing,0,legitimate,0.630384,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.steancomnunitiy.ru,1,phishing,0,legitimate,0.014185,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.blueview-thassos.gr,1,phishing,0,legitimate,0.009257,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.centralhotelblacktown.com.au,1,phishing,0,legitimate,0.026907,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.3659ggg.net,1,phishing,0,legitimate,0.373133,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.e-publicacoes.uerj.br,0,legitimate,1,phishing,0.684884,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.unionbindinqcompany.it,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.thelanguagegallerycanada.com,1,phishing,0,legitimate,0.010229,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.dd365j.cc,1,phishing,0,legitimate,0.458164,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.betterplants.basf.us,0,legitimate,1,phishing,0.850852,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.ministerioagape.net,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.notepad-setup.top,1,phishing,0,legitimate,0.010357,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.yoga4you.com.au,1,phishing,0,legitimate,0.006547,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://app.clliente30hrs.me,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.seedjfly.top,1,phishing,0,legitimate,0.003269,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.amazon.hhkmlq.xyz,1,phishing,0,legitimate,0.308322,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.arafato.site,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.maria.susypro.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.maryland-college.cf,1,phishing,0,legitimate,0.009257,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.ur.link,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.choicesoftheheart.com,1,phishing,0,legitimate,0.002601,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.wsdownloadd.com,1,phishing,0,legitimate,0.003021,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.stills.com.au,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.uc-free.com,1,phishing,0,legitimate,0.077867,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.infoserviceplus.net,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://personal-member.information.smartqsys.com.cn,1,phishing,0,legitimate,0.61831,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.bet810b.com,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.dutsh-helppackage.ecranul.ro,1,phishing,0,legitimate,0.350693,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://es.lng-web-soporte.com,1,phishing,0,legitimate,0.561944,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.babsecurity.co.ke,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://ww1.aviso30hrs.net,1,phishing,0,legitimate,0.126233,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.sghidrocarburos.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.wsend.co,1,phishing,0,legitimate,0.002272,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.birlik.az,1,phishing,0,legitimate,0.006274,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.alassadgroup.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.centregranger.cnrs.fr,0,legitimate,1,phishing,0.965416,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.attemplate.com,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.colis-dhl.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.icloud-mapfind.com,1,phishing,0,legitimate,0.003622,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.7minuteworkout.jnj.com,0,legitimate,1,phishing,0.694873,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.source-assist-guide.info,1,phishing,0,legitimate,0.083679,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://nz.nz-post.shop,1,phishing,0,legitimate,0.60596,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.stylesourcingbd.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.strategieredacweb.com,1,phishing,0,legitimate,0.002601,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.2vyou.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.tallpullmoby.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.steamconmumlty.com,1,phishing,0,legitimate,0.002009,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.velvogin.com.br,1,phishing,0,legitimate,0.00646,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.discord.org.ua,1,phishing,0,legitimate,0.002643,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.library-archives.cumc.columbia.edu,0,legitimate,1,phishing,0.702046,0.663835,false_positive
+Domain-Aware Test,RandomForest,https://www.birfa.tech,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://busy.fm-cars.com,1,phishing,0,legitimate,0.577339,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://w.faace30hrs.co,1,phishing,0,legitimate,0.545,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.lnicioerlineaennpresasscoltiaperu.com,1,phishing,0,legitimate,0.002407,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.mygov-2au.top,1,phishing,0,legitimate,0.413857,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.tkow.ink,1,phishing,0,legitimate,0.000639,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.ndnmag.fr,1,phishing,0,legitimate,0.006274,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.kwresearch.com.au,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://exodus.com.merge.hilsgroup.com,1,phishing,0,legitimate,0.33195,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.lambareimport.com.py,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.mobillformonaydenzii.top,1,phishing,0,legitimate,0.004592,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.howtogetfittoday.com,1,phishing,0,legitimate,0.003352,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.steamcommurnity.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.buqf163.ink,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.prodevestate.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.blackpointt.com,1,phishing,0,legitimate,0.003021,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.amazon.rialite.xyz,1,phishing,0,legitimate,0.293138,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.wvwvwzonaensengunrabeta.com,1,phishing,0,legitimate,0.013925,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.locato.top,1,phishing,0,legitimate,0.001948,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.bendiqo-comau.com,1,phishing,0,legitimate,0.010357,0.663835,false_negative
+Domain-Aware Test,RandomForest,https://www.bet988m.com,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.nacionmulticultural.unam.mx,0,legitimate,1,phishing,0.950528,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.bendiqo-log-au.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.ahsansupermarket.com,1,phishing,0,legitimate,0.003352,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.ambtechonline.com,1,phishing,0,legitimate,0.00397,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.mistoreosqv-jp.top,1,phishing,0,legitimate,0.003622,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.alhashimia.net,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.lazarovs.ga,1,phishing,0,legitimate,0.003792,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.arywarriors.armourtech.org,1,phishing,0,legitimate,0.08104,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.iboiha.fun,1,phishing,0,legitimate,0.001948,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.orderedami.com,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.365okn.com,1,phishing,0,legitimate,0.032114,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.torneocittadiverona.it,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://nibkrjvyxe.corso.net.pl,1,phishing,0,legitimate,0.630384,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.steancomnunitiy.ru,1,phishing,0,legitimate,0.014185,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.blueview-thassos.gr,1,phishing,0,legitimate,0.009257,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.centralhotelblacktown.com.au,1,phishing,0,legitimate,0.026907,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.3659ggg.net,1,phishing,0,legitimate,0.373133,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.e-publicacoes.uerj.br,0,legitimate,1,phishing,0.684884,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.unionbindinqcompany.it,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.thelanguagegallerycanada.com,1,phishing,0,legitimate,0.010229,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.dd365j.cc,1,phishing,0,legitimate,0.458164,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.betterplants.basf.us,0,legitimate,1,phishing,0.850852,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.ministerioagape.net,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.notepad-setup.top,1,phishing,0,legitimate,0.010357,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.yoga4you.com.au,1,phishing,0,legitimate,0.006547,0.663835,false_negative
+Template-Clean Test,RandomForest,https://app.clliente30hrs.me,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.seedjfly.top,1,phishing,0,legitimate,0.003269,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.amazon.hhkmlq.xyz,1,phishing,0,legitimate,0.308322,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.arafato.site,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.maria.susypro.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.maryland-college.cf,1,phishing,0,legitimate,0.009257,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.ur.link,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.choicesoftheheart.com,1,phishing,0,legitimate,0.002601,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.wsdownloadd.com,1,phishing,0,legitimate,0.003021,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.stills.com.au,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.uc-free.com,1,phishing,0,legitimate,0.077867,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.infoserviceplus.net,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Template-Clean Test,RandomForest,https://personal-member.information.smartqsys.com.cn,1,phishing,0,legitimate,0.61831,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.bet810b.com,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.dutsh-helppackage.ecranul.ro,1,phishing,0,legitimate,0.350693,0.663835,false_negative
+Template-Clean Test,RandomForest,https://es.lng-web-soporte.com,1,phishing,0,legitimate,0.561944,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.babsecurity.co.ke,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://ww1.aviso30hrs.net,1,phishing,0,legitimate,0.126233,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.sghidrocarburos.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.wsend.co,1,phishing,0,legitimate,0.002272,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.birlik.az,1,phishing,0,legitimate,0.006274,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.alassadgroup.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.centregranger.cnrs.fr,0,legitimate,1,phishing,0.965416,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.attemplate.com,1,phishing,0,legitimate,0.003067,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.colis-dhl.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.icloud-mapfind.com,1,phishing,0,legitimate,0.003622,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.7minuteworkout.jnj.com,0,legitimate,1,phishing,0.694873,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.source-assist-guide.info,1,phishing,0,legitimate,0.083679,0.663835,false_negative
+Template-Clean Test,RandomForest,https://nz.nz-post.shop,1,phishing,0,legitimate,0.60596,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.stylesourcingbd.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.strategieredacweb.com,1,phishing,0,legitimate,0.002601,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.2vyou.com,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.tallpullmoby.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.steamconmumlty.com,1,phishing,0,legitimate,0.002009,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.velvogin.com.br,1,phishing,0,legitimate,0.00646,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.discord.org.ua,1,phishing,0,legitimate,0.002643,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.library-archives.cumc.columbia.edu,0,legitimate,1,phishing,0.702046,0.663835,false_positive
+Template-Clean Test,RandomForest,https://www.birfa.tech,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://busy.fm-cars.com,1,phishing,0,legitimate,0.577339,0.663835,false_negative
+Template-Clean Test,RandomForest,https://w.faace30hrs.co,1,phishing,0,legitimate,0.545,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.lnicioerlineaennpresasscoltiaperu.com,1,phishing,0,legitimate,0.002407,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.mygov-2au.top,1,phishing,0,legitimate,0.413857,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.tkow.ink,1,phishing,0,legitimate,0.000639,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.ndnmag.fr,1,phishing,0,legitimate,0.006274,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.kwresearch.com.au,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://exodus.com.merge.hilsgroup.com,1,phishing,0,legitimate,0.33195,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.lambareimport.com.py,1,phishing,0,legitimate,0.0,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.mobillformonaydenzii.top,1,phishing,0,legitimate,0.004592,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.howtogetfittoday.com,1,phishing,0,legitimate,0.003352,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.steamcommurnity.com,1,phishing,0,legitimate,0.003379,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.buqf163.ink,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.prodevestate.com,1,phishing,0,legitimate,0.003336,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.blackpointt.com,1,phishing,0,legitimate,0.003021,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.amazon.rialite.xyz,1,phishing,0,legitimate,0.293138,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.wvwvwzonaensengunrabeta.com,1,phishing,0,legitimate,0.013925,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.locato.top,1,phishing,0,legitimate,0.001948,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.bendiqo-comau.com,1,phishing,0,legitimate,0.010357,0.663835,false_negative
+Template-Clean Test,RandomForest,https://www.bet988m.com,1,phishing,0,legitimate,0.079262,0.663835,false_negative
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/php,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-edge,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/sql,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030270/how-to-insert-a-char-into-stdvectorchar-fails-with-cannot-convert-argument,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/java,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/iwyu,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/android,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/dependencies,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/machine-learning,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/build,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/pandas,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/msal-angular,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/saga,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/state,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030219/ciphering-services-not-available-error-on-pysnmp-v3-walk,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/firefox,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/compatibility,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/svg-filters,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/snmpwalk,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030239/azure-application-insights-how-to-make-a-nice-time-graph-from-a-custom-kql-quer,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/azure-application-insights,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030244/using-getopts-and-case-multiple-times,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/reactjs,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/javascript,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/spring-boot,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/camel-cxf,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030216/whats-the-most-effective-way-to-access-an-external-16bit-sdram,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/masstransit,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030242/not-able-to-collect-flow-data-in-another-activity,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/pysnmp,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/data-cleaning,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/c,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030226/problem-with-trying-to-compile-ps4-11-50-webkit-on-debian-linux,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030256/how-can-i-achieve-accurate-imputation-of-missing-values-in-a-dataset,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030276/application-compilation-error-could-not-find-com-jaeger-statusbarutillibrary1,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/visual-studio,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030215/how-to-automatically-compute-a-signal-with-withcomputed-in-ngrx-signals-library,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030236/pass-a-pointer-to-a-functionand-allocate-and-initialize-it,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/gtk,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/inertiajs,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/apache-camel,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/snmp,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/clang-tidy,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/ios18,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/cmake,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030230/why-arent-file-uploads-banner-images-slider-working-in-laravel-with-react-a,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/bash,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/angular,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/appium-inspector,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030227/can-i-install-and-run-coral-usb-accelerator-on-ubuntu-22-04-without-downgrading,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/stm32,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/kql,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030266/appium-inspector-keeps-on-loading-on-trying-to-inspect-ios-elements,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/16-bit,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/browser,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/winapi,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/pointers,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/kotlin,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/css,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030232/how-to-use-loadexternaltokens-in-microsoft-authentication-library-for-js,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/msal.js,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/webkit,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/rabbitmq,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/oracle-integration-cloud,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030213/ms-edge-chrome-stopped-showing-response-preview,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/installation,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/apache-iceberg,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030254/how-to-skip-alternating-header-rows-in-csv-during-ftp-and-atp-integration-in-ora,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/ps4,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/8-bit,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/azure,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/ram,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030258/how-can-i-add-structured-metadata-to-a-column-in-an-iceberg-table,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/laravel,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/reference,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/testing,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/cxf,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/scikit-learn,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/animation,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/ngrx,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-entra-external-id,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030255/saga-event-not-returning-to-main-controller-its-going-for-long-loading-resulted,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-entra-id,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/getopts,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/c%2b%2b,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030235/using-misc-include-cleaner-with-windows-h,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/scripting,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030241/motion-blur-svg-filter-not-working-in-iphone,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/python,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/state-machine,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/ask,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/google-chrome,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/jbossfuse,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/annotations,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030250/composition-repeatable-annotations-in-custom-annotation,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/laravel-11,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/c%23,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/csv,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/tagged/iphone,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://stackoverflow.com/questions/79030264/how-to-avoid-exchange-timeout-in-redhat-fuse-adapter-working-with-apache-camel-a,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://forbes.com,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://github.com,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://nytimes.com,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://w3schools.com,0,legitimate,1,phishing,0.995,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://cnn.com,0,legitimate,1,phishing,0.945357,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Hampton_Dellinger,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Nerone_(Mascagni),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Portarlington_(Parliament_of_Ireland_constituency),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Teresa_Riera,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Arch_Rock_(Tasmania),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/List_of_Falling_in_Reverse_band_members,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Hatterrall_Ridge,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Red_River_shiner,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Blue_Kentucky_Girl_(Emmylou_Harris_album),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Queen_Victoria_Diamond_Jubilee_Medal,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/List_of_Fairy_Tail_chapters_(volumes_46%E2%80%9363),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Seymour_Inlet,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Daisy_Waterstone,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Daniel_Baldi,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Luis_Schiavo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Street_(Herman_Brood_%26_His_Wild_Romance_album),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Screaming_Dead,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Christian_National_Union_for_the_Reconstruction_of_Haiti,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Raj_Madiraju,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/2009_European_Parliament_election_in_Romania,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Gluconacetobacter_azotocaptans,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,"https://en.wikipedia.org/wiki/Stefan_Bajic_(footballer,_born_1997)",0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Gilly_in_Prague_for_the_First_Time,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/1948_New_York_Giants_season,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/C%C3%A9lestin_Bougl%C3%A9,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Boulevard_Saint-Michel,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Tramoyes,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Ines_Erbus,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Boys_on_Film,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Gjergj_Spani,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Jimmie%27s_Millions,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Swimming_at_the_2011_World_Aquatics_Championships_%E2%80%93_Women%27s_200_metre_freestyle,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/John_Laughlin_(actor),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Constitution_of_Carthage,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Takuya_Sugawara,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Clarence_L._Partee,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Ancellotta,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/What%27s_on_Tonight,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Abura/Asebu/Kwamankese_District,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Alejandro_Acton,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Futaba_Group,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Flavia_Sparacino,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Tobamovirus_internal_ribosome_entry_site_(IRES),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Social_policy_of_the_Barack_Obama_administration,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Martinism,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/John_Pudney,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Duane_Kuiper,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Conservation_biology,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Porthetinae,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/WJNV,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Atlantic_Rhapsody,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Leo-Raymond_de_Neckere,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/HMS_Cottesmore_(L78),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Trou-du-Nord_Arrondissement,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Almaz_Ivanov,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Keyon_Nash,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/I%27m_with_You_(Avril_Lavigne_song),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Psalidoxena,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Eiconaxius_cristagalli,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Ginger_Johnson,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Panthays,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Pak_Jong-hyeon,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Iraj%C3%A1,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Joe_McWilliams,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Roberto_Bressan,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Juupajoki,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Hotcakes_(album),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Paul_McGahan,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Maezora_Station,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Matas_Jucikas,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/John_Hay_(Jesuit),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Rainer_Kaufmann,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Midna_Ruda,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,"https://en.wikipedia.org/wiki/Gulf_Park_Estates,_Mississippi",0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Cathie_Adams,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,"https://en.wikipedia.org/wiki/Malaka_Township,_Jasper_County,_Iowa",0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Life_Serial,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Gisela_Stein,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Eddie_McGill,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/2012_Superstars_Series_Spa-Francorchamps_round,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Vrbo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,"https://en.wikipedia.org/wiki/Luancheng,_Hebei",0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/From_First_to_Last_(album),0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/SafeBreach,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Brachytrematidae,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Henry_Johansen,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Galician_Academy_of_the_Portuguese_Language,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Ugonna,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Edgar_Towner,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Maralan,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Monazite,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Jennifer_duBois,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/1931_World_Fencing_Championships,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Center_for_Bio-Ethical_Reform,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/John_Quinn_Sr.,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Parc_floral_de_Paris,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Wiltshire_Emergency_Services,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Google_Charts,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,"https://en.wikipedia.org/wiki/Five_Ways,_Birmingham",0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/List_of_most-visited_websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.similarweb.com/top-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://explodingtopics.com/blog/most-visited-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.semrush.com/website/top/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://moz.com/top500,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://ahrefs.com/top,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.visualcapitalist.com/the-50-most-visited-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://backlinko.com/most-popular-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-world-monthly-2/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.reddit.com/r/webdev/comments/10lbbfv/the_top_50_most_visited_websites_in_the_world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://webflow.com/made-in-webflow,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.affiliatefix.com/threads/top-50-most-visited-websites-in-the-world.167271/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://freshysites.com/web-design-development/most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.statista.com/statistics/1201880/most-visited-websites-worldwide/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://dataforseo.com/free-seo-stats/top-1000-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.a2hosting.com/blog/the-most-visited-websites-every-year-since-1995/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.hostinger.com/tutorials/most-visited-websites-in-the-world,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=Ko8Pz4Y-tYo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.domcop.com/top-10-million-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.kaggle.com/datasets/mathurinache/mostpopularwebsites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://squareboat.com/blog/10-most-popular-types-of-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.web.com/blog/popular-websites-looked-like-first-started/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://insightssuccess.com/top-9-most-popular-websites-worldwide/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.businessinsider.com/popular-websites-then-and-now-2017-6,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://finance.yahoo.com/news/30-most-visited-websites-world-231716713.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://trends.netcraft.com/topsites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.comparethemarket.com/broadband/news/the-worlds-most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://blog.hubspot.com/marketing/best-website-designs-list,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://support.apple.com/guide/safari/see-your-favorite-websites-sfri22092/mac,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.wpzoom.com/blog/wordpress-statistics/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://today.yougov.com/ratings/entertainment/popularity/news-websites/all,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://time.com/4960202/most-influential-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://analytics.usa.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=9DPZJBg4xBw,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.lifewire.com/most-popular-sites-3483140,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.socialmediatoday.com/news/a-look-at-the-most-visited-websites-in-the-us/619496/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.hostingadvice.com/how-to/most-visited-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.oberlo.com/statistics/most-visited-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ssa.gov/oact/babynames/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.lovemyonlinemarketing.com/16-most-popular-types-of-websites-that-you-should-know,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://wordpress.org/showcase/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.surveymonkey.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://10web.io/blog/wordpress-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=ijHHV5nh9bs,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://edkentmedia.com/list-of-top-500-most-popular-websites-on-internet/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.kaggle.com/datasets/thedevastator/the-top-websites-in-the-world,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://w3techs.com/technologies/overview/content_management,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fastcompany.com/90642252/think-you-know-the-worlds-most-popular-websites-think-again,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.topuniversities.com/blog/33-useful-websites-students,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.searchenginejournal.com/social-media/social-media-platforms/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.forbes.com/advisor/in/business/software/website-statistics/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.forbesindia.com/article/explainers/most-visited-websites-world/92619/1,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://trends.google.com/trends/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://support.apple.com/guide/safari/go-back-to-websites-you-already-visited-ibrw1009/mac,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.squarespace.com/templates,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.techradar.com/news/the-best-website-builder,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.cloudflare.com/learning/cdn/what-is-a-cdn/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fccourts.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,http://5000best.com/websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://lacity.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.pa.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.upwork.com/resources/best-freelance-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://daily.dev/blog/top-10-best-tech-websites-and-blogs-2024,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.incomediary.com/top-earning-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=VU69Mr7e9XQ,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://trends.builtwith.com/cms,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.nominus.com/en/dm/blog/hosting/what-is-the-most-visited-website-in-the-world,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.commoncause.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://inkbotdesign.com/most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.appypie.com/blog/research/most-visited-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://beebom.com/cool-interesting-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.census.gov/popclock/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.irs.gov/help/tax-scams/recognize-tax-scams-and-fraud,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.mlbair.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.pewresearch.org/internet/fact-sheet/social-media/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.mayoclinic.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.topknobs.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/spoofing-and-phishing,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://sg.finance.yahoo.com/news/9-world-most-popular-websites-145458390.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://commonfund.nih.gov/newinnovator,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://developers.google.com/search/docs/fundamentals/seo-starter-guide,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://owasp.org/www-project-top-ten/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.thebalancemoney.com/top-best-job-websites-2064080,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.forbes.com/sites/priceonomics/2017/07/26/what-are-the-most-popular-websites-by-demographic/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.quora.com/What-are-some-of-the-most-popular-websites-in-the-world-How-many-people-use-them-every-day-month-or-year,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://sites.google.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.designrush.com/best-designs/websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.vpnmentor.com/blog/10-best-torrent-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.stopbullying.gov/cyberbullying/what-is-it,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm,0,legitimate,1,phishing,0.995,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ucsb.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.statista.com/chart/17613/most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://zapier.com/blog/best-website-builders/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.gmu.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.weforum.org/agenda/2017/04/most-popular-websites-google-youtube-baidu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.freedomscientific.com/products/software/jaws/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.webdesign-inspiration.com/article/7-most-popular-types-of-websites-in-2022-with-examples/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.thetoptens.com/internet/websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://webflow.com/blog/freelance-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://commonhelp.virginia.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://truleap.net/top-10-most-visited-websites-in-the-u-s-as-of-august-2021/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://statisticsanddata.org/data/most-popular-websites-in-the-world-1996-2021/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.google.com/intl/en/search/howsearchworks/how-search-works/ranking-results/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://datareportal.com/reports/digital-2022-worlds-top-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.shopify.com/blog/shopify-stores,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.drake.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://provaromarketing.com/12-popular-websites-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.labnol.org/internet/101-useful-websites/18078/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://washu.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.brainpop.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.wikiwand.com/en/articles/List_of_most-visited_websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.facebook.com/RankingRoyals/videos/most-popular-websites-by-monthly-visits/3489452821320469/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.webhostface.com/blog/most-popular-websites-the-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.wix.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://getbootstrap.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.uic.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.pinterest.com/pin/745486544557523958/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.php.net/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.bls.gov/data/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.kidzsearch.com/questions/6267/what-is-the-most-famous-website?show=60513,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.avg.com/en/signal/best-dark-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.unt.edu/index.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ssa.gov/oact/babynames/decades/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://lacity.gov/myla311,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.dollywood.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://myactivity.google.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://nextjs.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fema.gov/disaster/current/hurricane-helene/rumor-response,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.toureiffel.paris/en,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.lsu.edu/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.weebly.com/?lang=en_GB,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,http://www.kelloggs.com/en_US/home.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.toppotdoughnuts.com/?srsltid=AfmBOorroQlZ5bciwxlQv5V3p9IlJJg8V0iq2h__0-GpLiKhdeor05Ah,0,legitimate,1,phishing,0.996257,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://cuyahogacounty.gov/coc,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.commonsensemedia.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.charitynavigator.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.un.org/en/content/common-agenda-report/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.awwwards.com/websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://geek.digit.in/community/threads/most-frequently-visited-websites-not-what-you%E2%80%99d-expect-usa.55705/?srsltid=AfmBOoqgwTBlrRZE-NrTJFaTF_tM6QItczAsd5cKt3JOVVsru5kSE6uv,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.stellantis.com/en,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://ahrefs.com/blog/search-traffic-study/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.irs.gov/businesses/small-businesses-self-employed/state-government-websites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.clarkcountyohio.gov/314/Legal-Division,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.marylandtaxes.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.crazyegg.com/blog/homepage-design/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.businessinsider.com/most-popular-websites-2017-7,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fec.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://explodingtopics.com/blog/chatgpt-users,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://business.adobe.com/blog/basics/best-website-design-examples,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.collegeboard.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.pewresearch.org/internet/2024/01/31/americans-social-media-use/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://yoast.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://data.gov/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.aspca.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://chromewebstore.google.com/detail/adblock-%E2%80%94-block-ads-acros/gighmmpiobklfepjocnamgkkbiglidom,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.nobelprize.org/prizes/chemistry/2024/popular-information/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.nytimes.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.wired.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.quora.com/What-are-some-of-the-most-visited-websites-in-the-world-after-YouTube-Facebook-and-Google-Where-does-Amazon-rank-compared-to-these-sites,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://acaai.org/allergies/allergic-conditions/food/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://ads.google.com/home/tools/keyword-planner/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://themeisle.com/blog/best-website-builder/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.squarespace.com/templates/clove-fluid-demo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.sistrix.com/blog/uk-top-100-domains-the-most-visible-websites-in-google-co-uk/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.squarespace.com/templates/ortiz-fluid-demo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.titanicbelfast.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://tophat.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.foxbusiness.com/features/exploring-the-most-popular-websites-of-the-last-20-years,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.parliament.uk/business/commons/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://neatsoft.eu/most-popular-websites-in-the-world,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ebizmba.com/articles/most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.reddit.com/r/videos/comments/1dsftba/most_popular_websites_1995_2023/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://moodle.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.cbsnews.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://open.spotify.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://bm.ge/en/news/the-worlds-most-popular-websites/85920,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://radar.cloudflare.com/domains,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.asos.com/us/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.alexa.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://blogs.cornell.edu/info2040/2017/10/18/the-worlds-most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ruby-lang.org/en/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://itp.live/news/top-100-the-most-visited-websites-in-usa,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.digitalinformationworld.com/2023/01/here-are-most-visited-websites-in-world.html,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://gizmodo.com/here-are-the-1000-most-popular-websites-in-the-world-5549666,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.ayansujon.com/20-most-popular-websites-of-all-time-worldwide/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.socialmediatoday.com/news/the-most-visited-websites-in-the-world-2023-edition-infographic/641389/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.founderjar.com/types-of-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://dev.to/souviktests/most-popular-websites-1996-2020-based-on-traffic-popularity-1e1i,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.etsy.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.tiktok.com/@ten2onepro/video/7288288597554236690,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://101theeagle.com/most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=trQgGhgigv8,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.c-sharpcorner.com/article/do-you-know-about-the-most-popular-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.insidermonkey.com/blog/the-15-most-visited-websites-in-the-world-2014-330665/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=Nc0gdYnQCnk,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.therichest.com/expensive-lifestyle/the-top-10-most-popular-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://support.google.com/chrome/answer/2693767?hl=en&co=GENIE.Platform%3DDesktop,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.popularmechanics.com/culture/g29575328/most-important-websites/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://coinmarketcap.com/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.un.org/en/about-us/universal-declaration-of-human-rights,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,http://web.archive.org/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://cmat.nta.nic.in/,0,legitimate,1,phishing,0.995,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=r4L4PteMF7o,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=39mwJThDCwc,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=MirrGCbsIp4,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://otechworld.com/most-popular-websites-in-world/,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=2Uj1A9AguFs,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=AmHEfTSBXiY,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/shorts/78FQt1Lk-eA,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=APnD33TTOjE,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://m.youtube.com/shorts/FU8HQNWJWLM,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=Pvi_metetxk,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://m.youtube.com/shorts/gzrvPaoh5y0,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=o1gG4170K5k,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=1c0bA95luXg,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://m.youtube.com/watch?v=ac4kYtKXw0I,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=8XrgNklPqHo,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://m.youtube.com/shorts/HlbLFje3iSM,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=EjmfCfzV_L0,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=qxCmNlK959Y,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=xBt0oE3t7Bw,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=yqCqtlXgfXE,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=YCFz3TcGVQc,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=KWR8DudHwPg,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=Am18wM-nA2s,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=AxFZH-dctQY,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=kswY9Sm68rY,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=c_O3BceSLdA,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=KX0o2YXBQmI,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=lxJ-fHxXLaY,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=qMCsLXd_QAI,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=RkFmPOVOWWE,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=OUM5T91zgHI,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.youtube.com/watch?v=eP_Ylb5VE9M,0,legitimate,1,phishing,1.0,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.iso25000.com,0,legitimate,1,phishing,0.647281,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.6717000.com,0,legitimate,1,phishing,0.852246,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.sources-chretiennes.mom.fr,0,legitimate,1,phishing,0.465983,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.cui-advanced.uni-hamburg.de,0,legitimate,1,phishing,0.475604,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.fetedeslumieres.lyon.fr,0,legitimate,1,phishing,0.823787,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.thebertonandeastbridge.onesuffolk.net,0,legitimate,1,phishing,0.586202,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.dsc.soic.indiana.edu,0,legitimate,1,phishing,0.471364,0.461235,false_positive
+LegitPhish External [production (random split)],RandomForest,https://www.library-archives.cumc.columbia.edu,0,legitimate,1,phishing,0.743999,0.461235,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/php,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-edge,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/sql,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030270/how-to-insert-a-char-into-stdvectorchar-fails-with-cannot-convert-argument,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/java,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/iwyu,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/android,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/dependencies,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/machine-learning,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/build,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/pandas,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/msal-angular,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/saga,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/state,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030219/ciphering-services-not-available-error-on-pysnmp-v3-walk,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/firefox,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/compatibility,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/svg-filters,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/snmpwalk,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030239/azure-application-insights-how-to-make-a-nice-time-graph-from-a-custom-kql-quer,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/azure-application-insights,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030244/using-getopts-and-case-multiple-times,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/reactjs,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/javascript,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/spring-boot,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/camel-cxf,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030216/whats-the-most-effective-way-to-access-an-external-16bit-sdram,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/masstransit,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030242/not-able-to-collect-flow-data-in-another-activity,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/pysnmp,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/data-cleaning,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/c,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030226/problem-with-trying-to-compile-ps4-11-50-webkit-on-debian-linux,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030256/how-can-i-achieve-accurate-imputation-of-missing-values-in-a-dataset,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030276/application-compilation-error-could-not-find-com-jaeger-statusbarutillibrary1,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/visual-studio,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030215/how-to-automatically-compute-a-signal-with-withcomputed-in-ngrx-signals-library,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030236/pass-a-pointer-to-a-functionand-allocate-and-initialize-it,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/gtk,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/inertiajs,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/apache-camel,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/snmp,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/clang-tidy,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/ios18,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/cmake,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030230/why-arent-file-uploads-banner-images-slider-working-in-laravel-with-react-a,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/bash,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/angular,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/appium-inspector,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030227/can-i-install-and-run-coral-usb-accelerator-on-ubuntu-22-04-without-downgrading,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/stm32,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/kql,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030266/appium-inspector-keeps-on-loading-on-trying-to-inspect-ios-elements,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/16-bit,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/browser,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/winapi,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/pointers,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/kotlin,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/css,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030232/how-to-use-loadexternaltokens-in-microsoft-authentication-library-for-js,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/msal.js,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/webkit,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/rabbitmq,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/oracle-integration-cloud,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030213/ms-edge-chrome-stopped-showing-response-preview,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/installation,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/apache-iceberg,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030254/how-to-skip-alternating-header-rows-in-csv-during-ftp-and-atp-integration-in-ora,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/ps4,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/8-bit,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/azure,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/ram,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030258/how-can-i-add-structured-metadata-to-a-column-in-an-iceberg-table,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/laravel,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/reference,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/testing,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/cxf,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/scikit-learn,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/animation,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/ngrx,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-entra-external-id,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030255/saga-event-not-returning-to-main-controller-its-going-for-long-loading-resulted,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/microsoft-entra-id,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/getopts,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/c%2b%2b,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030235/using-misc-include-cleaner-with-windows-h,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/scripting,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030241/motion-blur-svg-filter-not-working-in-iphone,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/python,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/state-machine,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/ask,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/google-chrome,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/jbossfuse,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/annotations,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030250/composition-repeatable-annotations-in-custom-annotation,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/laravel-11,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/c%23,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/csv,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/tagged/iphone,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://stackoverflow.com/questions/79030264/how-to-avoid-exchange-timeout-in-redhat-fuse-adapter-working-with-apache-camel-a,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://forbes.com,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://github.com,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://nytimes.com,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://w3schools.com,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://cnn.com,0,legitimate,1,phishing,0.925264,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Hampton_Dellinger,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Nerone_(Mascagni),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Portarlington_(Parliament_of_Ireland_constituency),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Teresa_Riera,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Arch_Rock_(Tasmania),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/List_of_Falling_in_Reverse_band_members,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Hatterrall_Ridge,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Red_River_shiner,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Blue_Kentucky_Girl_(Emmylou_Harris_album),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Queen_Victoria_Diamond_Jubilee_Medal,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/List_of_Fairy_Tail_chapters_(volumes_46%E2%80%9363),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Professional_practice_of_behavior_analysis,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Seymour_Inlet,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Daisy_Waterstone,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Daniel_Baldi,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Luis_Schiavo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Street_(Herman_Brood_%26_His_Wild_Romance_album),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Screaming_Dead,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Christian_National_Union_for_the_Reconstruction_of_Haiti,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Raj_Madiraju,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/2009_European_Parliament_election_in_Romania,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Gluconacetobacter_azotocaptans,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,"https://en.wikipedia.org/wiki/Stefan_Bajic_(footballer,_born_1997)",0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Gilly_in_Prague_for_the_First_Time,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/1948_New_York_Giants_season,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/C%C3%A9lestin_Bougl%C3%A9,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Boulevard_Saint-Michel,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Tramoyes,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Ines_Erbus,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Boys_on_Film,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Gjergj_Spani,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Jimmie%27s_Millions,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Swimming_at_the_2011_World_Aquatics_Championships_%E2%80%93_Women%27s_200_metre_freestyle,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/John_Laughlin_(actor),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Constitution_of_Carthage,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Takuya_Sugawara,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Clarence_L._Partee,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Ancellotta,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/What%27s_on_Tonight,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Abura/Asebu/Kwamankese_District,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Alejandro_Acton,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Futaba_Group,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Flavia_Sparacino,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Tobamovirus_internal_ribosome_entry_site_(IRES),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Social_policy_of_the_Barack_Obama_administration,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Martinism,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/John_Pudney,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Duane_Kuiper,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Conservation_biology,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Porthetinae,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/WJNV,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Atlantic_Rhapsody,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Leo-Raymond_de_Neckere,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/HMS_Cottesmore_(L78),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Trou-du-Nord_Arrondissement,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Almaz_Ivanov,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Keyon_Nash,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/I%27m_with_You_(Avril_Lavigne_song),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Psalidoxena,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Eiconaxius_cristagalli,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Ginger_Johnson,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Panthays,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Pak_Jong-hyeon,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Iraj%C3%A1,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Joe_McWilliams,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Roberto_Bressan,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Juupajoki,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Hotcakes_(album),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Paul_McGahan,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Maezora_Station,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Matas_Jucikas,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/John_Hay_(Jesuit),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Rainer_Kaufmann,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Midna_Ruda,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,"https://en.wikipedia.org/wiki/Gulf_Park_Estates,_Mississippi",0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Cathie_Adams,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,"https://en.wikipedia.org/wiki/Malaka_Township,_Jasper_County,_Iowa",0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Life_Serial,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Gisela_Stein,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Eddie_McGill,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/2012_Superstars_Series_Spa-Francorchamps_round,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Vrbo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,"https://en.wikipedia.org/wiki/Luancheng,_Hebei",0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/From_First_to_Last_(album),0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/SafeBreach,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Brachytrematidae,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Henry_Johansen,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Galician_Academy_of_the_Portuguese_Language,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Ugonna,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Edgar_Towner,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Maralan,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Monazite,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Jennifer_duBois,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/1931_World_Fencing_Championships,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Center_for_Bio-Ethical_Reform,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/John_Quinn_Sr.,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Parc_floral_de_Paris,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Wiltshire_Emergency_Services,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Google_Charts,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,"https://en.wikipedia.org/wiki/Five_Ways,_Birmingham",0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/List_of_most-visited_websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.similarweb.com/top-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://explodingtopics.com/blog/most-visited-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.semrush.com/website/top/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://moz.com/top500,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://ahrefs.com/top,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.visualcapitalist.com/the-50-most-visited-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://backlinko.com/most-popular-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-world-monthly-2/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.reddit.com/r/webdev/comments/10lbbfv/the_top_50_most_visited_websites_in_the_world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://webflow.com/made-in-webflow,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.affiliatefix.com/threads/top-50-most-visited-websites-in-the-world.167271/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://freshysites.com/web-design-development/most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.statista.com/statistics/1201880/most-visited-websites-worldwide/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://dataforseo.com/free-seo-stats/top-1000-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.a2hosting.com/blog/the-most-visited-websites-every-year-since-1995/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.hostinger.com/tutorials/most-visited-websites-in-the-world,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=Ko8Pz4Y-tYo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.domcop.com/top-10-million-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.kaggle.com/datasets/mathurinache/mostpopularwebsites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://squareboat.com/blog/10-most-popular-types-of-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.web.com/blog/popular-websites-looked-like-first-started/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://insightssuccess.com/top-9-most-popular-websites-worldwide/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.businessinsider.com/popular-websites-then-and-now-2017-6,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://finance.yahoo.com/news/30-most-visited-websites-world-231716713.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://trends.netcraft.com/topsites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.comparethemarket.com/broadband/news/the-worlds-most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://blog.hubspot.com/marketing/best-website-designs-list,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://support.apple.com/guide/safari/see-your-favorite-websites-sfri22092/mac,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.wpzoom.com/blog/wordpress-statistics/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://today.yougov.com/ratings/entertainment/popularity/news-websites/all,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://time.com/4960202/most-influential-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://analytics.usa.gov/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=9DPZJBg4xBw,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.lifewire.com/most-popular-sites-3483140,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.socialmediatoday.com/news/a-look-at-the-most-visited-websites-in-the-us/619496/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.hostingadvice.com/how-to/most-visited-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.oberlo.com/statistics/most-visited-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ssa.gov/oact/babynames/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.lovemyonlinemarketing.com/16-most-popular-types-of-websites-that-you-should-know,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://wordpress.org/showcase/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.surveymonkey.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://10web.io/blog/wordpress-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=ijHHV5nh9bs,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://edkentmedia.com/list-of-top-500-most-popular-websites-on-internet/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.kaggle.com/datasets/thedevastator/the-top-websites-in-the-world,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://w3techs.com/technologies/overview/content_management,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fastcompany.com/90642252/think-you-know-the-worlds-most-popular-websites-think-again,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.topuniversities.com/blog/33-useful-websites-students,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.searchenginejournal.com/social-media/social-media-platforms/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.forbes.com/advisor/in/business/software/website-statistics/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.forbesindia.com/article/explainers/most-visited-websites-world/92619/1,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://trends.google.com/trends/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://support.apple.com/guide/safari/go-back-to-websites-you-already-visited-ibrw1009/mac,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.squarespace.com/templates,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.techradar.com/news/the-best-website-builder,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.cloudflare.com/learning/cdn/what-is-a-cdn/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fccourts.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,http://5000best.com/websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://lacity.gov/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.pa.gov/,0,legitimate,1,phishing,0.99,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.upwork.com/resources/best-freelance-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://daily.dev/blog/top-10-best-tech-websites-and-blogs-2024,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.incomediary.com/top-earning-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=VU69Mr7e9XQ,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://trends.builtwith.com/cms,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.nominus.com/en/dm/blog/hosting/what-is-the-most-visited-website-in-the-world,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.commoncause.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://inkbotdesign.com/most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.appypie.com/blog/research/most-visited-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://beebom.com/cool-interesting-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.census.gov/popclock/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.irs.gov/help/tax-scams/recognize-tax-scams-and-fraud,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.mlbair.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.pewresearch.org/internet/fact-sheet/social-media/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.mayoclinic.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.topknobs.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/spoofing-and-phishing,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://sg.finance.yahoo.com/news/9-world-most-popular-websites-145458390.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://commonfund.nih.gov/newinnovator,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://developers.google.com/search/docs/fundamentals/seo-starter-guide,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://owasp.org/www-project-top-ten/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.thebalancemoney.com/top-best-job-websites-2064080,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.forbes.com/sites/priceonomics/2017/07/26/what-are-the-most-popular-websites-by-demographic/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.quora.com/What-are-some-of-the-most-popular-websites-in-the-world-How-many-people-use-them-every-day-month-or-year,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://sites.google.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.designrush.com/best-designs/websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.vpnmentor.com/blog/10-best-torrent-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.stopbullying.gov/cyberbullying/what-is-it,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ucsb.edu/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.statista.com/chart/17613/most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://zapier.com/blog/best-website-builders/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.cms.gov/medicare/coding-billing/healthcare-common-procedure-system,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.gmu.edu/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.weforum.org/agenda/2017/04/most-popular-websites-google-youtube-baidu/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.freedomscientific.com/products/software/jaws/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.webdesign-inspiration.com/article/7-most-popular-types-of-websites-in-2022-with-examples/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.thetoptens.com/internet/websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://webflow.com/blog/freelance-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://commonhelp.virginia.gov/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://truleap.net/top-10-most-visited-websites-in-the-u-s-as-of-august-2021/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://statisticsanddata.org/data/most-popular-websites-in-the-world-1996-2021/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.google.com/intl/en/search/howsearchworks/how-search-works/ranking-results/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://datareportal.com/reports/digital-2022-worlds-top-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.shopify.com/blog/shopify-stores,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.drake.edu/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://provaromarketing.com/12-popular-websites-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.labnol.org/internet/101-useful-websites/18078/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://washu.edu/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.brainpop.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.wikiwand.com/en/articles/List_of_most-visited_websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.facebook.com/RankingRoyals/videos/most-popular-websites-by-monthly-visits/3489452821320469/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.webhostface.com/blog/most-popular-websites-the-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.wix.com/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://getbootstrap.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.uic.edu/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.pinterest.com/pin/745486544557523958/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.php.net/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.bls.gov/data/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.kidzsearch.com/questions/6267/what-is-the-most-famous-website?show=60513,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.avg.com/en/signal/best-dark-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.unt.edu/index.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ssa.gov/oact/babynames/decades/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://lacity.gov/myla311,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.dollywood.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://myactivity.google.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://nextjs.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fema.gov/disaster/current/hurricane-helene/rumor-response,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.toureiffel.paris/en,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.lsu.edu/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.weebly.com/?lang=en_GB,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,http://www.kelloggs.com/en_US/home.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.toppotdoughnuts.com/?srsltid=AfmBOorroQlZ5bciwxlQv5V3p9IlJJg8V0iq2h__0-GpLiKhdeor05Ah,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://cuyahogacounty.gov/coc,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.commonsensemedia.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.charitynavigator.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.un.org/en/content/common-agenda-report/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.awwwards.com/websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://geek.digit.in/community/threads/most-frequently-visited-websites-not-what-you%E2%80%99d-expect-usa.55705/?srsltid=AfmBOoqgwTBlrRZE-NrTJFaTF_tM6QItczAsd5cKt3JOVVsru5kSE6uv,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.stellantis.com/en,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://ahrefs.com/blog/search-traffic-study/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.irs.gov/businesses/small-businesses-self-employed/state-government-websites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.clarkcountyohio.gov/314/Legal-Division,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.marylandtaxes.gov/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.crazyegg.com/blog/homepage-design/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.businessinsider.com/most-popular-websites-2017-7,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fec.gov/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://explodingtopics.com/blog/chatgpt-users,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://business.adobe.com/blog/basics/best-website-design-examples,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.collegeboard.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.pewresearch.org/internet/2024/01/31/americans-social-media-use/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://yoast.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://data.gov/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.aspca.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://chromewebstore.google.com/detail/adblock-%E2%80%94-block-ads-acros/gighmmpiobklfepjocnamgkkbiglidom,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.nobelprize.org/prizes/chemistry/2024/popular-information/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.nytimes.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.wired.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.quora.com/What-are-some-of-the-most-visited-websites-in-the-world-after-YouTube-Facebook-and-Google-Where-does-Amazon-rank-compared-to-these-sites,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://acaai.org/allergies/allergic-conditions/food/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://ads.google.com/home/tools/keyword-planner/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://themeisle.com/blog/best-website-builder/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.squarespace.com/templates/clove-fluid-demo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://support.microsoft.com/en-us/windows/protect-yourself-from-tech-support-scams-2ebf91bd-f94c-2a8a-e541-f5c800d18435,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.sistrix.com/blog/uk-top-100-domains-the-most-visible-websites-in-google-co-uk/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.squarespace.com/templates/ortiz-fluid-demo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.titanicbelfast.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://tophat.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.foxbusiness.com/features/exploring-the-most-popular-websites-of-the-last-20-years,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.parliament.uk/business/commons/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://neatsoft.eu/most-popular-websites-in-the-world,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ebizmba.com/articles/most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.reddit.com/r/videos/comments/1dsftba/most_popular_websites_1995_2023/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://moodle.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.cbsnews.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://open.spotify.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://bm.ge/en/news/the-worlds-most-popular-websites/85920,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://radar.cloudflare.com/domains,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.asos.com/us/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.alexa.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://blogs.cornell.edu/info2040/2017/10/18/the-worlds-most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ruby-lang.org/en/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://itp.live/news/top-100-the-most-visited-websites-in-usa,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.digitalinformationworld.com/2023/01/here-are-most-visited-websites-in-world.html,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://gizmodo.com/here-are-the-1000-most-popular-websites-in-the-world-5549666,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.ayansujon.com/20-most-popular-websites-of-all-time-worldwide/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.socialmediatoday.com/news/the-most-visited-websites-in-the-world-2023-edition-infographic/641389/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.founderjar.com/types-of-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://dev.to/souviktests/most-popular-websites-1996-2020-based-on-traffic-popularity-1e1i,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.etsy.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.tiktok.com/@ten2onepro/video/7288288597554236690,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://101theeagle.com/most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=trQgGhgigv8,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.c-sharpcorner.com/article/do-you-know-about-the-most-popular-websites-in-the-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.insidermonkey.com/blog/the-15-most-visited-websites-in-the-world-2014-330665/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=Nc0gdYnQCnk,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.therichest.com/expensive-lifestyle/the-top-10-most-popular-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://support.google.com/chrome/answer/2693767?hl=en&co=GENIE.Platform%3DDesktop,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.popularmechanics.com/culture/g29575328/most-important-websites/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://coinmarketcap.com/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.un.org/en/about-us/universal-declaration-of-human-rights,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,http://web.archive.org/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://cmat.nta.nic.in/,0,legitimate,1,phishing,0.995,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=r4L4PteMF7o,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=39mwJThDCwc,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=MirrGCbsIp4,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://otechworld.com/most-popular-websites-in-world/,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=2Uj1A9AguFs,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=AmHEfTSBXiY,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/shorts/78FQt1Lk-eA,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=APnD33TTOjE,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://m.youtube.com/shorts/FU8HQNWJWLM,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=Pvi_metetxk,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://m.youtube.com/shorts/gzrvPaoh5y0,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=o1gG4170K5k,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=1c0bA95luXg,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://m.youtube.com/watch?v=ac4kYtKXw0I,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=8XrgNklPqHo,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://m.youtube.com/shorts/HlbLFje3iSM,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=EjmfCfzV_L0,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=qxCmNlK959Y,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=xBt0oE3t7Bw,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=yqCqtlXgfXE,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=YCFz3TcGVQc,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=KWR8DudHwPg,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=Am18wM-nA2s,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=AxFZH-dctQY,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=kswY9Sm68rY,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=c_O3BceSLdA,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=KX0o2YXBQmI,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=lxJ-fHxXLaY,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=qMCsLXd_QAI,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=RkFmPOVOWWE,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=OUM5T91zgHI,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.youtube.com/watch?v=eP_Ylb5VE9M,0,legitimate,1,phishing,1.0,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.iso25000.com,0,legitimate,1,phishing,0.727412,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.6717000.com,0,legitimate,1,phishing,0.850204,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.fetedeslumieres.lyon.fr,0,legitimate,1,phishing,0.845155,0.663835,false_positive
+LegitPhish External [domain-holdout],RandomForest,https://www.library-archives.cumc.columbia.edu,0,legitimate,1,phishing,0.702046,0.663835,false_positive

@@ -93,6 +93,28 @@ def test_health_response_schema(client):
     assert isinstance(data["url_model_loaded"], bool)
 
 
+def test_health_reports_message_dataset_provenance(client):
+    """
+    Clients must be able to tell whether the message model was trained on real
+    data. This is how the UI decides to show its prototype banner.
+    """
+    data = client.get("/api/health").json()
+    assert "message_dataset_provenance" in data
+    assert data["message_dataset_provenance"] in {
+        "real",
+        "synthetic",
+        "unknown",
+        "unavailable",
+    }
+    assert isinstance(data["prototype"], bool)
+
+    # The two fields must agree: a non-real provenance implies a prototype.
+    if data["message_model_loaded"]:
+        assert data["prototype"] == (data["message_dataset_provenance"] != "real")
+    else:
+        assert data["prototype"] is False
+
+
 def test_health_status_is_ok(client):
     resp = client.get("/api/health")
     assert resp.json()["status"] == "ok"

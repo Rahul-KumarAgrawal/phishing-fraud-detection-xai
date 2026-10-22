@@ -40,6 +40,9 @@ htmlcov/
 .mypy_cache/
 *.log
 
+# ── Local experiment caches (not source) ─────────────────────
+.cache/
+
 # ── Secrets, Keys & Private Credentials ──────────────────────
 .env
 .env.*

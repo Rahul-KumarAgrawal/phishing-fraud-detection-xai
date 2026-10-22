@@ -4,7 +4,8 @@ prepare_messages.py
 Prepares the SMS/Smishing dataset for model training.
 
 Steps:
-  1. Load raw CSV with auto-detected column names.
+  1. Load raw CSV with auto-detected column names; detect data provenance
+     (real Mendeley data vs the synthetic placeholder).
   2. Map labels: ham → 0, smishing → 1. Exclude generic spam.
   3. Remove empty/invalid rows and exact duplicates.
   4. Stratified train / val / test split (70 / 15 / 15).
@@ -22,10 +23,21 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 RAW_SMS = pathlib.Path("data/raw/SMS_dataset.csv")
+SYNTHETIC_MARKER = pathlib.Path("data/raw/SMS_dataset.SYNTHETIC")
 PROCESSED = pathlib.Path("data/processed")
 PROCESSED.mkdir(parents=True, exist_ok=True)
 
 RANDOM_SEED = 42
+
+# ── Dataset provenance ─────────────────────────────────────────────────────
+# Documented composition of the real Mendeley dataset (Mishra & Soni, 2022):
+#   https://data.mendeley.com/datasets/f45bkkt8pr/1
+MENDELEY_EXPECTED_TOTAL = 5_971
+MENDELEY_EXPECTED_LABEL_COUNTS = {"ham": 4_844, "spam": 489, "smishing": 638}
+
+# Signature of the placeholder produced by scripts/create_synthetic_sms.py.
+SYNTHETIC_TOTAL = 65
+SYNTHETIC_LABEL_COUNTS = {"ham": 35, "smishing": 30}
 
 # ── Label mapping ──────────────────────────────────────────────────────────
 # Source labels (case-insensitive) → binary integer labels
@@ -81,6 +93,69 @@ def detect_columns(df: pd.DataFrame) -> tuple[str, str]:
     return label_col, text_col
 
 
+def detect_dataset_provenance(
+    df_raw: pd.DataFrame, label_col: str
+) -> tuple[str, str]:
+    """
+    Classify the raw SMS file as ``"real"``, ``"synthetic"`` or ``"unknown"``.
+
+    This exists so that a model trained on the 65-message synthetic placeholder
+    can never be mistaken for a real result. Detection is by explicit marker
+    file first, then by comparing the raw composition against the documented
+    Mendeley counts and the synthetic generator's signature.
+
+    Returns
+    -------
+    (provenance, detail)
+    """
+    counts = {
+        str(k): int(v)
+        for k, v in df_raw[label_col]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .value_counts()
+        .items()
+    }
+    total = len(df_raw)
+
+    if SYNTHETIC_MARKER.exists():
+        return "synthetic", f"marker file present ({SYNTHETIC_MARKER.name})"
+    if total == SYNTHETIC_TOTAL and counts == SYNTHETIC_LABEL_COUNTS:
+        return (
+            "synthetic",
+            f"matches scripts/create_synthetic_sms.py "
+            f"({total} rows; {SYNTHETIC_LABEL_COUNTS})",
+        )
+    if total == MENDELEY_EXPECTED_TOTAL and counts == MENDELEY_EXPECTED_LABEL_COUNTS:
+        return "real", (
+            f"matches the documented Mendeley composition "
+            f"({total:,} rows; ham/spam/smishing = "
+            f"{MENDELEY_EXPECTED_LABEL_COUNTS['ham']}/"
+            f"{MENDELEY_EXPECTED_LABEL_COUNTS['spam']}/"
+            f"{MENDELEY_EXPECTED_LABEL_COUNTS['smishing']})"
+        )
+    return "unknown", f"no known signature (total={total:,}, counts={counts})"
+
+
+def validate_label_values(labels: pd.Series) -> None:
+    """
+    Raise if any label falls outside the known set.
+
+    Unknown labels used to be dropped silently by the ``isin`` filter, which
+    would quietly shrink the positive class without any signal. This makes the
+    pipeline fail loudly instead.
+    """
+    known = set(LABEL_MAP) | EXCLUDED_LABELS
+    unexpected = set(labels.unique()) - known
+    if unexpected:
+        raise ValueError(
+            f"Unexpected label values: {sorted(unexpected)}. "
+            f"Expected one of {sorted(known)}. "
+            "Confirm the label semantics before training."
+        )
+
+
 def prepare(path: pathlib.Path = RAW_SMS) -> None:
     if not path.exists():
         print(f"[ERROR] Raw SMS dataset not found at: {path}")
@@ -90,11 +165,29 @@ def prepare(path: pathlib.Path = RAW_SMS) -> None:
     df = load_raw(path)
     label_col, text_col = detect_columns(df)
 
+    # ── Dataset provenance ────────────────────────────────────────────────
+    provenance, provenance_detail = detect_dataset_provenance(df, label_col)
+    print(f"\nDataset provenance: {provenance.upper()}  ({provenance_detail})")
+    if provenance == "synthetic":
+        print(
+            "  [WARNING] SYNTHETIC data -- for pipeline testing only.\n"
+            "            Do NOT report metrics from a model trained on it.\n"
+            "            Run src/fraud_phishing/data/download_data.py for real data."
+        )
+    elif provenance == "unknown":
+        print(
+            "  [WARNING] Unrecognised raw SMS composition. Verify the label\n"
+            "            semantics manually before trusting any metric."
+        )
+
     # ── Normalise label strings ────────────────────────────────────────────
     df["label_str"] = df[label_col].astype(str).str.strip().str.lower()
 
     raw_counts = df["label_str"].value_counts()
     print(f"\nRaw label distribution:\n{raw_counts.to_string()}")
+
+    # ── Reject unexpected label values ─────────────────────────────────────
+    validate_label_values(df["label_str"])
 
     # ── Log excluded categories ────────────────────────────────────────────
     excluded = df[df["label_str"].isin(EXCLUDED_LABELS)]
@@ -156,6 +249,10 @@ def prepare(path: pathlib.Path = RAW_SMS) -> None:
         "label_map": LABEL_MAP,
         "excluded_labels": list(EXCLUDED_LABELS),
         "excluded_count": int(len(excluded)),
+        "dataset_provenance": provenance,
+        "dataset_provenance_detail": provenance_detail,
+        "raw_total": int(raw_counts.sum()),
+        "raw_label_counts": {str(k): int(v) for k, v in raw_counts.items()},
         "total_after_filtering": int(len(df)),
         "train": {
             "total": int(len(train_df)),

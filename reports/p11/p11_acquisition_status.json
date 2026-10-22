@@ -1,0 +1,9 @@
+{
+  "status": "inputs_missing",
+  "missing": {
+    "prospective_final": [
+      "data\\raw\\prospective_legitimate_evidence.csv"
+    ]
+  },
+  "rule": "No output CSV, manifest, or zero-row benchmark is created when required raw evidence is missing."
+}

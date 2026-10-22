@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-10-19T17:00:38.715039+00:00",
+  "source": {
+    "dataset": "CompPhish v4",
+    "mapping_filename": "Mapping_File.xlsx",
+    "mapping_sha256": "e6dda6a21d925f8aba36090f295b08e9808a5dfe8dd3276bf8cd82022855f14a"
+  },
+  "other_original_files": {
+    "Readme.docx": "b6bb0dcec059a5fa0e01a380c711ea5d27d2577727f3d407a0012276a72b9083",
+    "Data_Dictionary.xlsx": "a4237dd99d7f4a55edc3ffe88a416db77b1734f7c5d52677f8f0c86bf8b88470",
+    "All_Features_threshold90.xlsx": "6e87b7997c2d0e9e3f1e02fd5ee1240442385f9bea5f0a40e46e7b6e43ada21b"
+  },
+  "development_boundary": [
+    "PHIUSIL",
+    "LegitPhish",
+    "MURL",
+    "URL-Phish"
+  ],
+  "exposure_before_freeze": "CompPhish structural analysis was performed in P6.1; no model predictions, fitting, feature selection, or threshold work used this candidate.",
+  "definitions": {
+    "dedup": "sort serial_number ascending and retain first exact trimmed URL",
+    "normalized_url": "lowercase scheme and host; remove fragment and default HTTP/HTTPS port; retain path/query",
+    "hostname": "lowercase parsed hostname",
+    "registered_domain": "offline tldextract public suffix snapshot",
+    "template": "project url_template: lowercase, remove scheme/query/fragment and trailing slash, mask digit runs"
+  },
+  "counts": {
+    "raw_rows": 15358,
+    "exact_duplicate_rows_removed": 7,
+    "unique_urls_pre_filter": 15351,
+    "original_unique_class_counts": {
+      "0": 8154,
+      "1": 7197
+    },
+    "retained_rows": 6443,
+    "retained_class_counts": {
+      "0": 4490,
+      "1": 1953
+    },
+    "retained_unique_hostnames": 6012,
+    "retained_unique_registered_domains": 5720,
+    "retained_unique_templates": 6258,
+    "flag_counts_nonexclusive": {
+      "malformed": 0,
+      "exact_url": 293,
+      "normalized_url": 300,
+      "hostname": 3425,
+      "registered_domain": 8700,
+      "template": 2477
+    },
+    "primary_disposition_counts": {
+      "retained": 6443,
+      "registered_domain": 5275,
+      "hostname": 3125,
+      "exact_url": 293,
+      "template": 208,
+      "normalized_url": 7
+    }
+  },
+  "post_filter_overlap": {
+    "exact_url": 0,
+    "normalized_url": 0,
+    "hostname": 0,
+    "registered_domain": 0,
+    "template": 0
+  },
+  "output": {
+    "filename": "data\\processed\\compphish_external_frozen.csv",
+    "sha256": "56f6e8545a7df5f675b740d0858ee0fb4b2fa920a085d4aceae2838bfbc0e377"
+  },
+  "reproduce": "python scripts/freeze_compphish_external.py",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "pandas": "3.0.1",
+    "tldextract": "5.4.0",
+    "platform": "Windows-10-10.0.26300-SP0"
+  }
+}

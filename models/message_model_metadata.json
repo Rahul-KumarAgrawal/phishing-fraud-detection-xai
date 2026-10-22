@@ -1,12 +1,15 @@
 {
-  "model_name": "LogisticRegression",
-  "threshold": 0.5914394906706496,
+  "model_name": "LinearSVC",
+  "threshold": 0.6180956986364009,
   "label_map": {
     "0": "ham",
     "1": "smishing"
   },
   "feature_type": "TF-IDF word(1-3gram) + char_wb(2-5gram)",
   "random_seed": 42,
+  "dataset_provenance": "real",
+  "dataset_provenance_detail": "matches the documented Mendeley composition (5,971 rows; ham/spam/smishing = 4844/489/638)",
+  "prototype": false,
   "split_stats": {
     "random_seed": 42,
     "label_map": {
@@ -16,22 +19,30 @@
     "excluded_labels": [
       "spam"
     ],
-    "excluded_count": 0,
-    "total_after_filtering": 65,
+    "excluded_count": 489,
+    "dataset_provenance": "real",
+    "dataset_provenance_detail": "matches the documented Mendeley composition (5,971 rows; ham/spam/smishing = 4844/489/638)",
+    "raw_total": 5971,
+    "raw_label_counts": {
+      "ham": 4844,
+      "smishing": 638,
+      "spam": 489
+    },
+    "total_after_filtering": 5462,
     "train": {
-      "total": 45,
-      "positive": 20,
-      "negative": 25
+      "total": 3822,
+      "positive": 440,
+      "negative": 3382
     },
     "val": {
-      "total": 10,
-      "positive": 5,
-      "negative": 5
+      "total": 820,
+      "positive": 94,
+      "negative": 726
     },
     "test": {
-      "total": 10,
-      "positive": 5,
-      "negative": 5
+      "total": 820,
+      "positive": 94,
+      "negative": 726
     }
   },
   "val_metrics": {
@@ -39,28 +50,28 @@
     "roc_auc": 1.0,
     "confusion_matrix": [
       [
-        5,
+        726,
         0
       ],
       [
         0,
-        5
+        94
       ]
     ]
   },
   "all_val_results": {
     "LogisticRegression": {
-      "f1": 1.0,
-      "roc_auc": 1.0
+      "f1": 0.9947089947089947,
+      "roc_auc": 0.9999267334857277
     },
     "LinearSVC": {
       "f1": 1.0,
       "roc_auc": 1.0
     },
     "MultinomialNB": {
-      "f1": 1.0,
-      "roc_auc": 1.0
+      "f1": 0.9947089947089947,
+      "roc_auc": 0.9999413867885822
     }
   },
-  "training_date": "2026-10-18T17:46:41.257952"
+  "training_date": "2026-10-18T19:27:43.157903"
 }

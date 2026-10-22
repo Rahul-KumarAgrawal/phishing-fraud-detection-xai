@@ -65,6 +65,28 @@ class ModelRegistry:
     def url_loaded(self) -> bool:
         return self._url_loaded
 
+    @property
+    def message_dataset_provenance(self) -> str:
+        """Provenance of the message training data: real | synthetic | unknown."""
+        if not self._message_loaded:
+            return "unavailable"
+        return self._message_metadata.get("dataset_provenance", "unknown")
+
+    @property
+    def prototype(self) -> bool:
+        """
+        True when a loaded model was trained on non-real data, so the API can
+        label itself as a prototype rather than present its output as an
+        evaluation result.
+        """
+        if not self._message_loaded:
+            return False
+        return bool(
+            self._message_metadata.get(
+                "prototype", self.message_dataset_provenance != "real"
+            )
+        )
+
     # ── Message analysis ──────────────────────────────────────────────────
 
     def analyze_message(self, message: str) -> MessageAnalysisResponse:
@@ -166,8 +188,8 @@ def _build_explanation(result: dict) -> ExplanationSchema | None:
     def _to_fc(item: dict) -> FeatureContribution:
         return FeatureContribution(
             feature=item["feature"],
-            value=item.get("value", item.get("shap_value")),
-            shap_value=item.get("shap_value"),
+            shap_value=float(item["shap_value"]),
+            feature_value=item.get("feature_value"),
             direction=item.get("direction", "unknown"),
             description=item.get("description"),
         )
@@ -177,6 +199,10 @@ def _build_explanation(result: dict) -> ExplanationSchema | None:
 
     return ExplanationSchema(
         explanation_type=exp_type,
+        units=result.get("units", "unknown"),
+        explained_output=result.get("explained_output", ""),
+        base_value=result.get("base_value"),
+        additivity_gap=result.get("additivity_gap"),
         top_positive_features=pos,
         top_negative_features=neg,
         disclaimer=result.get("disclaimer", ""),

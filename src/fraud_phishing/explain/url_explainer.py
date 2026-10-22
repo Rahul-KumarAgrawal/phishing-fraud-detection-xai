@@ -3,12 +3,19 @@ url_explainer.py
 ================
 SHAP-based explanations for the URL phishing classifier.
 
-Uses TreeExplainer for Random Forest (exact, fast) or
-LinearExplainer for Logistic Regression.
+Uses TreeExplainer for Random Forest (exact, explains the predicted
+probability) or LinearExplainer for Logistic Regression (exact, explains the
+log-odds that map monotonically onto that probability).
+
+Every payload states which model output it explains (``explained_output``) and
+in which units (``units``), plus ``base_value`` and the ``additivity_gap``
+check, so a contribution scale can never be mistaken for the other. The class
+column is resolved from the estimator's ``classes_`` (see ``shap_utils``).
 """
 
 import pathlib
 import sys
+import warnings
 from typing import Any
 
 import numpy as np
@@ -16,6 +23,12 @@ import shap
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent.parent.parent))
 
+from fraud_phishing.explain.shap_utils import (
+    additivity_gap,
+    expected_value_for,
+    positive_class_index,
+    select_class_shap_values,
+)
 from fraud_phishing.features.url_features import FEATURE_NAMES, extract_features
 from fraud_phishing.models.url_model import load_model
 
@@ -53,6 +66,13 @@ FEATURE_DESCRIPTIONS: dict[str, str] = {
     "has_percent_encoding": "Whether URL contains percent-encoded characters (0/1)",
     "is_url_shortener": "Whether the domain is a known URL shortener (0/1)",
     "suspicious_token_count": "Count of documented suspicious keyword tokens in URL",
+    "brand_token_count": "Number of distinct known brand tokens in the hostname",
+    "brand_domain_mismatch": (
+        "Brand token present but the registered domain is not that brand (0/1)"
+    ),
+    "brand_lookalike_domain": (
+        "Registered domain is a near-miss (edit distance 1-2) of a known brand (0/1)"
+    ),
 }
 
 
@@ -76,8 +96,9 @@ def explain_url(
     Returns
     -------
     dict with keys:
-        model_name, url, label, label_name, score, threshold,
-        features, top_positive_features, top_negative_features,
+        model_name, url, label, label_name, score, threshold, features,
+        explanation_type, units, explained_output, base_value,
+        additivity_gap, top_positive_features, top_negative_features,
         disclaimer
     """
     if pipeline is None:
@@ -86,6 +107,9 @@ def explain_url(
     metadata = metadata or {}
     threshold = metadata.get("threshold", 0.5)
     model_name = metadata.get("model_name", "unknown")
+    # A model may be trained on a subset of the canonical schema; always use the
+    # feature list it was fitted with (in that order).
+    feature_names = list(metadata.get("feature_names") or FEATURE_NAMES)
 
     # Extract features
     try:
@@ -98,7 +122,7 @@ def explain_url(
             "disclaimer": _DISCLAIMER,
         }
 
-    X_instance = np.array([[feat_dict[name] for name in FEATURE_NAMES]], dtype=float)
+    X_instance = np.array([[feat_dict[name] for name in feature_names]], dtype=float)
 
     # Apply scaler from pipeline
     try:
@@ -109,109 +133,128 @@ def explain_url(
 
     clf = pipeline.named_steps["clf"]
 
-    # Prediction
-    proba = pipeline.predict_proba(X_instance)[0][1]
+    # Prediction: score and label both come from the served pipeline.
+    proba = float(pipeline.predict_proba(X_instance)[0][1])
     label = int(proba >= threshold)
 
     # SHAP
     try:
-        shap_values, explanation_type = _compute_shap_values(clf, X_scaled)
+        shap_result = _compute_shap_values(clf, X_scaled)
     except Exception as exc:
         return {
             "model_name": model_name,
             "url": url,
             "label": label,
             "label_name": "phishing" if label == 1 else "legitimate",
-            "score": float(proba),
+            "score": proba,
             "threshold": threshold,
             "features": feat_dict,
+            "explanation_type": "unavailable",
+            "units": "probability",
+            "explained_output": "P(phishing)",
+            "base_value": None,
+            "additivity_gap": None,
             "top_positive_features": [],
             "top_negative_features": [],
-            "explanation_type": "unavailable",
             "explanation_error": str(exc),
             "disclaimer": _DISCLAIMER,
         }
 
-    contributions = list(zip(FEATURE_NAMES, shap_values))
-    contributions.sort(key=lambda x: abs(x[1]), reverse=True)
+    contributions = sorted(
+        zip(feature_names, shap_result["shap_values"]),
+        key=lambda item: abs(item[1]),
+        reverse=True,
+    )
 
-    top_positive = [
-        {
-            "feature": f,
-            "value": feat_dict[f],
-            "shap_value": float(v),
-            "direction": "increases_risk",
-            "description": FEATURE_DESCRIPTIONS.get(f, f),
-        }
-        for f, v in contributions
-        if v > 0
-    ][:_TOP_K]
-
-    top_negative = [
-        {
-            "feature": f,
-            "value": feat_dict[f],
-            "shap_value": float(v),
-            "direction": "decreases_risk",
-            "description": FEATURE_DESCRIPTIONS.get(f, f),
-        }
-        for f, v in contributions
-        if v < 0
-    ][:_TOP_K]
+    def _make(direction: str) -> list[dict[str, Any]]:
+        out = []
+        for name, value in contributions:
+            # "increases risk" means a positive contribution to P(phishing).
+            if direction == "increases_risk" and not value > 0:
+                continue
+            if direction == "decreases_risk" and not value < 0:
+                continue
+            out.append(
+                {
+                    "feature": name,
+                    "shap_value": float(value),
+                    "feature_value": feat_dict[name],
+                    "direction": direction,
+                    "description": FEATURE_DESCRIPTIONS.get(name, name),
+                }
+            )
+        return out[:_TOP_K]
 
     return {
         "model_name": model_name,
         "url": url,
         "label": label,
         "label_name": "phishing" if label == 1 else "legitimate",
-        "score": float(proba),
+        "score": proba,
         "threshold": threshold,
         "features": feat_dict,
-        "explanation_type": explanation_type,
-        "top_positive_features": top_positive,
-        "top_negative_features": top_negative,
+        "explanation_type": shap_result["explanation_type"],
+        "units": shap_result["units"],
+        "explained_output": shap_result["explained_output"],
+        "base_value": shap_result["base_value"],
+        "additivity_gap": shap_result["additivity_gap"],
+        "top_positive_features": _make("increases_risk"),
+        "top_negative_features": _make("decreases_risk"),
         "disclaimer": _DISCLAIMER,
     }
 
 
-def _compute_shap_values(clf, X_scaled: np.ndarray) -> tuple[list[float], str]:
+def _compute_shap_values(clf, X_scaled: np.ndarray) -> dict[str, Any]:
     """
-    Compute SHAP values using the most appropriate explainer.
-    Tries TreeExplainer → LinearExplainer → KernelExplainer.
+    Compute SHAP values for the positive class with the appropriate explainer.
+
+    Returns a dict with the values, the explainer name, the units of those
+    values, the model output they add up to, the base value and the measured
+    additivity gap.
     """
     from sklearn.ensemble import RandomForestClassifier  # noqa: PLC0415
     from sklearn.linear_model import LogisticRegression  # noqa: PLC0415
 
-    # Tree-based model
+    class_index = positive_class_index(clf)
+
+    def _pack(shap_values, explainer, name, units, explained_output, model_output):
+        values = select_class_shap_values(shap_values, class_index)
+        base_value = expected_value_for(explainer, class_index)
+        return {
+            "shap_values": values,
+            "explanation_type": name,
+            "units": units,
+            "explained_output": explained_output,
+            "base_value": base_value,
+            "additivity_gap": additivity_gap(base_value, values, model_output),
+        }
+
+    # Tree-based model: TreeExplainer is exact and explains the class
+    # probability, i.e. the same quantity the API returns as `score`.
     if isinstance(clf, RandomForestClassifier):
         explainer = shap.TreeExplainer(clf)
-        sv = explainer.shap_values(X_scaled)
-        # sv is list[class_0_values, class_1_values] for binary classification
-        if isinstance(sv, list) and len(sv) == 2:
-            return sv[1][0].tolist(), "TreeExplainer"
-        if isinstance(sv, np.ndarray) and sv.ndim == 3:
-            return sv[0, :, 1].tolist(), "TreeExplainer"
-        return sv[0].tolist(), "TreeExplainer"
+        raw = explainer.shap_values(X_scaled)
+        model_output = float(np.asarray(clf.predict_proba(X_scaled))[0][class_index])
+        return _pack(raw, explainer, "TreeExplainer", "probability", "P(phishing)", model_output)
 
-    # Linear model
+    # Linear model: LinearExplainer is exact and explains the log-odds, which
+    # map monotonically onto the displayed probability of the same class.
     if isinstance(clf, LogisticRegression):
         explainer = shap.LinearExplainer(clf, np.zeros_like(X_scaled))
-        sv = explainer.shap_values(X_scaled)
-        if isinstance(sv, list):
-            return sv[1][0].tolist(), "LinearExplainer"
-        return sv[0].tolist(), "LinearExplainer"
+        raw = explainer.shap_values(X_scaled)
+        decision = np.asarray(clf.decision_function(X_scaled))
+        model_output = float(decision[0] if decision.ndim == 1 else decision[0, class_index])
+        return _pack(raw, explainer, "LinearExplainer", "log_odds", "log-odds of P(phishing)", model_output)
 
-    # Generic fallback
+    # Generic fallback: explain predict_proba directly, in probability units.
     bg = np.zeros((10, X_scaled.shape[1]))
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        explainer = shap.KernelExplainer(clf.predict_proba, bg, l1_reg=0)
+        raw = explainer.shap_values(X_scaled, nsamples=100, silent=True)
+    model_output = float(np.asarray(clf.predict_proba(X_scaled))[0][class_index])
+    return _pack(raw, explainer, "KernelExplainer", "probability", "P(phishing)", model_output)
 
-    def pred_fn(X):
-        return clf.predict_proba(X)
-
-    explainer = shap.KernelExplainer(pred_fn, bg)
-    sv = explainer.shap_values(X_scaled, nsamples=100, silent=True)
-    if isinstance(sv, list):
-        return sv[1][0].tolist(), "KernelExplainer"
-    return sv[0].tolist(), "KernelExplainer"
 
 
 _DISCLAIMER = (

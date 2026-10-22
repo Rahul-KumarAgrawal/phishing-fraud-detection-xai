@@ -7,21 +7,29 @@
   "excluded_labels": [
     "spam"
   ],
-  "excluded_count": 0,
-  "total_after_filtering": 65,
+  "excluded_count": 489,
+  "dataset_provenance": "real",
+  "dataset_provenance_detail": "matches the documented Mendeley composition (5,971 rows; ham/spam/smishing = 4844/489/638)",
+  "raw_total": 5971,
+  "raw_label_counts": {
+    "ham": 4844,
+    "smishing": 638,
+    "spam": 489
+  },
+  "total_after_filtering": 5462,
   "train": {
-    "total": 45,
-    "positive": 20,
-    "negative": 25
+    "total": 3822,
+    "positive": 440,
+    "negative": 3382
   },
   "val": {
-    "total": 10,
-    "positive": 5,
-    "negative": 5
+    "total": 820,
+    "positive": 94,
+    "negative": 726
   },
   "test": {
-    "total": 10,
-    "positive": 5,
-    "negative": 5
+    "total": 820,
+    "positive": 94,
+    "negative": 726
   }
 }

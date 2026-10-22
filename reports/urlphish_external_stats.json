@@ -1,0 +1,28 @@
+{
+  "dataset": "URL-Phish",
+  "role": "FINAL external evaluation only (untouched during development)",
+  "source": "https://data.mendeley.com/datasets/65z9twcx3r/2",
+  "label_convention": {
+    "meaning": {
+      "0": "benign",
+      "1": "phishing"
+    },
+    "note": "URL-Phish uses the intuitive convention (0 = benign, 1 = phishing), the opposite of PHIUSIL and LegitPhish. Verified against the card.",
+    "expected_counts": {
+      "0": 100000,
+      "1": 16600
+    }
+  },
+  "rows": {
+    "after_dedup": 115231,
+    "benign": 98641,
+    "phishing": 16590
+  },
+  "overlap": {
+    "byte_identical_to_phiusil": 595,
+    "byte_identical_to_murl": 0,
+    "byte_identical_to_legitphish_dev": 176,
+    "byte_identical_to_any_training": 595,
+    "rows_on_phiusil_training_domain": 22625
+  }
+}

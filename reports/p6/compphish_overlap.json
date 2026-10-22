@@ -1,0 +1,319 @@
+{
+  "status": "complete",
+  "method": {
+    "exact_raw_url": "trimmed raw URL string",
+    "normalized_url": "lowercase scheme/host, fragment removed, default HTTP/HTTPS ports removed; path and query retained",
+    "hostname": "lowercase parsed hostname",
+    "registered_domain": "offline public-suffix extraction",
+    "template": "project url_template: lowercase, scheme/query/fragment removed, trailing slash removed, digit runs masked"
+  },
+  "comp_phish": {
+    "raw_rows": 15358,
+    "unique_exact_urls": 15351,
+    "labels": {
+      "0": 8154,
+      "1": 7197
+    }
+  },
+  "comparisons": [
+    {
+      "source": "PHIUSIL",
+      "raw_rows_after_source_cleaning": 235370,
+      "levels": {
+        "exact_raw_url": {
+          "comp_phish_unique": 15351,
+          "source_unique": 235370,
+          "intersection": 42,
+          "pct_of_comp_phish": 0.2736,
+          "pct_of_source": 0.0178,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "normalized_url": {
+          "comp_phish_unique": 15311,
+          "source_unique": 235150,
+          "intersection": 42,
+          "pct_of_comp_phish": 0.2743,
+          "pct_of_source": 0.0179,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "hostname": {
+          "comp_phish_unique": 13510,
+          "source_unique": 220077,
+          "intersection": 1264,
+          "pct_of_comp_phish": 9.356,
+          "pct_of_source": 0.5743,
+          "conflicting_label_keys": 22,
+          "conflict_examples": [
+            "bitly.com",
+            "ipfs.io",
+            "linktr.ee",
+            "quip.com",
+            "substack.com"
+          ]
+        },
+        "registered_domain": {
+          "comp_phish_unique": 9436,
+          "source_unique": 175352,
+          "intersection": 1676,
+          "pct_of_comp_phish": 17.7618,
+          "pct_of_source": 0.9558,
+          "conflicting_label_keys": 90,
+          "conflict_examples": [
+            "acm.org",
+            "altervista.org",
+            "aptoide.com",
+            "atozproxy.com",
+            "aweber.com"
+          ]
+        },
+        "template": {
+          "comp_phish_unique": 14268,
+          "source_unique": 220415,
+          "intersection": 1161,
+          "pct_of_comp_phish": 8.1371,
+          "pct_of_source": 0.5267,
+          "conflicting_label_keys": 18,
+          "conflict_examples": [
+            "#.cc",
+            "#.com",
+            "#nnn.com",
+            "www.#.cn",
+            "www.#.com"
+          ]
+        }
+      }
+    },
+    {
+      "source": "LegitPhish",
+      "raw_rows_after_source_cleaning": 100872,
+      "levels": {
+        "exact_raw_url": {
+          "comp_phish_unique": 15351,
+          "source_unique": 100872,
+          "intersection": 31,
+          "pct_of_comp_phish": 0.2019,
+          "pct_of_source": 0.0307,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "normalized_url": {
+          "comp_phish_unique": 15311,
+          "source_unique": 100202,
+          "intersection": 31,
+          "pct_of_comp_phish": 0.2025,
+          "pct_of_source": 0.0309,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "hostname": {
+          "comp_phish_unique": 13510,
+          "source_unique": 64001,
+          "intersection": 406,
+          "pct_of_comp_phish": 3.0052,
+          "pct_of_source": 0.6344,
+          "conflicting_label_keys": 11,
+          "conflict_examples": [
+            "archive.org",
+            "bitbucket.org",
+            "github.com",
+            "ipfs.io",
+            "mega.nz"
+          ]
+        },
+        "registered_domain": {
+          "comp_phish_unique": 9436,
+          "source_unique": 38100,
+          "intersection": 596,
+          "pct_of_comp_phish": 6.3162,
+          "pct_of_source": 1.5643,
+          "conflicting_label_keys": 22,
+          "conflict_examples": [
+            "adobe.com",
+            "altervista.org",
+            "archive.org",
+            "bitbucket.org",
+            "cutt.ly"
+          ]
+        },
+        "template": {
+          "comp_phish_unique": 14268,
+          "source_unique": 54262,
+          "intersection": 342,
+          "pct_of_comp_phish": 2.397,
+          "pct_of_source": 0.6303,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        }
+      }
+    },
+    {
+      "source": "MURL",
+      "raw_rows_after_source_cleaning": 661851,
+      "levels": {
+        "exact_raw_url": {
+          "comp_phish_unique": 15351,
+          "source_unique": 661851,
+          "intersection": 0,
+          "pct_of_comp_phish": 0.0,
+          "pct_of_source": 0.0,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "normalized_url": {
+          "comp_phish_unique": 15311,
+          "source_unique": 661523,
+          "intersection": 0,
+          "pct_of_comp_phish": 0.0,
+          "pct_of_source": 0.0,
+          "conflicting_label_keys": 0,
+          "conflict_examples": []
+        },
+        "hostname": {
+          "comp_phish_unique": 13510,
+          "source_unique": 270703,
+          "intersection": 725,
+          "pct_of_comp_phish": 5.3664,
+          "pct_of_source": 0.2678,
+          "conflicting_label_keys": 101,
+          "conflict_examples": [
+            "abcnews.go.com",
+            "about.me",
+            "abre.ai",
+            "adf.ly",
+            "apache.org"
+          ]
+        },
+        "registered_domain": {
+          "comp_phish_unique": 9436,
+          "source_unique": 198273,
+          "intersection": 2462,
+          "pct_of_comp_phish": 26.0916,
+          "pct_of_source": 1.2417,
+          "conflicting_label_keys": 633,
+          "conflict_examples": [
+            "3ds.com",
+            "4shared.com",
+            "511.org",
+            "a2hosting.com",
+            "aaa.com"
+          ]
+        },
+        "template": {
+          "comp_phish_unique": 14268,
+          "source_unique": 565127,
+          "intersection": 464,
+          "pct_of_comp_phish": 3.252,
+          "pct_of_source": 0.0821,
+          "conflicting_label_keys": 9,
+          "conflict_examples": [
+            "#.#.#.#",
+            "#.net",
+            "bet#.com",
+            "disq.us",
+            "href.li"
+          ]
+        }
+      }
+    },
+    {
+      "source": "URL-Phish",
+      "raw_rows_after_source_cleaning": 115231,
+      "levels": {
+        "exact_raw_url": {
+          "comp_phish_unique": 15351,
+          "source_unique": 115231,
+          "intersection": 233,
+          "pct_of_comp_phish": 1.5178,
+          "pct_of_source": 0.2022,
+          "conflicting_label_keys": 1,
+          "conflict_examples": [
+            "https://kakaku.com/"
+          ]
+        },
+        "normalized_url": {
+          "comp_phish_unique": 15311,
+          "source_unique": 115218,
+          "intersection": 238,
+          "pct_of_comp_phish": 1.5544,
+          "pct_of_source": 0.2066,
+          "conflicting_label_keys": 1,
+          "conflict_examples": [
+            "https://kakaku.com/"
+          ]
+        },
+        "hostname": {
+          "comp_phish_unique": 13510,
+          "source_unique": 103006,
+          "intersection": 690,
+          "pct_of_comp_phish": 5.1073,
+          "pct_of_source": 0.6699,
+          "conflicting_label_keys": 12,
+          "conflict_examples": [
+            "calendly.com",
+            "disq.us",
+            "ipfs.io",
+            "kakaku.com",
+            "linktr.ee"
+          ]
+        },
+        "registered_domain": {
+          "comp_phish_unique": 9436,
+          "source_unique": 90844,
+          "intersection": 941,
+          "pct_of_comp_phish": 9.9724,
+          "pct_of_source": 1.0358,
+          "conflicting_label_keys": 36,
+          "conflict_examples": [
+            "amazonaws.com",
+            "archive.org",
+            "azurewebsites.net",
+            "bing.com",
+            "box.com"
+          ]
+        },
+        "template": {
+          "comp_phish_unique": 14268,
+          "source_unique": 112310,
+          "intersection": 401,
+          "pct_of_comp_phish": 2.8105,
+          "pct_of_source": 0.357,
+          "conflicting_label_keys": 3,
+          "conflict_examples": [
+            "#.#.#.#",
+            "disq.us",
+            "kakaku.com"
+          ]
+        }
+      }
+    }
+  ],
+  "proposed_single_level_exclusions": {
+    "exact_raw_url": {
+      "candidate_keys_overlapping_any_existing_source": 293,
+      "candidate_keys_retained_if_excluding_this_level": 15058,
+      "candidate_keys_with_any_label_conflict": 1
+    },
+    "normalized_url": {
+      "candidate_keys_overlapping_any_existing_source": 298,
+      "candidate_keys_retained_if_excluding_this_level": 15013,
+      "candidate_keys_with_any_label_conflict": 1
+    },
+    "hostname": {
+      "candidate_keys_overlapping_any_existing_source": 2441,
+      "candidate_keys_retained_if_excluding_this_level": 11069,
+      "candidate_keys_with_any_label_conflict": 121
+    },
+    "registered_domain": {
+      "candidate_keys_overlapping_any_existing_source": 3563,
+      "candidate_keys_retained_if_excluding_this_level": 5873,
+      "candidate_keys_with_any_label_conflict": 685
+    },
+    "template": {
+      "candidate_keys_overlapping_any_existing_source": 1868,
+      "candidate_keys_retained_if_excluding_this_level": 12400,
+      "candidate_keys_with_any_label_conflict": 27
+    }
+  }
+}

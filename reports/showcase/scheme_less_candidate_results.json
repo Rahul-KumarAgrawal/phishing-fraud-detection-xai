@@ -1,0 +1,135 @@
+{
+  "status": "complete",
+  "served_model_changed": false,
+  "canonical_feature_order_preserved_as_prefix": true,
+  "new_candidate_feature": "has_explicit_scheme",
+  "sampling": {
+    "fit_rows": 12000,
+    "validation_rows": 4000,
+    "test_rows": 4000,
+    "rule": "deterministic balanced subsamples within the existing grouped partitions"
+  },
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "registered_domain_length",
+    "dot_count",
+    "hyphen_count",
+    "slash_count",
+    "underscore_count",
+    "at_count",
+    "question_count",
+    "equals_count",
+    "ampersand_count",
+    "percent_count",
+    "digit_count",
+    "digit_ratio",
+    "special_char_ratio",
+    "tilde_count",
+    "subdomain_count",
+    "subdomain_length",
+    "tld_length",
+    "path_depth",
+    "query_param_count",
+    "has_query",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "has_percent_encoding",
+    "is_url_shortener",
+    "suspicious_token_count",
+    "has_explicit_scheme"
+  ],
+  "threshold": 0.6258809523809525,
+  "validation": {
+    "precision": 0.9154786150712831,
+    "recall": 0.899,
+    "f1": 0.9071644803229062,
+    "accuracy": 0.908,
+    "roc_auc": 0.9715830000000001,
+    "pr_auc": 0.9705300872893015,
+    "confusion_matrix": {
+      "tn": 1834,
+      "fp": 166,
+      "fn": 202,
+      "tp": 1798
+    },
+    "false_positive_rate_legitimate": 0.083,
+    "false_negative_rate_phishing": 0.101,
+    "predicted_class_counts": {
+      "legitimate": 2036,
+      "phishing": 1964
+    },
+    "rows": 4000,
+    "legitimate": 2000,
+    "phishing": 2000
+  },
+  "test": {
+    "precision": 0.926338102808691,
+    "recall": 0.874,
+    "f1": 0.8994082840236687,
+    "accuracy": 0.90225,
+    "roc_auc": 0.9757805,
+    "pr_auc": 0.9754935475029911,
+    "confusion_matrix": {
+      "tn": 1861,
+      "fp": 139,
+      "fn": 252,
+      "tp": 1748
+    },
+    "false_positive_rate_legitimate": 0.0695,
+    "false_negative_rate_phishing": 0.126,
+    "predicted_class_counts": {
+      "legitimate": 2113,
+      "phishing": 1887
+    },
+    "rows": 4000,
+    "legitimate": 2000,
+    "phishing": 2000
+  },
+  "artifact": "models\\scheme_less_randomforest_candidate.joblib",
+  "artifact_sha256": "da30266fafd7a31111fe476ed23df88972a0f1e169d0a5f0de11b77aa4311c46",
+  "metadata": "models\\scheme_less_randomforest_candidate_metadata.json",
+  "metadata_sha256": "d437370fccd79eae271422cf7cdf0e15b75efcba44ecd7123d922500a58c7995",
+  "probes": [
+    {
+      "url": "www.google.com",
+      "score": 0.9707916666666666,
+      "label": 1,
+      "has_explicit_scheme": 0
+    },
+    {
+      "url": "google.com",
+      "score": 0.6952457264957266,
+      "label": 1,
+      "has_explicit_scheme": 0
+    },
+    {
+      "url": "https://www.google.com/",
+      "score": 0.491329365079365,
+      "label": 0,
+      "has_explicit_scheme": 1
+    },
+    {
+      "url": "http://www.google.com/",
+      "score": 0.798390873015873,
+      "label": 1,
+      "has_explicit_scheme": 1
+    },
+    {
+      "url": "https://www.wikipedia.org/",
+      "score": 0.2952487373737376,
+      "label": 0,
+      "has_explicit_scheme": 1
+    },
+    {
+      "url": "http://paypal-secure-login.example/verify?urgent=true",
+      "score": 0.9037500000000002,
+      "label": 1,
+      "has_explicit_scheme": 1
+    }
+  ],
+  "limitations": "The candidate uses only existing development data and is not an external evaluation. It is retained separately and is not integrated automatically."
+}

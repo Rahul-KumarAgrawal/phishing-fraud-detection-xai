@@ -1,48 +1,17 @@
 {
+  "split": "validation",
   "model": "RandomForest",
-  "threshold": 0.4244005158743374,
-  "splits": {
-    "random_test": {
-      "split": "Random Test",
-      "n": 35306,
-      "n_positive": 20228,
-      "precision": 0.9960108347697612,
-      "recall": 0.9998022543009689,
-      "f1": 0.9979029432807835,
-      "roc_auc": 0.998107404281993,
-      "confusion_matrix": [
-        [
-          14997,
-          81
-        ],
-        [
-          4,
-          20224
-        ]
-      ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  legitimate       1.00      0.99      1.00     15078\n    phishing       1.00      1.00      1.00     20228\n\n    accuracy                           1.00     35306\n   macro avg       1.00      1.00      1.00     35306\nweighted avg       1.00      1.00      1.00     35306\n",
-      "inference_ms_per_sample": 0.004348351553742775
-    },
-    "domain_test": {
-      "split": "Domain-Aware Test",
-      "n": 38591,
-      "n_positive": 20332,
-      "precision": 0.996666339837239,
-      "recall": 0.9999016328939603,
-      "f1": 0.9982813650871594,
-      "roc_auc": 0.999114485940098,
-      "confusion_matrix": [
-        [
-          18191,
-          68
-        ],
-        [
-          2,
-          20330
-        ]
-      ],
-      "classification_report": "              precision    recall  f1-score   support\n\n  legitimate       1.00      1.00      1.00     18259\n    phishing       1.00      1.00      1.00     20332\n\n    accuracy                           1.00     38591\n   macro avg       1.00      1.00      1.00     38591\nweighted avg       1.00      1.00      1.00     38591\n",
-      "inference_ms_per_sample": 0.0035080847865109717
-    }
-  }
+  "threshold": 0.6293639206241308,
+  "f1": 0.9975073947289708,
+  "roc_auc": 0.9985856110351282,
+  "confusion_matrix": [
+    [
+      20224,
+      4
+    ],
+    [
+      71,
+      15007
+    ]
+  ]
 }

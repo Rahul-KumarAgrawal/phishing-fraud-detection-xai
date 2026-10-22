@@ -1,0 +1,38 @@
+{
+  "PHIUSIL": {
+    "file": "data\\raw\\PHIUSIL_urls.csv",
+    "rows_after_dedup": 235370,
+    "legitimate": 134850,
+    "phishing": 100520,
+    "licence": "CC BY 4.0",
+    "source_page": "https://archive.ics.uci.edu/dataset/967/phiusil-phishing-url-dataset",
+    "collector": "Hannousse (2023)"
+  },
+  "LegitPhish": {
+    "file": "data\\raw\\LegitPhish_urls.csv",
+    "rows_after_dedup": 100872,
+    "legitimate": 37380,
+    "phishing": 63492,
+    "licence": "CC BY 4.0",
+    "source_page": "https://data.mendeley.com/datasets/hx4m73v2sf/2",
+    "collector": "Potpelwar et al. (2025)"
+  },
+  "MURL": {
+    "file": "data\\raw\\MURL_urls.csv",
+    "rows_after_dedup": 661851,
+    "legitimate": 432241,
+    "phishing": 229610,
+    "licence": "CC BY 4.0",
+    "source_page": "https://data.mendeley.com/datasets/5fk24y4xmg/2",
+    "collector": "Choudhary et al. (2023)"
+  },
+  "URL-Phish": {
+    "file": "data\\raw\\URLPhish_urls.csv",
+    "rows_after_dedup": 115231,
+    "legitimate": 98641,
+    "phishing": 16590,
+    "licence": "CC BY 4.0",
+    "source_page": "https://data.mendeley.com/datasets/65z9twcx3r/2",
+    "collector": "Choudhary et al. (2024)"
+  }
+}

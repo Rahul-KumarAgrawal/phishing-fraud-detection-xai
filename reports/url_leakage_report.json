@@ -1,0 +1,32 @@
+{
+  "random_seed": 42,
+  "reports": [
+    {
+      "split": "LEGACY random-train+val vs domain_test (contaminated)",
+      "n_train": 200064,
+      "n_test": 38591,
+      "exact_url_overlap": 32826,
+      "domain_overlap": 22513,
+      "test_template_overlap_count": 33260,
+      "test_template_overlap_pct": 86.19
+    },
+    {
+      "split": "domain_train vs domain_test",
+      "n_train": 196779,
+      "n_test": 38591,
+      "exact_url_overlap": 0,
+      "domain_overlap": 0,
+      "test_template_overlap_count": 249,
+      "test_template_overlap_pct": 0.65
+    },
+    {
+      "split": "domain_train vs template_clean_test",
+      "n_train": 196779,
+      "n_test": 38342,
+      "exact_url_overlap": 0,
+      "domain_overlap": 0,
+      "test_template_overlap_count": 0,
+      "test_template_overlap_pct": 0.0
+    }
+  ]
+}

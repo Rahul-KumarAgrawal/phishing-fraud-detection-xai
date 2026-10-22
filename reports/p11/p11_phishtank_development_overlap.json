@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "candidate_rows": 60412,
+  "development_sources": [
+    "PHIUSIL",
+    "LegitPhish",
+    "MURL",
+    "URL-Phish"
+  ],
+  "development_rows": {
+    "PHIUSIL": 235370,
+    "LegitPhish": 100872,
+    "MURL": 661851,
+    "URL-Phish": 115231
+  },
+  "definitions": {
+    "exact_url": "trimmed raw URL",
+    "normalized_url": "P6 conservative normalizer",
+    "hostname": "P6 parsed hostname",
+    "registered_domain": "P6 offline-PSL extractor",
+    "template": "project url_template"
+  },
+  "results": {
+    "exact_url": {
+      "candidate_unique": 60412,
+      "development_unique": 1075384,
+      "intersection": 8112,
+      "pct_candidate": 13.427796
+    },
+    "normalized_url": {
+      "candidate_unique": 60350,
+      "development_unique": 1074154,
+      "intersection": 8113,
+      "pct_candidate": 13.443248
+    },
+    "hostname": {
+      "candidate_unique": 30295,
+      "development_unique": 609711,
+      "intersection": 7965,
+      "pct_candidate": 26.291467
+    },
+    "registered_domain": {
+      "candidate_unique": 10957,
+      "development_unique": 445486,
+      "intersection": 1628,
+      "pct_candidate": 14.858082
+    },
+    "template": {
+      "candidate_unique": 53618,
+      "development_unique": 904898,
+      "intersection": 14568,
+      "pct_candidate": 27.16998
+    }
+  },
+  "zero_prohibited_overlap": false,
+  "scope": "qualification evidence only; no model load, fit, or prediction"
+}

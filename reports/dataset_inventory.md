@@ -13,7 +13,7 @@
   Mendeley Data, V1.
 
 **File:** `data\raw\SMS_dataset.csv`
-**Rows:** 65
+**Rows:** 5,971
 **Columns:** ['LABEL', 'TEXT']
 
 ### Column dtypes
@@ -24,13 +24,16 @@
 - `LABEL`: 0
 - `TEXT`: 0
 
-**Exact duplicate rows:** 0
+**Exact duplicate rows:** 18
 
 ### Label distribution (all label-like columns)
 
 **Column `LABEL`:**
-  - `ham`: 35 (53.8%)
-  - `smishing`: 30 (46.2%)
+  - `ham`: 4,844 (81.1%)
+  - `Smishing`: 616 (10.3%)
+  - `spam`: 466 (7.8%)
+  - `Spam`: 23 (0.4%)
+  - `smishing`: 22 (0.4%)
 
 ### Binary classification policy
 - **ham** → label 0 (negative / legitimate)
@@ -69,17 +72,116 @@
   - `0`: 100,945 (42.8%)
 
 ### Label normalization policy
-- Legitimate URLs → 0
-- Phishing URLs → 1
-- Confirm mapping against dataset documentation before applying.
+- **Raw convention (official UCI dataset card):**
+  `1` = legitimate, `0` = phishing —
+  *"Class Labels: Label 1 corresponds to a legitimate URL, label 0 to a phishing URL"*
+- **Project convention applied downstream:** legitimate -> 0, phishing -> 1
+- Expected raw composition: 134,850 legitimate / 100,945 phishing
+- Source: https://archive.ics.uci.edu/dataset/967/phiusil-phishing-url-dataset
 
 **Empty or missing URL strings** (column `url`): 0
 **Duplicate URL strings:** 425
 
 ---
 
+## Dataset C - LegitPhish URLs (external evaluation only)
+
+- **Source:** https://data.mendeley.com/datasets/hx4m73v2sf/2
+- **Citation:** Potpelwar, R., Kulkarni, U. & Waghmare, J. (2025). *LegitPhish Dataset.* Mendeley Data, V2. https://doi.org/10.17632/hx4m73v2sf.2
+- **License:** CC BY 4.0
+- **Role:** independent **external evaluation only** - never used for training.
+- **Provenance:** phishing URLs sourced from URLHaus and other threat repositories; legitimate URLs scraped from Wikipedia, Stack Overflow and high-authority sites.
+- **SHA-256 (as stored):** `959b57b2566406f0721d66f597cdc713fca8c989ea2c3f7d833e6495b5194dc5`
+- **Rows:** 101,218
+- **Columns:** 2
+- **Exact duplicate rows:** 346
+
+### Raw label distribution
+  - `0`: 63,678 (62.9%)
+  - `1`: 37,540 (37.1%)
+
+### Label normalization policy
+- **Raw convention (dataset card + verified against observed domains):**
+  `1` = legitimate, `0` = phishing - the *same inverted convention as PHIUSIL*
+- **Project convention applied downstream:** legitimate -> 0, phishing -> 1
+- Expected raw composition: 63,678 phishing / 37,540 legitimate
+- `prepare_external_urls.py` fails hard if these counts ever change.
+
+**Duplicate URL strings:** 346
+
+### Overlap with PHIUSIL
+- URLs byte-identical to a PHIUSIL URL: **36,935 / 101,218 (36.49%)**
+  - legitimate: 36,935 / 37,540 (98.39%) byte-identical
+  - phishing: 0 / 63,678 (0.00%) byte-identical
+- **Caveat:** nearly all of LegitPhish's *legitimate* URLs are byte-identical to PHIUSIL's, so precision measured on that class is optimistic. Its *phishing* class has zero PHIUSIL overlap and is a genuine generalisation test. See `reports/external_evaluation.md`.
+
+---
+
+## Dataset D - MURL URLs (training augmentation only)
+
+- **Source:** https://data.mendeley.com/datasets/5fk24y4xmg/2
+- **License:** CC BY 4.0
+- **Role:** training augmentation only - it supplies path-bearing, scheme-less URLs that PHIUSIL lacks. It is never used for evaluation.
+- **Caveat:** URLs are stored **without a scheme**. The extractor's `is_https` therefore reads 0 for every MURL row, which is a property of the file, not of the URL. See `reports/limitations.md`.
+- **SHA-256 (as stored):** `c93fd48d29e84d7e4e0a30aeaff072e767c8b5f0e7c0d349bd09870b7eab6e33`
+- **Rows:** 661,854
+- **Columns:** 2
+- **Exact duplicate rows:** 0
+
+**Duplicate URL strings:** 0
+- URLs without an explicit scheme: **661,709 / 661,854 (100.0%)**
+
+---
+
+## Dataset E - URL-Phish (development-informed diagnostic set)
+
+- **Source:** https://data.mendeley.com/datasets/65z9twcx3r/2
+- **License:** CC BY 4.0
+- **Role:** development-informed diagnostic data. It influenced URL model
+  development and has measurable overlap with the augmented development corpus,
+  so it is not an untouched final test set.
+- **Provenance:** phishing sample from PhishTank; benign sample from the Research Organization Registry (ROR) list of legitimate institutions.
+- **Why it matters:** its HTTPS rate is *inverted* relative to PHIUSIL (most phishing is HTTPS, much benign traffic is plain HTTP), so a model that learned "https implies legitimate" cannot pass it.
+- **SHA-256 (as stored):** `15c16e7e937db7b01f4137c55c1099d1bb46c48a88eb2c75f711560e2c74eaf0`
+- **Rows:** 116,600
+- **Columns:** 2
+
+### Raw label distribution
+  - `0`: 100,000 (85.8%)
+  - `1`: 16,600 (14.2%)
+
+### Label normalization policy
+- **Raw convention:** `0` = benign, `1` = phishing - the *intuitive* convention, unlike PHIUSIL and LegitPhish.
+- This already matches the project convention, so labels are used as-is.
+- `prepare_external_urls.py` fails hard if the composition ever changes.
+
+**Duplicate URL strings:** 1,369
+
+### Prepared evaluation split (`data/processed/urlphish_external.csv`)
+- Rows kept after de-duplication: **115,231** (98,641 benign / 16,590 phishing)
+- Byte-identical to a training URL: **595** (all benign; these are excluded from the headline generalisation metrics and reported separately as an integrity stratum)
+- Rows whose registered domain appears in PHIUSIL training data: **22,625**
+
+---
+
+## Dataset roles at a glance
+| ID | Dataset | Role |
+|----|---------|------|
+| A | Mendeley SMS/Smishing | training + in-distribution test |
+| B | PHIUSIL URLs | training (random and domain-held-out splits) |
+| C | LegitPhish URLs | development / diagnostic benchmark only |
+| D | MURL URLs | training augmentation only |
+| E | URL-Phish URLs | development-informed diagnostic benchmark |
+| F | CompPhish frozen subset | historical P9 evidence; byte-identical copy used as final-showcase development data |
+
 ## Usage Notes
 - Raw files must remain unchanged under `data/raw/`.
 - Processed splits are saved to `data/processed/` by the prepare scripts.
+- Datasets C and E are development-informed diagnostics and are not clean final
+  evaluation claims. P9's single CompPhish evaluation of the unserved P7
+  Random Forest failed with a 98.46% false-positive rate. The original frozen
+  subset and P9 report remain unchanged; a byte-identical development copy is
+  used in the final-showcase grouped internal pipeline. See `reports/p9/` and
+  `reports/showcase/`.
 - Do not commit raw data files to Git (see `.gitignore`).
 - Re-run this script after downloading datasets to update figures.

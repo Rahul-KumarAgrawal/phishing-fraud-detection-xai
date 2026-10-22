@@ -1,0 +1,607 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-10-20T12:19:26.622665+00:00",
+  "scope": {
+    "static_raw_url_features_only": true,
+    "html_derived_features_used": false,
+    "destination_access": false,
+    "sms_branch_changed": false,
+    "compphish_role": "development data; P9 historical evidence preserved"
+  },
+  "split_manifest": {
+    "status": "complete",
+    "created_at_utc": "2026-10-20T12:10:19.992061+00:00",
+    "purpose": "Final showcase URL development corpus; CompPhish is development data and P9 is preserved historical evidence.",
+    "inputs": {
+      "development_sources": [
+        "PHIUSIL",
+        "MURL",
+        "CompPhish"
+      ],
+      "compphish_frozen_path": "data\\processed\\compphish_external_frozen.csv",
+      "compphish_frozen_sha256": "56f6e8545a7df5f675b740d0858ee0fb4b2fa920a085d4aceae2838bfbc0e377",
+      "compphish_development_copy": "data\\processed\\showcase_compphish_development.csv",
+      "compphish_development_copy_sha256": "56f6e8545a7df5f675b740d0858ee0fb4b2fa920a085d4aceae2838bfbc0e377",
+      "p9_historical_outputs_preserved": true,
+      "murl_rows_after_conflict_screening_before_cap": 661449,
+      "murl_exact_label_conflicts_quarantined": 402,
+      "murl_cap_per_class": 60000
+    },
+    "deduplication_and_exclusions": {
+      "raw_rows_before_normalized_conflict_exclusion": 361813,
+      "normalized_label_conflict_keys_excluded": 0,
+      "rows_excluded_for_normalized_label_conflict": 0,
+      "normalized_duplicates_removed_after_conflict_screening": 2153,
+      "malformed_rows_excluded": 1906,
+      "deduplication_rule": "keep first by normalized URL after source priority CompPhish, PHIUSIL, MURL; only after excluding conflicting labels"
+    },
+    "grouping": {
+      "registered_domain": "offline public suffix extraction",
+      "template": "project url_template: lowercase, remove scheme/query/fragment/trailing slash, mask digit runs",
+      "components": 229908,
+      "largest_component_rows": 6259,
+      "p95_component_rows": 2.0
+    },
+    "splits": {
+      "seed": 42,
+      "train": {
+        "rows": 240558,
+        "class_counts": {
+          "0": 138774,
+          "1": 101784
+        },
+        "source_counts": {
+          "CompPhish": 4500,
+          "MURL": 81579,
+          "PHIUSIL": 154479
+        },
+        "unique_raw_urls": 240558,
+        "unique_normalized_urls": 240558,
+        "unique_registered_domains": 161907,
+        "unique_templates": 224445
+      },
+      "validation": {
+        "rows": 61076,
+        "class_counts": {
+          "0": 30070,
+          "1": 31006
+        },
+        "source_counts": {
+          "CompPhish": 997,
+          "MURL": 18716,
+          "PHIUSIL": 41363
+        },
+        "unique_raw_urls": 61076,
+        "unique_normalized_urls": 61076,
+        "unique_registered_domains": 34621,
+        "unique_templates": 55774
+      },
+      "test": {
+        "rows": 58026,
+        "class_counts": {
+          "0": 30471,
+          "1": 27555
+        },
+        "source_counts": {
+          "CompPhish": 938,
+          "MURL": 18384,
+          "PHIUSIL": 38704
+        },
+        "unique_raw_urls": 58026,
+        "unique_normalized_urls": 58026,
+        "unique_registered_domains": 34664,
+        "unique_templates": 52384
+      }
+    },
+    "overlap": {
+      "train_validation": {
+        "exact_url": 0,
+        "normalized_url": 0,
+        "registered_domain": 0,
+        "template": 0
+      },
+      "train_test": {
+        "exact_url": 0,
+        "normalized_url": 0,
+        "registered_domain": 0,
+        "template": 0
+      },
+      "validation_test": {
+        "exact_url": 0,
+        "normalized_url": 0,
+        "registered_domain": 0,
+        "template": 0
+      }
+    },
+    "outputs": {
+      "train": {
+        "path": "data\\processed\\showcase_url_train.csv",
+        "sha256": "4a226c910fc65d6115e019b6d2b686418a78bb65a6cc14b1c4adfea60d61b079"
+      },
+      "validation": {
+        "path": "data\\processed\\showcase_url_validation.csv",
+        "sha256": "c921c32a513dfde925c1c7fa6b3fbf080dc9330dd5dfe402996986c7fa6d4e03"
+      },
+      "test": {
+        "path": "data\\processed\\showcase_url_test.csv",
+        "sha256": "26de1318d7b05d46f533a6cc258159c73e4236c856993b6c350b83b0ec5ab41f"
+      }
+    }
+  },
+  "fit_sample": {
+    "rows": 150000,
+    "class_counts": {
+      "0": 75000,
+      "1": 75000
+    },
+    "source_counts": {
+      "CompPhish": 4500,
+      "MURL": 51438,
+      "PHIUSIL": 94062
+    },
+    "rule": "retain CompPhish train rows; fill remaining per-class quota with deterministic PHIUSIIL/MURL samples"
+  },
+  "candidate_configurations": {
+    "p7_all_features": {
+      "feature_names": [
+        "url_length",
+        "hostname_length",
+        "path_length",
+        "query_length",
+        "registered_domain_length",
+        "dot_count",
+        "hyphen_count",
+        "slash_count",
+        "underscore_count",
+        "at_count",
+        "question_count",
+        "equals_count",
+        "ampersand_count",
+        "percent_count",
+        "digit_count",
+        "digit_ratio",
+        "special_char_ratio",
+        "tilde_count",
+        "subdomain_count",
+        "subdomain_length",
+        "tld_length",
+        "path_depth",
+        "query_param_count",
+        "has_query",
+        "is_https",
+        "is_ip_host",
+        "has_at_symbol",
+        "has_percent_encoding",
+        "is_url_shortener",
+        "suspicious_token_count",
+        "brand_token_count",
+        "brand_domain_mismatch",
+        "brand_lookalike_domain"
+      ],
+      "feature_count": 33
+    },
+    "p8_without_brand": {
+      "feature_names": [
+        "url_length",
+        "hostname_length",
+        "path_length",
+        "query_length",
+        "registered_domain_length",
+        "dot_count",
+        "hyphen_count",
+        "slash_count",
+        "underscore_count",
+        "at_count",
+        "question_count",
+        "equals_count",
+        "ampersand_count",
+        "percent_count",
+        "digit_count",
+        "digit_ratio",
+        "special_char_ratio",
+        "tilde_count",
+        "subdomain_count",
+        "subdomain_length",
+        "tld_length",
+        "path_depth",
+        "query_param_count",
+        "has_query",
+        "is_https",
+        "is_ip_host",
+        "has_at_symbol",
+        "has_percent_encoding",
+        "is_url_shortener",
+        "suspicious_token_count"
+      ],
+      "feature_count": 30
+    }
+  },
+  "candidates": {
+    "LogisticRegression_p7_all_features": {
+      "model_name": "LogisticRegression",
+      "feature_configuration": "p7_all_features",
+      "threshold": 0.3937803156912564,
+      "threshold_selection": "maximum F1 on grouped validation partition",
+      "validation": {
+        "precision": 0.8226804711788026,
+        "recall": 0.9302715603431594,
+        "f1": 0.8731742019465089,
+        "accuracy": 0.8628102691728339,
+        "roc_auc": 0.9343591216487036,
+        "pr_auc": 0.9179046716929642,
+        "confusion_matrix": {
+          "tn": 23853,
+          "fp": 6217,
+          "fn": 2162,
+          "tp": 28844
+        },
+        "false_positive_rate_legitimate": 0.2067509145327569,
+        "false_negative_rate_phishing": 0.06972843965684061,
+        "predicted_class_counts": {
+          "legitimate": 26015,
+          "phishing": 35061
+        },
+        "rows": 61076,
+        "legitimate": 30070,
+        "phishing": 31006
+      },
+      "test": {
+        "precision": 0.8148538909137413,
+        "recall": 0.9249500998003992,
+        "f1": 0.8664185066204341,
+        "accuracy": 0.8645607141626167,
+        "roc_auc": 0.9354603236654434,
+        "pr_auc": 0.9039488466460175,
+        "confusion_matrix": {
+          "tn": 24680,
+          "fp": 5791,
+          "fn": 2068,
+          "tp": 25487
+        },
+        "false_positive_rate_legitimate": 0.19004955531488957,
+        "false_negative_rate_phishing": 0.0750499001996008,
+        "predicted_class_counts": {
+          "legitimate": 26748,
+          "phishing": 31278
+        },
+        "rows": 58026,
+        "legitimate": 30471,
+        "phishing": 27555,
+        "legitimate_path_query_subgroups": {
+          "nonempty_path": {
+            "legitimate_rows": 9118,
+            "false_positives": 5063,
+            "false_positive_rate": 0.5552752796665935
+          },
+          "query_parameter": {
+            "legitimate_rows": 1216,
+            "false_positives": 956,
+            "false_positive_rate": 0.7861842105263158
+          },
+          "path_or_query": {
+            "legitimate_rows": 9118,
+            "false_positives": 5063,
+            "false_positive_rate": 0.5552752796665935
+          }
+        }
+      },
+      "artifact": "models\\showcase_url_logisticregression_p7_all_features.joblib",
+      "artifact_sha256": "893a19e5301d45c58ac6de9d0ff2547cfbe245dcfb66c0e6455c7841b743e9a3",
+      "metadata": "models\\showcase_url_logisticregression_p7_all_features_metadata.json",
+      "metadata_sha256": "d90bad753852fbf09475d19ddf33b9a9218a07c06a687b2e8d04c47d398cdf1d"
+    },
+    "RandomForest_p7_all_features": {
+      "model_name": "RandomForest",
+      "feature_configuration": "p7_all_features",
+      "threshold": 0.5249444444444445,
+      "threshold_selection": "maximum F1 on grouped validation partition",
+      "validation": {
+        "precision": 0.8769477960346814,
+        "recall": 0.9329484615880798,
+        "f1": 0.9040817602200275,
+        "accuracy": 0.8995022594799922,
+        "roc_auc": 0.9677965168932943,
+        "pr_auc": 0.967483927776212,
+        "confusion_matrix": {
+          "tn": 26011,
+          "fp": 4059,
+          "fn": 2079,
+          "tp": 28927
+        },
+        "false_positive_rate_legitimate": 0.13498503491852346,
+        "false_negative_rate_phishing": 0.06705153841192027,
+        "predicted_class_counts": {
+          "legitimate": 28090,
+          "phishing": 32986
+        },
+        "rows": 61076,
+        "legitimate": 30070,
+        "phishing": 31006
+      },
+      "test": {
+        "precision": 0.9011522346368716,
+        "recall": 0.9366358192705498,
+        "f1": 0.9185514725509387,
+        "accuracy": 0.9211215661944645,
+        "roc_auc": 0.9794818732936982,
+        "pr_auc": 0.9777151729820635,
+        "confusion_matrix": {
+          "tn": 27640,
+          "fp": 2831,
+          "fn": 1746,
+          "tp": 25809
+        },
+        "false_positive_rate_legitimate": 0.09290801089560566,
+        "false_negative_rate_phishing": 0.06336418072945019,
+        "predicted_class_counts": {
+          "legitimate": 29386,
+          "phishing": 28640
+        },
+        "rows": 58026,
+        "legitimate": 30471,
+        "phishing": 27555,
+        "legitimate_path_query_subgroups": {
+          "nonempty_path": {
+            "legitimate_rows": 9118,
+            "false_positives": 2492,
+            "false_positive_rate": 0.27330554946260144
+          },
+          "query_parameter": {
+            "legitimate_rows": 1216,
+            "false_positives": 292,
+            "false_positive_rate": 0.24013157894736842
+          },
+          "path_or_query": {
+            "legitimate_rows": 9118,
+            "false_positives": 2492,
+            "false_positive_rate": 0.27330554946260144
+          }
+        }
+      },
+      "artifact": "models\\showcase_url_randomforest_p7_all_features.joblib",
+      "artifact_sha256": "5529cbe9f5973996d11fef2f8a90ed925e8b4dc69b6d61dc67d4af535f439bb5",
+      "metadata": "models\\showcase_url_randomforest_p7_all_features_metadata.json",
+      "metadata_sha256": "e24e6807d77269910b744b403e52a35012e311315898f0b7c64e9411f2b9af22"
+    },
+    "LogisticRegression_p8_without_brand": {
+      "model_name": "LogisticRegression",
+      "feature_configuration": "p8_without_brand",
+      "threshold": 0.41789807586043143,
+      "threshold_selection": "maximum F1 on grouped validation partition",
+      "validation": {
+        "precision": 0.8337148559018607,
+        "recall": 0.9162097658517706,
+        "f1": 0.8730178242163491,
+        "accuracy": 0.8646931691662846,
+        "roc_auc": 0.9345018571450849,
+        "pr_auc": 0.9180916143340332,
+        "confusion_matrix": {
+          "tn": 24404,
+          "fp": 5666,
+          "fn": 2598,
+          "tp": 28408
+        },
+        "false_positive_rate_legitimate": 0.18842700365813103,
+        "false_negative_rate_phishing": 0.08379023414822938,
+        "predicted_class_counts": {
+          "legitimate": 27002,
+          "phishing": 34074
+        },
+        "rows": 61076,
+        "legitimate": 30070,
+        "phishing": 31006
+      },
+      "test": {
+        "precision": 0.8250230232864096,
+        "recall": 0.9103248049355834,
+        "f1": 0.865577390914267,
+        "accuracy": 0.8657326026264088,
+        "roc_auc": 0.9353157882980389,
+        "pr_auc": 0.9037102646975705,
+        "confusion_matrix": {
+          "tn": 25151,
+          "fp": 5320,
+          "fn": 2471,
+          "tp": 25084
+        },
+        "false_positive_rate_legitimate": 0.17459223524006431,
+        "false_negative_rate_phishing": 0.08967519506441662,
+        "predicted_class_counts": {
+          "legitimate": 27622,
+          "phishing": 30404
+        },
+        "rows": 58026,
+        "legitimate": 30471,
+        "phishing": 27555,
+        "legitimate_path_query_subgroups": {
+          "nonempty_path": {
+            "legitimate_rows": 9118,
+            "false_positives": 4819,
+            "false_positive_rate": 0.52851502522483
+          },
+          "query_parameter": {
+            "legitimate_rows": 1216,
+            "false_positives": 897,
+            "false_positive_rate": 0.7376644736842105
+          },
+          "path_or_query": {
+            "legitimate_rows": 9118,
+            "false_positives": 4819,
+            "false_positive_rate": 0.52851502522483
+          }
+        }
+      },
+      "artifact": "models\\showcase_url_logisticregression_p8_without_brand.joblib",
+      "artifact_sha256": "7625fd84d76a62b0933ea38c622c97e7b33c5ad717e95721887ab35fc2b82a38",
+      "metadata": "models\\showcase_url_logisticregression_p8_without_brand_metadata.json",
+      "metadata_sha256": "4aaa5c34a264b7722b3c6e28773e3c7a4d1267942c4f533b944618b585cd60e1"
+    },
+    "RandomForest_p8_without_brand": {
+      "model_name": "RandomForest",
+      "feature_configuration": "p8_without_brand",
+      "threshold": 0.5143261183261184,
+      "threshold_selection": "maximum F1 on grouped validation partition",
+      "validation": {
+        "precision": 0.8732774925695758,
+        "recall": 0.9381410049667807,
+        "f1": 0.9045479281660577,
+        "accuracy": 0.8994858864365708,
+        "roc_auc": 0.9697803176835592,
+        "pr_auc": 0.9701190569857592,
+        "confusion_matrix": {
+          "tn": 25849,
+          "fp": 4221,
+          "fn": 1918,
+          "tp": 29088
+        },
+        "false_positive_rate_legitimate": 0.14037246425008315,
+        "false_negative_rate_phishing": 0.06185899503321938,
+        "predicted_class_counts": {
+          "legitimate": 27767,
+          "phishing": 33309
+        },
+        "rows": 61076,
+        "legitimate": 30070,
+        "phishing": 31006
+      },
+      "test": {
+        "precision": 0.8985200111172874,
+        "recall": 0.9385955362003267,
+        "f1": 0.9181206624185733,
+        "accuracy": 0.9205011546548099,
+        "roc_auc": 0.9798762352495685,
+        "pr_auc": 0.9781676024149972,
+        "confusion_matrix": {
+          "tn": 27550,
+          "fp": 2921,
+          "fn": 1692,
+          "tp": 25863
+        },
+        "false_positive_rate_legitimate": 0.09586163893538119,
+        "false_negative_rate_phishing": 0.06140446379967338,
+        "predicted_class_counts": {
+          "legitimate": 29242,
+          "phishing": 28784
+        },
+        "rows": 58026,
+        "legitimate": 30471,
+        "phishing": 27555,
+        "legitimate_path_query_subgroups": {
+          "nonempty_path": {
+            "legitimate_rows": 9118,
+            "false_positives": 2496,
+            "false_positive_rate": 0.27374424215836807
+          },
+          "query_parameter": {
+            "legitimate_rows": 1216,
+            "false_positives": 291,
+            "false_positive_rate": 0.2393092105263158
+          },
+          "path_or_query": {
+            "legitimate_rows": 9118,
+            "false_positives": 2496,
+            "false_positive_rate": 0.27374424215836807
+          }
+        }
+      },
+      "artifact": "models\\showcase_url_randomforest_p8_without_brand.joblib",
+      "artifact_sha256": "3da19fc7097deff42d1885e4b17d0db36714731883a9303651096c1493f95085",
+      "metadata": "models\\showcase_url_randomforest_p8_without_brand_metadata.json",
+      "metadata_sha256": "dc63534ddae73a5352dc2ffc8dfdd40e95243349a8bb93d5d762536a900665c9"
+    }
+  },
+  "served_baseline": {
+    "artifact": "models\\url_model.joblib",
+    "artifact_sha256_before": "0366b8c528523e47bf447fa9c6051f4f6558317e6fc68d00ea30e88e850d834c",
+    "metadata": "models\\url_model_metadata.json",
+    "metadata_sha256_before": "60c3805ccd61a3b25f56e95d65eb836c07d2eb73d62bbbea62c464e5c63d2d1e",
+    "threshold": 0.6293639206241308,
+    "test": {
+      "precision": 0.730926792934667,
+      "recall": 0.9971692977681001,
+      "f1": 0.8435384591769383,
+      "accuracy": 0.8243373660083411,
+      "roc_auc": 0.8904796551040933,
+      "pr_auc": 0.8092653927138759,
+      "confusion_matrix": {
+        "tn": 20356,
+        "fp": 10115,
+        "fn": 78,
+        "tp": 27477
+      },
+      "false_positive_rate_legitimate": 0.3319549735814381,
+      "false_negative_rate_phishing": 0.0028307022318998366,
+      "predicted_class_counts": {
+        "legitimate": 20434,
+        "phishing": 37592
+      },
+      "rows": 58026,
+      "legitimate": 30471,
+      "phishing": 27555,
+      "legitimate_path_query_subgroups": {
+        "nonempty_path": {
+          "legitimate_rows": 9118,
+          "false_positives": 9118,
+          "false_positive_rate": 1.0
+        },
+        "query_parameter": {
+          "legitimate_rows": 1216,
+          "false_positives": 1216,
+          "false_positive_rate": 1.0
+        },
+        "path_or_query": {
+          "legitimate_rows": 9118,
+          "false_positives": 9118,
+          "false_positive_rate": 1.0
+        }
+      }
+    }
+  },
+  "selection": {
+    "rule": "highest validation F1; ties lower validation FPR, then lower validation FNR",
+    "selected_candidate": "RandomForest_p8_without_brand",
+    "acceptance_criteria": {
+      "minimum_test_f1": 0.8,
+      "minimum_test_roc_auc": 0.85,
+      "maximum_test_false_positive_rate": 0.2,
+      "maximum_test_false_negative_rate": 0.2,
+      "minimum_test_path_or_query_legitimate_fpr": null,
+      "minimum_f1_improvement_over_served": 0.05,
+      "minimum_fpr_reduction_over_served": 0.05
+    },
+    "acceptance_checks": [
+      "PASS: test F1 0.9181 >= 0.80",
+      "PASS: test ROC-AUC 0.9799 >= 0.85",
+      "PASS: test FPR 0.0959 <= 0.20",
+      "PASS: test FNR 0.0614 <= 0.20",
+      "PASS: test F1 improvement 0.0746 >= 0.05",
+      "PASS: test FPR reduction 0.2361 >= 0.05"
+    ]
+  },
+  "integration": {
+    "integrated": true,
+    "reason": "All predeclared grouped internal acceptance criteria passed.",
+    "served_artifact": "models\\url_model.joblib",
+    "served_artifact_sha256": "69b1476c670c07a38b3368285ea5e60fc2295d0bf84a3ee570eb87f64dba011e",
+    "served_metadata": "models\\url_model_metadata.json",
+    "served_metadata_sha256": "29f9a1b6d2912d618e8a0f3cd0c555be9e852fa1540f9d7978ad934bfcf863fc",
+    "showcase_artifact": "models\\url_model_showcase.joblib",
+    "showcase_artifact_sha256": "69b1476c670c07a38b3368285ea5e60fc2295d0bf84a3ee570eb87f64dba011e",
+    "rollback_artifact": "models\\url_model_pre_showcase.joblib",
+    "rollback_artifact_sha256": "0366b8c528523e47bf447fa9c6051f4f6558317e6fc68d00ea30e88e850d834c",
+    "rollback_metadata": "models\\url_model_pre_showcase_metadata.json",
+    "rollback_metadata_sha256": "60c3805ccd61a3b25f56e95d65eb836c07d2eb73d62bbbea62c464e5c63d2d1e"
+  },
+  "phishvn_diagnostic": {
+    "evaluated": false,
+    "reason": "verified-core URLs are scheme-stripped; using the extractor would synthesize HTTP/is_https=0 and invalidate a scheme-sensitive diagnostic",
+    "verified_archive_report": "reports/p11/p11_phishvn_archive_qualification.json",
+    "prior_structural_analysis_exposure": true
+  },
+  "limitations": [
+    "The grouped test partition is internal development data, not a new independent benchmark.",
+    "CompPhish was previously used for P9 and is now repurposed as development data; its historical P9 result remains unchanged.",
+    "PhishVN was not scored because its scheme-stripped URLs cannot provide an honest is_https feature value.",
+    "The integrated URL model remains a college-project prototype and must not be treated as a production security control."
+  ]
+}

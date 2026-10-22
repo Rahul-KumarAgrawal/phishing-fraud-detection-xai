@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "scope": "aggregate-only P9 arithmetic and evaluator source inspection; no frozen rows, model, or predictions read",
+  "confusion_matrix": {
+    "tn": 69,
+    "fp": 4421,
+    "fn": 6,
+    "tp": 1947
+  },
+  "derived_metrics": {
+    "accuracy": 0.3128977184541363,
+    "balanced_accuracy": 0.506147643337815,
+    "false_positive_rate_legitimate": 0.9846325167037862,
+    "false_negative_rate_phishing": 0.0030721966205837174,
+    "precision": 0.30574748743718594,
+    "recall": 0.9969278033794163,
+    "f1": 0.46797259944718184
+  },
+  "class_order": [
+    0,
+    1
+  ],
+  "positive_class_score": "predict_proba(X)[:, 1] after class-order assertion [0, 1]",
+  "roc_auc_path": "roc_auc_score(y, scores), where scores is the phishing-class probability",
+  "p9_evaluator_itself_reads_frozen_when_run": true,
+  "frozen_evaluator_was_not_run_by_this_audit": true
+}

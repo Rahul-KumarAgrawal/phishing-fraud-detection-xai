@@ -1,0 +1,34 @@
+{
+  "dataset": "LegitPhish",
+  "role": "external evaluation only (never used for training)",
+  "source": "https://data.mendeley.com/datasets/hx4m73v2sf/2",
+  "random_seed": 42,
+  "raw_label_convention": {
+    "meaning": {
+      "1": "legitimate",
+      "0": "phishing"
+    },
+    "expected_raw_counts": {
+      "1": 37540,
+      "0": 63678
+    },
+    "note": "LegitPhish raw labels are 1 = legitimate, 0 = phishing, the same inverted convention as PHIUSIL. Mapped to project convention 0 = legitimate, 1 = phishing."
+  },
+  "rows": {
+    "after_dedup": 100872,
+    "legitimate": 37380,
+    "phishing": 63492,
+    "unlabelled_dropped": 0
+  },
+  "phiusil_overlap": {
+    "pools_considered": [
+      "urls_train.csv",
+      "urls_val.csv",
+      "urls_template_train.csv"
+    ],
+    "phiusil_domains": 171562,
+    "rows_with_domain_seen_in_phiusil": 37314,
+    "rows_with_unseen_domain": 63558,
+    "pct_unseen_domain": 63.01
+  }
+}

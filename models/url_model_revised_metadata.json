@@ -1,0 +1,111 @@
+{
+  "model_name": "LogisticRegression",
+  "model_variant": "revised",
+  "threshold": 0.30664972487431563,
+  "label_map": {
+    "0": "legitimate",
+    "1": "phishing"
+  },
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "registered_domain_length",
+    "dot_count",
+    "hyphen_count",
+    "underscore_count",
+    "at_count",
+    "percent_count",
+    "digit_count",
+    "digit_ratio",
+    "special_char_ratio",
+    "tilde_count",
+    "subdomain_count",
+    "subdomain_length",
+    "tld_length",
+    "is_https",
+    "is_ip_host",
+    "has_at_symbol",
+    "has_percent_encoding",
+    "is_url_shortener",
+    "suspicious_token_count",
+    "brand_token_count",
+    "brand_domain_mismatch",
+    "brand_lookalike_domain"
+  ],
+  "n_features": 24,
+  "feature_schema_version": 2,
+  "feature_subset": "no_path_no_query",
+  "feature_subset_rationale": "In PHIUSIL every legitimate URL is a bare https://domain with no path while phishing URLs carry paths, and the only path-bearing legitimate source used for augmentation (MURL) stores no scheme, so the conjunction 'https AND non-empty path' occurred only in the phishing class. Features that encode URL shape (path, query, length) were therefore removed, chosen by scripts/ablate_url_features.py (reports/url_feature_ablation.md).",
+  "model_selection": "Pipeline family fixed to LogisticRegression by the ablation experiment; validation F1 alone would have selected RandomForest, which is not used because its false-positive rate on independent legitimate URLs is ~98%.",
+  "random_seed": 42,
+  "trained_on": "data/processed/urls_aug_train.csv (+val for the final fit): PHIUSIL domain-isolated pool + MURL benign/legitimate/phishing",
+  "never_trained_on": [
+    "LegitPhish (Dataset C, development benchmark)",
+    "URL-Phish (Dataset E, untouched final external set)"
+  ],
+  "val_metrics": {
+    "f1": 0.770706045606114,
+    "roc_auc": 0.8478430410566822,
+    "confusion_matrix": [
+      [
+        18525,
+        9784
+      ],
+      [
+        1287,
+        18606
+      ]
+    ]
+  },
+  "all_val_results": {
+    "LogisticRegression": {
+      "f1": 0.770706045606114,
+      "roc_auc": 0.8478430410566822
+    },
+    "RandomForest": {
+      "f1": 0.8608832256938383,
+      "roc_auc": 0.9606206044543969
+    }
+  },
+  "threshold_selection": "domain-held-out 15% slice of the augmented pool (urls_aug_val.csv)",
+  "augmented_pool_stats": {
+    "random_seed": 42,
+    "label_map": {
+      "0": "legitimate",
+      "1": "phishing"
+    },
+    "purpose": "Augmented training pool: PHIUSIL domain-isolated pool + MURL benign/legitimate/phishing. MURL supplies realistic path-bearing legitimate URLs that PHIUSIL lacks.",
+    "sources": {
+      "phiusil": "data/processed/urls_template_train.csv (Dataset B pool)",
+      "murl": "data/raw/MURL_urls.csv (Dataset D, augmentation only)"
+    },
+    "not_used_for_training": [
+      "LegitPhish (Dataset C) - development benchmark",
+      "URL-Phish (Dataset E) - untouched final external set"
+    ],
+    "caps": {
+      "murl_benign": 60000,
+      "murl_phishing": 60000
+    },
+    "split": "GroupShuffleSplit by registered domain (85/15), seed 42",
+    "fit": {
+      "total": 268577,
+      "legitimate": 146209,
+      "phishing": 122368,
+      "from_phiusil": 168928,
+      "from_murl": 99649
+    },
+    "val": {
+      "total": 48202,
+      "legitimate": 28309,
+      "phishing": 19893,
+      "from_phiusil": 27851,
+      "from_murl": 20351
+    },
+    "phiusil_eval_splits_kept_disjoint": [
+      "urls_template_test.csv",
+      "urls_domain_test.csv"
+    ]
+  },
+  "training_date": "2026-10-19T09:03:46.222362"
+}

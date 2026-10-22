@@ -15,10 +15,9 @@ Writes:
     models/message_model.joblib
     models/message_model_metadata.json
     reports/message_metrics.json
-    reports/model_comparison.csv (appended)
+    reports/model_comparison.csv (rows for the message branch replaced)
 """
 
-import csv
 import json
 import pathlib
 import sys
@@ -31,13 +30,15 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent.parent / "src"))
 
 from fraud_phishing.models.message_model import (
     CANDIDATE_PIPELINES,
-    EvalResult,
+    FEATURE_SPEC,
     MESSAGE_METADATA_PATH,
     MESSAGE_MODEL_PATH,
+    EvalResult,
     evaluate_pipeline,
     save_model,
     select_threshold,
 )
+from fraud_phishing.reporting import update_model_comparison
 
 PROCESSED = pathlib.Path("data/processed")
 REPORTS = pathlib.Path("reports")
@@ -56,10 +57,33 @@ def load_split(name: str) -> tuple[pd.Series, pd.Series]:
     return df["text"].astype(str), df["label"].astype(int)
 
 
-def main() -> None:
+def load_split_stats() -> dict:
+    stats_path = PROCESSED / "messages_split_stats.json"
+    return json.loads(stats_path.read_text()) if stats_path.exists() else {}
+
+
+def main(allow_synthetic: bool = False) -> None:
     print("=" * 60)
     print("Training message classification models")
     print("=" * 60)
+
+    split_stats = load_split_stats()
+    provenance = split_stats.get("dataset_provenance", "unknown")
+    print(f"\nTraining data provenance: {provenance.upper()}")
+    if provenance == "synthetic" and not allow_synthetic:
+        print(
+            "\n[REFUSED] The message dataset is the synthetic 65-message placeholder,\n"
+            "          so any metric from it would be meaningless. Download the real\n"
+            "          dataset instead:\n"
+            "            python src/fraud_phishing/data/download_data.py\n"
+            "          Pass --allow-synthetic to train anyway (development only)."
+        )
+        sys.exit(2)
+    if provenance != "real":
+        print(
+            "  [WARNING] Provenance is not 'real'. Treat every metric below as a\n"
+            "            prototype result, not an evaluation."
+        )
 
     X_train, y_train = load_split("train")
     X_val, y_val = load_split("val")
@@ -118,8 +142,11 @@ def main() -> None:
         "model_name": best_name,
         "threshold": best_threshold,
         "label_map": {"0": "ham", "1": "smishing"},
-        "feature_type": "TF-IDF word(1-3gram) + char_wb(2-5gram)",
+        "feature_type": FEATURE_SPEC,
         "random_seed": RANDOM_SEED,
+        "dataset_provenance": provenance,
+        "dataset_provenance_detail": split_stats.get("dataset_provenance_detail", ""),
+        "prototype": provenance != "real",
         "split_stats": split_stats,
         "val_metrics": {
             "f1": best_result.f1,
@@ -146,29 +173,34 @@ def main() -> None:
     )
 
     comp_path = REPORTS / "model_comparison.csv"
-    write_header = not comp_path.exists()
-    with open(comp_path, "a", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(
-            f,
-            fieldnames=["branch", "model", "val_f1", "val_roc_auc", "threshold", "selected"],
-        )
-        if write_header:
-            w.writeheader()
-        for name, res in results.items():
-            w.writerow(
-                {
-                    "branch": "message",
-                    "model": name,
-                    "val_f1": f"{res.f1:.4f}",
-                    "val_roc_auc": f"{res.roc_auc:.4f}",
-                    "threshold": f"{thresholds[name]:.4f}",
-                    "selected": name == best_name,
-                }
-            )
+    update_model_comparison(
+        comp_path,
+        "message",
+        [
+            {
+                "branch": "message",
+                "model": name,
+                "val_f1": f"{res.f1:.4f}",
+                "val_roc_auc": f"{res.roc_auc:.4f}",
+                "threshold": f"{thresholds[name]:.4f}",
+                "selected": name == best_name,
+            }
+            for name, res in results.items()
+        ],
+    )
     print(f"\nModel comparison written to: {comp_path}")
     print(f"Message metrics written to : {REPORTS / 'message_metrics.json'}")
     print("\nDone. Run evaluate_message_model.py for test-set results.")
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Train the message classifier.")
+    parser.add_argument(
+        "--allow-synthetic",
+        action="store_true",
+        help="Permit training on the synthetic placeholder (development only).",
+    )
+    args = parser.parse_args()
+    main(allow_synthetic=args.allow_synthetic)
